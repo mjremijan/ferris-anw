@@ -17,12 +17,93 @@ below for details on getting the data from the website into the Access database.
 
 # UNAA
 
+Vist the schedule website:
+
 (https://www.ultimateninja.net/schedule)
 
+Select the table of qualifiers. **NOTE** it may be necessary to select the 
+table in different chuncks because I found I wasn't able to select the entire
+table at once.
+
+Paste into the Excel document: `unaa-events-from-website.xlsx` This is only 
+tempoarary and the Excel document will not be directly used. Go back to the
+website and copy/paste as many times as needed to get all the competitions.
+
+Paste into the TXT document: `unaa-events-from-website.txt`. When pasted,
+the rows will be tab-delimited. This is OK.
+
+Open `UnaaWebsiteParserMain.java`. Update these class properties as needed:
+
+```java
+private static final String path = "D:\\Documents\\Databases\\ANW\\anw-website-parser\\unaa-events-from-website.txt";
+private static final int year = 2024; // For the 2024-2025 seaons, this value is 2024
+private static final String type = "Area Qualifier";
+private static final String league = "UNAA Season 10";
+```
+
+Run `UnaaWebsiteParserMain.java`.
+
+Look for any missing gyms...
+
+```text
+-- MISSING ---------------------------------
+Hit Squad Ninja Warriors	Arizona
+AirBenders	Oklahoma
+```
+
+If there are any, they need to be resolved. To resolve, see the 
+**Reslove Missing Gym** heading. Do this untile there are none missing...
+
+```text
+-- MISSING ---------------------------------
+None missing!!
+```
+
+The data to be imported is output. Select all the output including the 1st
+line with the column headers.
+
+```text
+gym_name	begin_date	end_date	type	leauge
+Hit Squad Ninjas	9/21/2024	9/22/2024	Area Qualifier	UNAA Season 10
+The Ninja Gym	10/5/2024		Area Qualifier	UNAA Season 10
+Sumner Ninja	10/5/2024		Area Qualifier	UNAA Season 10
+Big Time Ninja	10/12/2024		Area Qualifier	UNAA Season 10
+.
+.
+.
+```
+
+
+Open Excel document: `competitions-to-import.xlsx`
+
+Delete everything already in there
+
+Paste into the Excel document: `competitions-to-import.xlsx`
+
+Open the ANW Access database.
+
+a;sdkjf;akjfl;kadjf;kljaf
 
 # FINA
 
 (https://fina.ninja/events/)
+
+# Resolve Missing Gym
+
+1. Open `Gyms.java`. This file as a list of all the gym names that are in the database
+1. Search `Gyms.java` for a potential match for a missing gym
+1. If a match is found: 
+    1. Edit the `Gyms.find("")` method. 
+    1. Add an `if-else` statement to handle the translation between the website data and what's in the database.
+1. If a match is **NOT** found, more work needs to be done:
+    1. Open the Access database
+    1. Open the `gyms` table
+    1. Gather all of the information about the gym and add it to the table.
+        - Hyperlink value is: `My Display Text#https://the/url#`
+    1. Edit `Gyms.java`
+    1. Add the gym name to the list of names in the database.
+
+
 
 # Database
 
