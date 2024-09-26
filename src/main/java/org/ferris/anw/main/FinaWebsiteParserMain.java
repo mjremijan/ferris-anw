@@ -64,6 +64,10 @@ public class FinaWebsiteParserMain {
                     if (name.equals("Ninja Core Training (Lost Island Warrior)")) {
                         name = "Lost Island";
                     }
+                    else
+                    if (name.equals("Ultimate Ninja Gym")) {
+                        name = "UNAA Gym";
+                    }
                 }
                 type_league = data[2];
                 location = (data.length >= 4) ? data[3] : "UNKNOWN_LOCATION";
@@ -87,7 +91,6 @@ public class FinaWebsiteParserMain {
                 }                
             }
             private void setBeginEnd() {
-                                              
                 //
                 // MONTH
                 //
@@ -115,8 +118,8 @@ public class FinaWebsiteParserMain {
                 
                 // 
                 // DATE
-                //                
-                Pattern p = Pattern.compile("(\\d{1,2})");
+                //  
+                Pattern p = Pattern.compile("\\b(?!\\d{4})\\d{1,2}\\b");
                 Matcher m = p.matcher(date);
                 List<Integer> numbers = new LinkedList<>();
                 while (m.find()) {
@@ -134,6 +137,11 @@ public class FinaWebsiteParserMain {
                     begin = month + "/" + numbers.get(0) + "/" + year;
                     end   = month + "/" + numbers.get(1) + "/" + year;
                 }
+                else
+                if (numbers.size() == 2 && numbers.get(0) > numbers.get(1)) {
+                    begin = month + "/" + numbers.get(0) + "/" + year;
+                    end   = (month + 1) + "/" + numbers.get(1) + "/" + year;
+                }
                 else {
                     return;
                 }
@@ -143,17 +151,18 @@ public class FinaWebsiteParserMain {
             public String toString() {
                 return String.format("[Comp%n   n=\"%s\"%n   tl=\"%s\"%n   l=\"\"%n   d=\"%s\"%n   b=\"%s\"%n   e=\"%s\"%n   t=\"%s\"%n   l=\"%s\"%n]",name,type_league,location,date,begin,end,type,league);
             }
-//            public String toStringForAccessImport() {
-//                String b = begin;
-//                String e = end;
-//                if ( b == null && e == null) {
-//                    b = e = "??" + date;
-//                } else
-//                if (e == null) {
-//                    e = "";
-//                }
-//                return String.format("%s\t%s\t%s\t%s\t%s",name,b,e,type,league);
-//            }
+            public String toStringForAccessImport() {
+                String b = begin;
+                String e = end;
+                if ( b == null && e == null) {
+                    b = e = "??" + date;
+                } 
+                else
+                if (e == null) {
+                    e = "";
+                }
+                return String.format("%s\t%s\t%s\t%s\t%s", name,b,e,type,league);
+            }
             
         }
         
@@ -168,20 +177,22 @@ public class FinaWebsiteParserMain {
         comps.forEach(c -> System.out.printf("%s%n", c));
         
         
+        System.out.printf("%n%n-- MISSING ---------------------------------%n");
         List<Comp> missing
             = comps.stream()
                 .filter(c -> Gyms.contains(c.name) == false)
                 .collect(Collectors.toList())
         ;
         if (missing.isEmpty() == false) {
-            System.out.printf("%n%n-- MISSING ---------------------------------%n");
             missing.forEach(c -> System.out.printf("%s\t%s%n", c.name, c.location ) );
             return;
+        } else {
+            System.out.printf("None missing!!%n");
         }
         
-//        System.out.printf("%n%n-- FOR ACCESS IMPORT ---------------------------------%n");
-//        System.out.printf("%s\t%s\t%s\t%s\t%s%n","gym_name","begin_date","end_date","type","leauge");
-//        comps.forEach(c -> System.out.printf("%s%n", c.toStringForAccessImport()));
-//        System.out.printf("%n%n Copy what's above into the \"competitions-to-import.xlsx file.\"%n%n");
+        System.out.printf("%n%n-- FOR ACCESS IMPORT ---------------------------------%n");
+        System.out.printf("%s\t%s\t%s\t%s\t%s%n","gym_name","begin_date","end_date","type","leauge");
+        comps.forEach(c -> System.out.printf("%s%n", c.toStringForAccessImport()));
+        System.out.printf("%n%n Copy what's above into the \"competitions-to-import.xlsx file.\"%n%n");
     }
 }

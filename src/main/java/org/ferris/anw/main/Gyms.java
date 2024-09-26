@@ -99,5 +99,11 @@ public class Gyms {
         , "Warrior Challenge Arena"	//Broomfield, CO
         , "Kid Wonder"	//Encinitas, CA
         , "Fighting Lyons"	//Essendon North, Victoria
-    );
+        , "Rugged Obstacle Courses" //Williamsburg, VA
+        , "Queen City Ninja"    //Cincinnati, OH
+        , "WA Ninja Games"  // Australia
+        , "The Warrior Factory - Hamilton"  //Hamilton, Ontario, Canada
+        , "Ultimate Ninja Gym"  //Albuquerque, NM   
+            
+     );
 }
