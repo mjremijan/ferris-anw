@@ -1,0 +1,139 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ */
+package org.ferris.anw.main;
+
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+import java.util.stream.Collectors;
+
+/**
+ *
+ * @author Michael
+ */
+public class UnaaWebsiteParserMain {
+
+    private static final int year = 2024;
+    private static final String type = "Area Qualifier";
+    private static final String league = "UNAA Season 10";
+    
+    public static void main(String[] args) throws Exception {
+        // Define the path to the file
+        Path filePath = Paths.get("D:\\Documents\\Databases\\ANW\\unaa-events-from-website.txt");
+
+        // Read all lines from the file into a list
+        List<String> lines = Files.readAllLines(filePath);
+
+        // Print each line
+        System.out.printf("%n%n-- LINES ---------------------------------%n");
+        for (String line : lines) {
+            System.out.println(line);
+        }
+        
+        // split by tab
+        class Comp {     
+            int year;
+            String name, state, date;
+            String begin, end;
+
+            public Comp(String[] data) {
+                this.name = data[0];
+                this.state = data[1];
+                this.date = data[2];
+                setBeginEnd();
+            }
+            @Override
+            public String toString() {
+                return String.format("[Comp n=\"%s\", s=\"%s\", d=\"%s\", begin=\"%s\", end=\"%s\"]",name,state,date,begin,end);
+            }
+            public String toStringForAccessImport() {
+                String b = begin;
+                String e = end;
+                if ( b == null && e == null) {
+                    b = e = "??" + date;
+                } else
+                if (e == null) {
+                    e = "";
+                }
+                return String.format("%s\t%s\t%s\t%s\t%s",name,b,e,type,league);
+            }
+            private void setBeginEnd() {
+                if (date.equalsIgnoreCase("TBD")) {
+                    return;
+                }
+                
+                //
+                // MONTH
+                //
+                int month = -1;                
+                switch (date.toLowerCase().substring(0, 3)) {
+                    case "sep" -> {month = 9; year = UnaaWebsiteParserMain.year;}                    
+                    case "oct" -> {month = 10; year = UnaaWebsiteParserMain.year;}
+                    case "nov" -> {month = 11; year = UnaaWebsiteParserMain.year;}
+                    case "dec" -> {month = 12; year = UnaaWebsiteParserMain.year;}
+                    
+                    case "jan" -> {month = 1; year = UnaaWebsiteParserMain.year+1;}                    
+                    case "feb" -> {month = 2; year = UnaaWebsiteParserMain.year+1;}
+                    case "mar" -> {month = 3; year = UnaaWebsiteParserMain.year+1;}
+                    case "apr" -> {month = 4; year = UnaaWebsiteParserMain.year+1;}
+                    case "may" -> {month = 5; year = UnaaWebsiteParserMain.year+1;}
+                    case "jun" -> {month = 6; year = UnaaWebsiteParserMain.year+1;}
+                    case "jul" -> {month = 7; year = UnaaWebsiteParserMain.year+1;}
+                    case "aug" -> {month = 8; year = UnaaWebsiteParserMain.year+1;}
+                    
+                    default -> month = -1;
+                }
+                if (month == -1) {
+                    return;
+                }
+                
+                // 
+                // DATE
+                //                
+                Pattern p = Pattern.compile("(\\d{1,2})");
+                Matcher m = p.matcher(date);
+                List<Integer> numbers = new LinkedList<>();
+                while (m.find()) {
+                    numbers.add(Integer.parseInt(m.group()));
+                }
+                if (numbers.isEmpty()) {
+                    return;
+                } 
+                else 
+                if (numbers.size() == 1) {
+                    begin = month + "/" + numbers.getFirst() + "/" + year;
+                }
+                else
+                if (numbers.size() == 2 && (numbers.get(0) == numbers.get(1) - 1)) {
+                    begin = month + "/" + numbers.get(0) + "/" + year;
+                    end   = month + "/" + numbers.get(1) + "/" + year;
+                }
+                else {
+                    return;
+                }
+            }
+        }
+        
+        
+        System.out.printf("%n%n-- OBJECTS ---------------------------------%n");
+        List<Comp> comps
+            = lines.stream()
+                .map(l -> new Comp(l.split("\\t"))) 
+                .filter(c -> c.date.equalsIgnoreCase("TBD") == false)
+                .collect(Collectors.toList())
+            ;
+        comps.forEach(c -> System.out.printf("%s%n", c));
+        
+        
+        System.out.printf("%n%n-- FOR ACCESS IMPORT ---------------------------------%n");
+        System.out.printf("%s\t%s\t%s\t%s\t%s%n","gym_name","begin_date","end_date","type","leauge");
+        comps.forEach(c -> System.out.printf("%s%n", c.toStringForAccessImport()));
+        System.out.printf("%n%n Copy what's above into the \"competitions-to-import.xlsx file.\"%n%n");
+
+    }
+}
