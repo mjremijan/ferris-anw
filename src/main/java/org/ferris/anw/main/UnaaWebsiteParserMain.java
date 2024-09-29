@@ -18,16 +18,22 @@ import java.util.stream.Collectors;
  */
 public class UnaaWebsiteParserMain {
 
-    private static final int year = 2024;
+    private static final String path = "D:\\Documents\\Databases\\ANW\\anw-website-parser\\unaa-events-from-website.txt";
+    private static final int year = 2024; // For the 2024-2025 seaons, this value is 2024
     private static final String type = "Area Qualifier";
     private static final String league = "UNAA Season 10";
     
     public static void main(String[] args) throws Exception {
         // Define the path to the file
-        Path filePath = Paths.get("D:\\Documents\\Databases\\ANW\\unaa-events-from-website.txt");
+        Path filePath = Paths.get(path);
 
         // Read all lines from the file into a list
-        List<String> lines = Files.readAllLines(filePath);
+        List<String> lines = Files.readAllLines(filePath)
+            .stream()
+            .map(l -> l.trim())
+            .filter(l -> l.isEmpty() == false)
+            .collect(Collectors.toList())
+        ;
 
         // Print each line
         System.out.printf("%n%n-- LINES ---------------------------------%n");
@@ -42,9 +48,10 @@ public class UnaaWebsiteParserMain {
             String begin, end;
 
             public Comp(String[] data) {
-                this.name = data[0];
-                this.state = data[1];
-                this.date = data[2];
+                name = Gyms.find(data[0]);
+                state = data[1];
+                System.out.printf("name: %s%n", name);
+                date = data[2];
                 setBeginEnd();
             }
             @Override
@@ -129,6 +136,19 @@ public class UnaaWebsiteParserMain {
             ;
         comps.forEach(c -> System.out.printf("%s%n", c));
         
+        
+        System.out.printf("%n%n-- MISSING ---------------------------------%n");
+        List<Comp> missing
+            = comps.stream()
+                .filter(c -> Gyms.contains(c.name) == false)
+                .collect(Collectors.toList())
+        ;
+        if (missing.isEmpty() == false) {
+            missing.forEach(c -> System.out.printf("%s\t%s%n", c.name, c.state ) );
+            return;
+        } else {
+            System.out.printf("None missing!!%n");
+        }
         
         System.out.printf("%n%n-- FOR ACCESS IMPORT ---------------------------------%n");
         System.out.printf("%s\t%s\t%s\t%s\t%s%n","gym_name","begin_date","end_date","type","leauge");

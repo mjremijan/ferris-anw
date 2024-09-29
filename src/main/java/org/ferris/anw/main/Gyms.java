@@ -106,4 +106,37 @@ public class Gyms {
         , "Ultimate Ninja Gym"  //Albuquerque, NM   
             
      );
+
+    static String find(String name) {
+        if (name.equals("Hitsquad Ninja Gym")) {
+            name = "Hit Squad Ninjas";
+        }
+        else
+        if (name.equals("Move Sport Ninja")) {
+            name = "Move Sport Ninja Academy";
+        }
+        else
+        if (name.equals("Ninja Obstacle Academy Huntsville")) {
+            name = "Ninja Obstacle Academy";
+        }
+        else
+        if (name.equals("Ultimate Ninjas Anaheim Hills")) {
+            name = "Ultimate Ninjas- Anaheim Hills";
+        }
+        else
+        if (name.equals("Ninja Core Training (Lost Island Warrior)")) {
+            name = "Lost Island";
+        }
+        else
+        if (name.equals("Ultimate Ninja Gym")) {
+            name = "UNAA Gym";
+        }
+        else
+        if (name.equals("AirBenders")) {
+            name = "Airbenders";
+        }
+        
+        
+        return name;
+    }
 }

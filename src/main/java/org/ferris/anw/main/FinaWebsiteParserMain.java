@@ -25,7 +25,11 @@ public class FinaWebsiteParserMain {
         Path filePath = Paths.get("D:\\Documents\\Databases\\ANW\\fina-events-from-website.txt");
 
         // Read all lines from the file into a list
-        List<String> lines = Files.readAllLines(filePath);
+        List<String> lines = Files.readAllLines(filePath)
+            .stream()
+            .filter(l -> l.isEmpty() == false)
+            .collect(Collectors.toList())
+        ;
 
         // Print each line
         System.out.printf("%n%n-- LINES ---------------------------------%n");
@@ -42,33 +46,7 @@ public class FinaWebsiteParserMain {
 
             public Comp(String[] data) {
                 date = data[0];
-                
-                name = data[1];
-                {
-                    if (name.equals("Hitsquad Ninja Gym")) {
-                        name = "Hit Squad Ninjas";
-                    }
-                    else
-                    if (name.equals("Move Sport Ninja")) {
-                        name = "Move Sport Ninja Academy";
-                    }
-                    else
-                    if (name.equals("Ninja Obstacle Academy Huntsville")) {
-                        name = "Ninja Obstacle Academy";
-                    }
-                    else
-                    if (name.equals("Ultimate Ninjas Anaheim Hills")) {
-                        name = "Ultimate Ninjas- Anaheim Hills";
-                    }
-                    else
-                    if (name.equals("Ninja Core Training (Lost Island Warrior)")) {
-                        name = "Lost Island";
-                    }
-                    else
-                    if (name.equals("Ultimate Ninja Gym")) {
-                        name = "UNAA Gym";
-                    }
-                }
+                name = Gyms.find(data[1]);
                 type_league = data[2];
                 location = (data.length >= 4) ? data[3] : "UNKNOWN_LOCATION";
                 setTypeLeague();
@@ -189,6 +167,7 @@ public class FinaWebsiteParserMain {
         } else {
             System.out.printf("None missing!!%n");
         }
+        
         
         System.out.printf("%n%n-- FOR ACCESS IMPORT ---------------------------------%n");
         System.out.printf("%s\t%s\t%s\t%s\t%s%n","gym_name","begin_date","end_date","type","leauge");
