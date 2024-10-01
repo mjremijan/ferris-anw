@@ -151,7 +151,7 @@ public class UnaaWebsiteParserMain {
         }
         
         System.out.printf("%n%n-- FOR ACCESS IMPORT ---------------------------------%n");
-        System.out.printf("%s\t%s\t%s\t%s\t%s%n","gym_name","begin_date","end_date","type","leauge");
+        System.out.printf("%s\t%s\t%s\t%s\t%s\t%s%n","gym_name","begin_date","end_date","type","league","is_attendance_planned");
         comps.forEach(c -> System.out.printf("%s%n", c.toStringForAccessImport()));
         System.out.printf("%n%n Copy what's above into the \"competitions-to-import.xlsx file.\"%n%n");
 

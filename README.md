@@ -80,9 +80,33 @@ Delete everything already in there
 
 Paste into the Excel document: `competitions-to-import.xlsx`
 
+Verify all of the `begin_date` and `end_date` values. Some dates may not
+have been parsed and will need manual correction.
+
 Open the ANW Access database.
 
-a;sdkjf;akjfl;kadjf;kljaf
+**First Time Importing**
+
+If you have not imported this data before, then just run an import of the
+`competitions-to-import.xlsx` data into the `competitions` table.
+
+**Nth Time Importing**
+
+If this is the Nth time importing this data, you have a bit more work to do.
+
+Close all database objects
+
+Open the `competitions` table
+
+**SORT** by `is_attendance_planned` 
+
+Manually add a 'y' to `competitions-to-import.xlsx` spreadsheet
+
+**DELETE** all of the league's data from the `competitions` table. NOTE: Make 
+sure you have a backup.
+
+Run an import of the
+`competitions-to-import.xlsx` data into the `competitions` table.
 
 # FINA
 

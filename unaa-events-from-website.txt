@@ -4,7 +4,6 @@ Sumner Ninja	Washington	October 5th
 Big Time Ninja	Illinois	October 12th
 Republic Warrior Sports	Missouri	October 12th
 Ninja Intensity	Colorado	October 12-13th
-Power Pickle	Texas	October 18th
 Next Level Gym	Oklahoma	October 19th
 Warrior Zone Ninja Obstacle Center	North Carolina	October 19 - 20th
 Ninja Lair	Nevada	October 19 - 20th
@@ -20,6 +19,7 @@ District Christian Academy	California	November 2nd
 Vertex Lab Academy	Virginia	November 2nd
 Paragon Performance Sports	Kansas	November 2nd
 Magic City Gymnastics	Montana	November 2nd
+Power Pickle	Texas	November 2nd
 605 Ninja	South Dakota	November 2 - 3rd
 Kid Wonder	California	November 8 & 10
 Athletes in Motion	Lousiana	November 9th
@@ -82,6 +82,7 @@ Sterling Gym	Massachusetts	March 29 - 30th (Up to 17-year-olds)
 Altitude Movement Gym	Colorado	March 30th
 Rock Solid Warrior - Fuquay	North Carolina	April 5 - 6th
 USA Ninja Challenge-Manchester	New Hampshire	April 5 - 6th (Up to 17-year-olds)
+Tumble Time Gymnastics	California	April 12th
 Altius Ninja	Wisconsin	TBD
 Power Pickle	Texas	TBD
 Kings Camp & Fitness	California	TBD
@@ -89,5 +90,4 @@ Avant Coeur Ninja	Idaho	TBD
 Leap Ninja	Wyoming	TBD
 Conquer Ninja - Fargo	North Dakota	TBD
 Ninja Force	New Mexico	TBD
-Tumble Time Gymnastics	California	TBD
 716 Ninja Academy	New York	TBD
