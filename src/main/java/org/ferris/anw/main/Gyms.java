@@ -103,7 +103,9 @@ public class Gyms {
         , "Queen City Ninja"    //Cincinnati, OH
         , "WA Ninja Games"  // Australia
         , "The Warrior Factory - Hamilton"  //Hamilton, Ontario, Canada
-        , "Ultimate Ninja Gym"  //Albuquerque, NM   
+        , "Ultimate Ninja Gym"  //Albuquerque, NM
+        , "Ninja Hub"   //Ohio
+        , "Ninja Fortress"  //Washington
             
      );
 
@@ -134,6 +136,14 @@ public class Gyms {
         else
         if (name.equals("AirBenders")) {
             name = "Airbenders";
+        }
+        else
+        if (name.equals("Nova Ninja")) {
+            name = "Nova Ninja Sterling";
+        }
+        else
+        if (name.equals("Conquer Gym - Fargo")) {
+            name = "Conquer Ninja - Fargo";
         }
         
         

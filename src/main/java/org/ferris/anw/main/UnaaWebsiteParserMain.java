@@ -18,7 +18,7 @@ import java.util.stream.Collectors;
  */
 public class UnaaWebsiteParserMain {
 
-    private static final String path = "D:\\Documents\\Databases\\ANW\\anw-website-parser\\unaa-events-from-website.txt";
+    private static final String path = "D:\\Development\\projects\\ferris-anw\\unaa-events-from-website.txt";
     private static final int year = 2024; // For the 2024-2025 seaons, this value is 2024
     private static final String type = "Area Qualifier";
     private static final String league = "UNAA Season 10";
