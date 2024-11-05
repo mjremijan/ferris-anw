@@ -106,6 +106,10 @@ public class Gyms {
         , "Ultimate Ninja Gym"  //Albuquerque, NM
         , "Ninja Hub"   //Ohio
         , "Ninja Fortress"  //Washington
+        , "Bodies In Motion"    //Idaho
+        , "USA Ninja Challenge - Bristol"   //Bristol, VA
+        , "305 Ninja Academy"   //Miami, Florida
+        , "Conquer Gym - Blaine"    //Blaine, Minnesota
             
      );
 
@@ -144,6 +148,10 @@ public class Gyms {
         else
         if (name.equals("Conquer Gym - Fargo")) {
             name = "Conquer Ninja - Fargo";
+        }
+        else
+        if (name.equals("Next Level")) {
+            name = "Next Level Gym";
         }
         
         
