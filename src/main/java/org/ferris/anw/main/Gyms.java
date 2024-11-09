@@ -110,12 +110,18 @@ public class Gyms {
         , "USA Ninja Challenge - Bristol"   //Bristol, VA
         , "305 Ninja Academy"   //Miami, Florida
         , "Conquer Gym - Blaine"    //Blaine, Minnesota
+        , "Ninja Nation - Murphy"   //Texas
+        , "Get Over It Fitness"     //Tennessee
             
      );
 
     static String find(String name) {
         if (name.equals("Hitsquad Ninja Gym")) {
             name = "Hit Squad Ninjas";
+        }
+        else
+        if (name.equals("NCNS (Qualified Athletes Only)")) {
+            name = "605 Ninja";
         }
         else
         if (name.equals("Move Sport Ninja")) {
