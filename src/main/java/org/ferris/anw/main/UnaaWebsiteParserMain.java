@@ -19,7 +19,8 @@ import java.util.stream.Collectors;
 public class UnaaWebsiteParserMain {
 
     private static final String path = "D:\\Development\\projects\\ferris-anw\\unaa-events-from-website.txt";
-    private static final int year = 2024; // For the 2024-2025 seaons, this value is 2024
+    private static final int year = 2024; // For the 2024-2025 seasons, this value is 2024
+    //private static final String type = "Area Qualifier";
     private static final String type = "Regional Qualifier";
     private static final String league = "UNAA Season 10";
     
@@ -70,8 +71,49 @@ public class UnaaWebsiteParserMain {
                 return String.format("%s\t%s\t%s\t%s\t%s",name,b,e,type,league);
             }
             private void setBeginEnd() {
+                
+                // Typically formatted as:
+                // March 15th
+                
+                
                 if (date.equalsIgnoreCase("TBD")) {
                     return;
+                }
+                
+                if (date.equalsIgnoreCase("??November 9 (Youth) & Nov 10 (15U/ Adults)")) {
+                    date = "November 9th";
+                }
+                else
+                if (date.equalsIgnoreCase("??November 23rd 7U - 11U / November 24th 13U & above")) {
+                    date = "November 23rd";
+                }
+                else
+                if (date.equalsIgnoreCase("??January 11 - 12th (Up to 17-year-olds)")) {
+                    date = "January 11th";
+                }
+                else
+                if (date.equalsIgnoreCase("??January 25th 7U - 11U, January 26th 13U & above")) {
+                    date = "January 25th";
+                }
+                else
+                if (date.equalsIgnoreCase("??February 8 - 9th (Up to 17-year-olds)")) {
+                    date = "February 8th";
+                }
+                else
+                if (date.equalsIgnoreCase("??March 15th (13 & Under)")) {
+                    date = "March 15th";
+                }
+                else
+                if (date.equalsIgnoreCase("??March 29th (Up to 17-year-olds)")) {
+                    date = "March 29th";
+                }
+                else
+                if (date.equalsIgnoreCase("??March 29 - 30th (Up to 17-year-olds)")) {
+                    date = "March 29th";
+                }
+                else
+                if (date.equalsIgnoreCase("??April 5 - 6th (Up to 17-year-olds)")) {
+                    date = "April 5th";
                 }
                 
                 //

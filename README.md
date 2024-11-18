@@ -100,7 +100,7 @@ Open the `competitions` table
 
 **SORT** by `is_attendance_planned` 
 
-Manually add a 'y' to `competitions-to-import.xlsx` spreadsheet
+Manually add a 'TRUE' to `competitions-to-import.xlsx` spreadsheet
 
 **DELETE** all of the league's data from the `competitions` table. NOTE: Make 
 sure you have a backup.

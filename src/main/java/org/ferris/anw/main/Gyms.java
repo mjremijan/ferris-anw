@@ -112,6 +112,7 @@ public class Gyms {
         , "Conquer Gym - Blaine"    //Blaine, Minnesota
         , "Ninja Nation - Murphy"   //Texas
         , "Get Over It Fitness"     //Tennessee
+        , "Ninja Quest Adventures"  //Issaquah, WA
             
      );
 
