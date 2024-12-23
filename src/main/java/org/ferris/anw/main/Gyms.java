@@ -12,10 +12,6 @@ import java.util.List;
  */
 public class Gyms {
     
-    public static boolean contains(String gymName) {
-        return gyms.contains(gymName);
-    }
-    
     private static List<String> gyms = List.of( 
           "Athletes in Motion"	//Prairieville, LA
         , "Airbenders"	//Owasso, OK
@@ -113,9 +109,20 @@ public class Gyms {
         , "Ninja Nation - Murphy"   //Texas
         , "Get Over It Fitness"     //Tennessee
         , "Ninja Quest Adventures"  //Issaquah, WA
-            
-     );
+        , "Warrior Playground"   //Longmont, CO 
+        , "Wojo Ninja Warrior"
+        , "TA Fitness Weymouth"
+        , "Adrenaline Monkey West Dundee"
+        , "Australian Warrior Fitness"
+        , "Hybrid Ninja Academy"
+        , "Obstacle Course Racing School"   
+        , "Conquer Gym - Peoria"
+    );
 
+    public static boolean contains(String gymName) {
+        return gyms.contains(gymName);
+    }
+    
     static String find(String name) {
         if (name.equals("Hitsquad Ninja Gym")) {
             name = "Hit Squad Ninjas";
@@ -134,6 +141,10 @@ public class Gyms {
         }
         else
         if (name.equals("Ultimate Ninjas Anaheim Hills")) {
+            name = "Ultimate Ninjas- Anaheim Hills";
+        }
+        else
+        if (name.equals("Ultimate Ninjas - Anaheim")) {
             name = "Ultimate Ninjas- Anaheim Hills";
         }
         else
@@ -160,8 +171,36 @@ public class Gyms {
         if (name.equals("Next Level")) {
             name = "Next Level Gym";
         }
+        else
+        if (name.equals("Iron Sports")) {
+            name = "Iron Sports Ninja Warrior";
+        }
+        else
+        if (name.equals("Warrior Zone")) {
+            name = "Warrior Zone Ninja Obstacle Center";
+        }
+        else
+        if (name.equals("Conquer Ninja Gym Blaine")) {
+            name = "Conquer Gym - Blaine";
+        }
+        else
+        if (name.equals("KidWonder")) {
+            name = "Kid Wonder";
+        }
+        else
+        if (name.equals("Conquer Ninja Gym Peoria")) {
+            name = "Conquer Gym - Peoria";
+        }
+        else
+        if (name.equals("Authentik Movement")) {
+            name = "Authentik Movement Training";
+        }
+        else
+        if (name.equals("Vertex Labs Academy")) {
+            name = "Vertex Lab Academy";
+        }
         
-        
+        //  
         return name;
     }
 }

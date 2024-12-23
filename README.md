@@ -110,7 +110,58 @@ Run an import of the
 
 # FINA
 
+GO TO Website:
 (https://fina.ninja/events/)
+
+From the dropdown, select "All Season ** Comps".
+
+Select the entire table.
+
+Paste into the Excel document: `competitions-from-website.xlsx`
+
+Fix any dates or any other information that you can in the Excel document.
+
+Copy & paste all the Excel data into `fina-events-from-website.txt`. This will
+made a tab-delimited file. This is OK.
+
+Open `FinaWebsiteParserMain.java`
+
+Verify:
+
+```java
+Path filePath = Paths.get("D:\\Development\\projects\\ferris-anw\\fina-events-from-website.txt");
+private static final int year = 2024;
+```
+
+Run!
+
+Fix MISSING until you get:
+
+```txt
+-- MISSING ---------------------------------
+None missing!!
+```
+
+Copy all of the console output, including the first row
+with the field names, into `competitions-to-import.xlsx`
+
+Inspect the data, cleanup anything out of the ordinary.
+If necessary, update code to parse correctly.
+
+Open Access
+
+Filter `competitions` by FINA
+
+Find any where 'is_attendance_planned' is check. Locate
+those in the `competitions-to-import.xlsx` file and add
+`TRUE` to the last column 
+
+Copy the `competitions` table
+
+Delete all of the **FINA** competitions.
+
+Run the saved import
+
 
 # Resolve Missing Gym
 

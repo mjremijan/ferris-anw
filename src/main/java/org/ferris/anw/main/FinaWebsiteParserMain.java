@@ -18,11 +18,12 @@ import java.util.stream.Collectors;
  */
 public class FinaWebsiteParserMain {
 
+    private static Path filePath = Paths.get("D:\\Development\\projects\\ferris-anw\\fina-events-from-website.txt");
     private static final int year = 2024;
     
     public static void main(String[] args) throws Exception {
         // Define the path to the file
-        Path filePath = Paths.get("D:\\Documents\\Databases\\ANW\\fina-events-from-website.txt");
+        
 
         // Read all lines from the file into a list
         List<String> lines = Files.readAllLines(filePath)
@@ -48,25 +49,63 @@ public class FinaWebsiteParserMain {
                 date = data[0];
                 name = Gyms.find(data[1]);
                 type_league = data[2];
-                location = (data.length >= 4) ? data[3] : "UNKNOWN_LOCATION";
+                location = (data.length >= 5) ? data[4] : "UNKNOWN_LOCATION";
                 setTypeLeague();
                 setBeginEnd();
             }
             private void setTypeLeague() {
+                // FINA Season VI Ninja vs. Ninja #1
                 // FINA Season VI Qualifier #1 - Endurance
-                // FINA Season VI SECTIONAL - Endurance                                
-                String tokens[] = type_league.split(" ");
+                // FINA Season VI SECTIONAL - Endurance
+                // FINA Season VI Qualifier #1 - Speed - YA, Amat., Masters
+                               
+                // Split
+                String[] split = type_league.split("-");
+                // FINA Season VI Ninja vs. Ninja #1
+                // FINA Season VI Qualifier #1
+                // FINA Season VI SECTIONAL
+                String one = null;
+                { 
+                    one = split[0].trim();
+                }
+                // Endurance
+                // Speed
+                String two = null;
+                {
+                    if (split.length >= 2) {
+                        two = split[1].trim();
+                    }
+                }
                 
                 // FINA Season VI
-                league = tokens[0] + " " + tokens[1] + " " + tokens[2];
+                league = "";
+                {
+                    String [] s = one.split(" ");
+                    league = s[0] + " " + s[1] + " " + s[2];
+                }
                 
-                // Qualifier #1 - Endurance
-                // SECTIONAL - Endurance
+                
                 type = "";
-                for (int i=3; i<tokens.length; i++) {
-                    if (!type.isEmpty()) { type += " "; }
-                    type += tokens[i];
-                }                
+                {
+                    // Ninja vs. Ninja #1
+                    // Qualifier #1
+                    // SECTIONAL
+                    String [] s = one.split(" ");
+                    for (int i =3; i<s.length; i++) {
+                        if (!type.isEmpty()) { type += " "; }
+                        type += s[i];
+                    }
+                    league = s[0] + " " + s[1] + " " + s[2];
+                    
+                    // Endurance
+                    // Speed
+                    if (two != null) {
+                        if (two.startsWith("End.")) {
+                            two = "Endurance";
+                        }
+                        type += " - " + two.trim();
+                    }
+                }
             }
             private void setBeginEnd() {
                 //
@@ -127,7 +166,18 @@ public class FinaWebsiteParserMain {
             
             @Override
             public String toString() {
-                return String.format("[Comp%n   n=\"%s\"%n   tl=\"%s\"%n   l=\"\"%n   d=\"%s\"%n   b=\"%s\"%n   e=\"%s\"%n   t=\"%s\"%n   l=\"%s\"%n]",name,type_league,location,date,begin,end,type,league);
+                StringBuilder sp = new StringBuilder();
+                sp.append(String.format("[Comp%n"));
+                  sp.append(String.format("  name=\"%s\"%n", name));
+                  sp.append(String.format("  type_league=\"%s\"%n", type_league));
+                  sp.append(String.format("  type=\"%s\"%n", type));
+                  sp.append(String.format("  league=\"%s\"%n", league));
+                  sp.append(String.format("  location=\"%s\"%n", location));
+                  sp.append(String.format("  date=\"%s\"%n", date));
+                  sp.append(String.format("  begin=\"%s\"%n", begin));
+                  sp.append(String.format("  end=\"%s\"%n", end));
+                sp.append(String.format("]%n"));
+                return sp.toString();
             }
             public String toStringForAccessImport() {
                 String b = begin;
@@ -156,13 +206,15 @@ public class FinaWebsiteParserMain {
         
         
         System.out.printf("%n%n-- MISSING ---------------------------------%n");
-        List<Comp> missing
+        List<String> missing
             = comps.stream()
-                .filter(c -> Gyms.contains(c.name) == false)
+                .map(c -> c.name)
+                .distinct()
+                .filter(s -> Gyms.contains(s) == false)
                 .collect(Collectors.toList())
         ;
         if (missing.isEmpty() == false) {
-            missing.forEach(c -> System.out.printf("%s\t%s%n", c.name, c.location ) );
+            missing.forEach(s -> System.out.printf("%s%n", s ) );
             return;
         } else {
             System.out.printf("None missing!!%n");
