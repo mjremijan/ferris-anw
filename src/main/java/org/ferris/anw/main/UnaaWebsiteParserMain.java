@@ -18,10 +18,11 @@ import java.util.stream.Collectors;
  */
 public class UnaaWebsiteParserMain {
 
-    private static final String path = "D:\\Development\\projects\\ferris-anw\\unaa-events-from-website.txt";
+    private static final String path = 
+        "D:\\Development\\projects\\ferris-anw\\unaa-events-from-website.txt";
     private static final int year = 2024; // For the 2024-2025 seasons, this value is 2024
     //private static final String type = "Area Qualifier";
-    private static final String type = "Regional Qualifier";
+    private static final String type = "WNA Games";
     private static final String league = "UNAA Season 10";
     
     public static void main(String[] args) throws Exception {
@@ -72,10 +73,6 @@ public class UnaaWebsiteParserMain {
             }
             private void setBeginEnd() {
                 
-                // Typically formatted as:
-                // March 15th
-                
-                
                 if (date.equalsIgnoreCase("TBD")) {
                     return;
                 }
@@ -115,6 +112,12 @@ public class UnaaWebsiteParserMain {
                 if (date.equalsIgnoreCase("??April 5 - 6th (Up to 17-year-olds)")) {
                     date = "April 5th";
                 }
+                
+                // Typically formatted as:
+                // March 15th
+                // March 1 - 9th
+                // March 1st - 9th
+                // March 7-9
                 
                 //
                 // MONTH
@@ -158,7 +161,7 @@ public class UnaaWebsiteParserMain {
                     begin = month + "/" + numbers.getFirst() + "/" + year;
                 }
                 else
-                if (numbers.size() == 2 && (numbers.get(0) == numbers.get(1) - 1)) {
+                if (numbers.size() == 2) {
                     begin = month + "/" + numbers.get(0) + "/" + year;
                     end   = month + "/" + numbers.get(1) + "/" + year;
                 }

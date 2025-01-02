@@ -117,6 +117,11 @@ public class Gyms {
         , "Hybrid Ninja Academy"
         , "Obstacle Course Racing School"   
         , "Conquer Gym - Peoria"
+        , "USA Ninja Challenge - Greenbrier" //VA
+        , "USA Ninja Challenge - Rochester"  //NY
+        , "Strong Grip" //Forida
+        , "Conquer Gym - Chandler" //AZ
+        , "USA Ninja Challenge - Katy" //TX
     );
 
     public static boolean contains(String gymName) {
@@ -124,6 +129,10 @@ public class Gyms {
     }
     
     static String find(String name) {
+        if (name.equals("The Wolf's Den")) {
+            name = "The Wolfs Den";
+        }
+        else
         if (name.equals("Hitsquad Ninja Gym")) {
             name = "Hit Squad Ninjas";
         }
@@ -198,6 +207,10 @@ public class Gyms {
         else
         if (name.equals("Vertex Labs Academy")) {
             name = "Vertex Lab Academy";
+        }
+        else
+        if (name.equals("Ninja Nation Murphy")) {
+            name = "Ninja Nation - Murphy";
         }
         
         //  
