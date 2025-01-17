@@ -21,8 +21,9 @@ public class UnaaWebsiteParserMain {
     private static final String path = 
         "D:\\Development\\projects\\ferris-anw\\unaa-events-from-website.txt";
     private static final int year = 2024; // For the 2024-2025 seasons, this value is 2024
-    //private static final String type = "Area Qualifier";
-    private static final String type = "WNA Games";
+    private static final String type = "Area Qualifier";
+    //private static final String type = "Regional Qualifier";
+    //private static final String type = "WNA Games";
     private static final String league = "UNAA Season 10";
     
     public static void main(String[] args) throws Exception {
@@ -161,7 +162,7 @@ public class UnaaWebsiteParserMain {
                     begin = month + "/" + numbers.getFirst() + "/" + year;
                 }
                 else
-                if (numbers.size() == 2) {
+                 if (numbers.size() == 2) {
                     begin = month + "/" + numbers.get(0) + "/" + year;
                     end   = month + "/" + numbers.get(1) + "/" + year;
                 }
@@ -188,7 +189,7 @@ public class UnaaWebsiteParserMain {
                 .filter(c -> Gyms.contains(c.name) == false)
                 .collect(Collectors.toList())
         ;
-        if (missing.isEmpty() == false) {
+        if (false == missing.isEmpty()) {
             missing.forEach(c -> System.out.printf("%s\t%s%n", c.name, c.state ) );
             return;
         } else {

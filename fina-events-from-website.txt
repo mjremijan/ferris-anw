@@ -22,13 +22,13 @@ December 28, 2024	The Warrior Factory - Hamilton	FINA Season VI Ninja vs. Ninja 
 January 3	Hitsquad Ninja Gym	FINA Season VI Qualifier #1 - Speed - YA, Amat., Masters	Speed	Tempe, AZ
 January 3	Hitsquad Ninja Gym	FINA Season VI Qualifier #1 - Endurance - YA, Amat., Masters	Endurance	Tempe, AZ
 January 4	Nebraska Ninja	FINA Season VI Qualifier #1 - Speed	Speed	Lincoln, NE
-January 4-5	Iron Sports	FINA Season VI Qualifier #1 - Speed	Speed	Houston, TX, US
-January 4-5	Iron Sports	FINA Season VI Qualifier #1 - Endurance	Endurance	Houston, TX, US
+January 4	Iron Sports	FINA Season VI Qualifier #1 - Speed	Speed	Houston, TX, US
+January 4	Iron Sports	FINA Season VI Qualifier #1 - Endurance	Endurance	Houston, TX, US
 January 4	Hitsquad Ninja Gym	FINA Season VI Qualifier #1 - Speed - 7U, 9U, 11U, !3U, TF	Speed	Tempe, AZ
 January 4	Hitsquad Ninja Gym	FINA Season VI Qualifier #1 - End. - 7U, 9U, 11U, 13U, TF	Endurance	Tempe, AZ
 January 5	Nebraska Ninja	FINA Season VI Qualifier #2 - Endurance	Endurance	Lincoln, NE
-January 11-12	Warrior Zone	FINA Season VI Qualifier #1 - Speed	Speed	Winterville, NC, US
-January 11-12	Warrior Zone	FINA Season VI Qualifier #1 - Endurance	Endurance	Winterville, NC, US
+January 5	Iron Sports	FINA Season VI Qualifier #2 - Speed	Speed	Houston, TX, US
+January 5	Iron Sports	FINA Season VI Qualifier #2 - Endurance	Endurance	Houston, TX, US
 January 11-12	Wojo Ninja Warrior	FINA Season VI Qualifier #1 - Speed	Speed	East Aurora, NY
 January 11-12	Wojo Ninja Warrior	FINA Season VI Qualifier #1 - Endurance	Endurance	East Aurora, NY
 January 11	Four Star Ninja Academy	FINA Season VI Qualifier #1 - Endurance	Endurance	Fargo, ND
@@ -54,6 +54,8 @@ February 1-2	KidWonder	FINA Season VI Qualifier #2 - Speed	Speed	Encinitas, CA
 February 1-2	KidWonder	FINA Season VI Qualifier #2 - Endurance	Endurance	Encinitas, CA
 February 1-2	Ninja Lair	FINA Season VI Qualifier #1 - Speed	Speed	Las Vegas, NV, US
 February 1-2	Ninja Lair	FINA Season VI Qualifier #1 - Endurance	Endurance	Las Vegas, NV, US
+February 8	Tri County Ninja	FINA Season VI Qualifier #1 - Speed	Speed	Fenton, MI
+February 8	Tri County Ninja	FINA Season VI Qualifier #1 - Endurance	Endurance	Fenton, MI
 February 8	Permian Basin Ninja Academy	FINA Season VI Qualifier #1 - Speed	Speed	Midland, TX
 February 8	Permian Basin Ninja Academy	FINA Season VI Qualifier #1 - Endurance	Endurance	Midland, TX
 February 9	Fighting Lyons	FINA Season VI Qualifier #1 - Speed	Speed	Essendon North, Victoria, Australia
@@ -69,12 +71,16 @@ February 22-23	The Warrior Factory - Hamilton	FINA Season VI Qualifier #1 - Spee
 February 22-23	The Warrior Factory - Hamilton	FINA Season VI Qualifier #2 - Endurance	Endurance	Hamilton, Ontario, Canada
 February 22-23	Ninja Obstacle Academy Huntsville	FINA Season VI Qualifier #1 - Speed	Speed	Huntsville, AL
 February 22-23	Ninja Obstacle Academy Huntsville	FINA Season VI Qualifier #1 - Endurance	Endurance	Huntsville, AL
+February 22-23	Warrior Zone	FINA Season VI Qualifier #1 - Speed	Speed	Winterville, NC, US
+February 22-23	Warrior Zone	FINA Season VI Qualifier #1 - Endurance	Endurance	Winterville, NC, US
 February 22-23	TA Fitness Weymouth	FINA Season VI Qualifier #2 - Endurance	Endurance	Weymouth, MA
 February 22-23	TA Fitness Weymouth	FINA Season VI Qualifier #2 - Speed	Speed	Weymouth, MA
 February 22-23	Conquer Ninja Gym Peoria	FINA Season VI Qualifier #1 =- Speed	Speed	Glendale, AZ
 March 1	Authentik Movement	FINA Season VI Qualifier #2 - Speed	Speed	Cleveland, OH
 March 1	Authentik Movement	FINA Season VI Qualifier #2 - Endurance	Endurance	Cleveland, OH
+March 8	The Rock Ninja Warrior Academy	FINA Season VI Qualifier #1 - Speed	Speed	Orange Park, FL
 March 8	Ninja Fortress	FINA Season VI Qualifier #1 - Speed	Speed	WA
+March 9	The Rock Ninja Warrior Academy	FINA Season VI Qualifier #1 - Endurance	Endurance	Orange Park, FL
 March 9	Ninja Fortress	FINA Season VI Qualifier #1 - Endurance	Endurance	WA
 March 15	Altius Ninja	FINA Season VI Qualifier - Speed #2	Speed	Franklin, WI
 March 22-23	Hitsquad Ninja Gym	FINA Season VI Qualifier #2 - Speed	Speed	Tempe, AZ
@@ -82,26 +88,36 @@ March 22-23	Hitsquad Ninja Gym	FINA Season VI Qualifier #2 - Endurance	Endurance
 March 29-30	Hybrid Ninja Academy	FINA Season VI Qualifier #1 - Speed	Speed	Lancaster, NY
 March 29-30	Hybrid Ninja Academy	FINA Season VI Qualifier #1 - Endurance	Endurance	Lancaster, NY
 March 29	Four Star Ninja Academy	FINA Season VI Qualifier #3 - Endurance	Endurance	Fargo, ND
+March 29-31	Camp Rhino	FINA Season VI Qualifier #1 - Speed	Speed	Las Vegas, NV
+March 29-30	Camp Rhino	FINA Season VI Qualifier #1 - Endurance	Endurance	Las Vegas, NV
 March 30	Four Star Ninja Academy	FINA Season VI Qualifier #3 - Speed	Speed	Fargo, ND
+April 5	The Rock Ninja Warrior Academy	FINA Season VI Qualifier #2 - Speed	Speed	Orange Park, FL
 April 5-6	Ultimate Ninjas Anaheim Hills	FINA Season VI Qualifier #1 - Speed	Speed	Anaheim, CA, US
 April 5-6	Ultimate Ninjas Anaheim Hills	FINA Season VI Qualifier #1 - Endurance	Endurance	Anaheim, CA, US
+April 6	The Rock Ninja Warrior Academy	FINA Season VI Qualifier #2 - Endurance	Endurance	Orange Park, FL
 April 12-13	Ninjobstacles	FINA Season VI Qualifier #2 - Speed	Speed	Kettering, OH
 April 12-13	Ninjobstacles	FINA Season VI Qualifier #2 - Endurance	Endurance	Kettering, OH
-April 12-13	Iron Sports	FINA Season VI Qualifier #2 - Speed	Speed	Houston, TX, US
-April 12-13	Iron Sports	FINA Season VI Qualifier #2 - Endurance	Endurance	Houston, TX, US
+April 12	Iron Sports	FINA Season VI Qualifier #3 - Speed	Speed	Houston, TX, US
+April 12	Iron Sports	FINA Season VI Qualifier #3 - Endurance	Endurance	Houston, TX, US
 April 13	Altius Ninja	FINA Season VI Qualifier #1 - Endurance	Endurance	Franklin, WI
 April 26	Rugged Obstacle Courses	FINA Season VI Qualifier #1 - Endurance	Endurance	Williamsburg, VA
 April 26	Rugged Obstacle Courses	FINA Season VI Qualifier #2 - Speed	Speed	Williamsburg, VA
+April 26-27	Ninja Core Training (Lost Island Warrior)	FINA Season VI SECTIONAL - Speed	Speed	Colorado Springs, CO
+April 26-27	Ninja Core Training (Lost Island Warrior)	FINA Season VI SECTIONAL - Endurance	Endurance	Colorado Springs, CO
 May 3	Obstacle Course Racing School	FINA Season VI Qualifier #1 - Speed	Speed	Tuggerah, NSW, Australia
 May 3	Obstacle Course Racing School	FINA Season VI Qualifier #1 - Endurance	Endurance	Tuggerah, NSW, Australia
 May 3-4	Ninja Obstacle Academy Huntsville	FINA Season VI SECTIONAL - Speed	Speed	Huntsville, AL
 May 3	Ninja Obstacle Academy Huntsville	FINA Season VI SECTIONAL - Endurance	Endurance	Huntsville, AL
+May 3-4	Authentik Movement	FINA Season VI SECTIONAL - Speed	Speed	Cleveland, OH
+May 3-4	Authentik Movement	FINA Season VI SECTIONAL - Endurance	Endurance	Cleveland, OH
 May 4	Obstacle Course Racing School	FINA Season VI Ninja vs. Ninja #1	Ninja vs. Ninja	Tuggerah, NSW, Australia
 May 4	Nebraska Ninja	FINA Season VI Qualifier #2 - Speed	Speed	Lincoln, NE
 May 10-11	The Warrior Factory - Hamilton	FINA Season VI SECTIONAL - Speed	Speed	Hamilton, Ontario, Canada
 May 10-11	The Warrior Factory - Hamilton	FINA Season VI SECTIONAL - Endurance	Endurance	Hamilton, Ontario, Canada
 May 10-11	Altius Ninja	FINA Season VI SECTIONAL - Speed	Speed	Franklin, WI
 May 10-11	Altius Ninja	FINA Season VI SECTIONAL - Endurance	Endurance	Franklin, WI
+May 10-11	Ultimate Ninja Gym	FINA Season VI SECTIONAL - Speed	Speed	Albuquerque, NM, US
+May 10-11	Ultimate Ninja Gym	FINA Season VI SECTIONAL - Endurance	Endurance	Albuquerque, NM, US
 May 17-18	Queen City Ninja	FINA Season VI SECTIONAL - Speed	Speed	Cincinnati, OH
 May 17-18	Queen City Ninja	FINA Season VI SECTIONAL - Endurance	Endurance	Cincinnati, OH
 May 17-18	Warrior Zone	FINA Season VI SECTIONAL - Speed	Speed	Winterville, NC, US
@@ -116,9 +132,13 @@ May 24-25	Iron Sports	FINA Season VI SECTIONAL - Speed	Speed	Houston, TX, US
 May 24-25	Iron Sports	FINA Season VI SECTIONAL - Endurance	Endurance	Houston, TX, US
 May 24	Hitsquad Ninja Gym	FINA Season VI SECTIONAL - Speed - 7U, 9U, 11U, 13U, TF	Speed	Tempe, AZ
 May 24	Hitsquad Ninja Gym	FINA Season VI SECTIONAL - End. 7U, 9U, 11U, 13U, TF	Endurance	Tempe, AZ
-May 24	Ninja Core Training (Lost Island Warrior)	FINA Season VI SECTIONAL - Endurance	Endurance	Colorado Springs, CO
 May 25	Hitsquad Ninja Gym	FINA Season VI SECTIONAL - Speed - YA, Amat., Masters	Speed	Tempe, AZ
 May 25	Hitsquad Ninja Gym	FINA Season VI SECTIONAL - End. - YA, Amat., Masters	Endurance	Tempe, AZ
-May 25	Ninja Core Training (Lost Island Warrior)	FINA Season VI SECTIONAL - Speed	Speed	Colorado Springs, CO
+May 31	The Rock Ninja Warrior Academy	FINA Season VI SECTIONAL - Speed	Speed	Orange Park, FL
 May 31 - Jun 1	Nebraska Ninja	FINA Season VI SECTIONAL - Speed	Speed	Lincoln, NE
 May 31 - Jun 1	Nebraska Ninja	FINA Season VI SECTIONAL - Endurance	Endurance	Lincoln, NE
+May 31 - Jun 1	The Barn	FINA Season VI SECTIONAL - Speed	Speed	Dorsey, IL
+May 31 - Jun 1	The Barn	FINA Season VI SECTIONAL - Endurance	Endurance	Dorsey, IL
+May 31 - Jun 1	Camp Rhino	FINA Season VI SECTIONAL - Speed	Speed	Las Vegas, NV
+May 31 - Jun 1	Camp Rhino	FINA Season VI SECTIONAL - Endurance	Endurance	Las Vegas, NV
+June 1	The Rock Ninja Warrior Academy	FINA Season VI SECTIONAL - Endurance	Endurance	Orange Park, FL

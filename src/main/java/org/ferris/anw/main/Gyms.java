@@ -122,6 +122,10 @@ public class Gyms {
         , "Strong Grip" //Forida
         , "Conquer Gym - Chandler" //AZ
         , "USA Ninja Challenge - Katy" //TX
+        , "Rapt Ninja Academy" //	Massachusetts
+        , "Ninja Republic" //	California
+        , "First State Gymnatics" //	Delaware
+        , "The Rock Ninja Warrior Academy"  // Orange Park, FL
     );
 
     public static boolean contains(String gymName) {
@@ -129,11 +133,19 @@ public class Gyms {
     }
     
     static String find(String name) {
+        if (name.equals("Rapt Ninja")) {
+            name = "Rapt Ninja Academy";
+        }
+        else
+        if (name.equals("Buffalo Elite Ninja")) {
+            name = "716 Ninja Academy";
+        }
+        else
         if (name.equals("The Wolf's Den")) {
             name = "The Wolfs Den";
         }
         else
-        if (name.equals("Hitsquad Ninja Gym")) {
+        if (name.equals("Hitsquad Ninja Gym") || name.equals("Hit Squad")) {
             name = "Hit Squad Ninjas";
         }
         else
@@ -154,6 +166,10 @@ public class Gyms {
         }
         else
         if (name.equals("Ultimate Ninjas - Anaheim")) {
+            name = "Ultimate Ninjas- Anaheim Hills";
+        }
+        else
+        if (name.equals("Ultimate Ninjas- Anaheim")) {
             name = "Ultimate Ninjas- Anaheim Hills";
         }
         else
@@ -211,6 +227,10 @@ public class Gyms {
         else
         if (name.equals("Ninja Nation Murphy")) {
             name = "Ninja Nation - Murphy";
+        }
+        else
+        if (name.equals("Tri County Ninja")) {
+            name = "Tri County";
         }
         
         //  
