@@ -1,112 +1,21 @@
-ORTHDX	Wisconsin	November 9 
-Super Ninja Zone	Ohio	November 16th
-Iron Sports Ninja Warrior	Texas	November 16th
-Conquer Gym - Gilbert	Arizona	November 16th
-WISC Ninja Warrior	Virginia	November 16th
-Avant Coeur Ninja	Idaho	November 23rd
-Camp Rhino	Nevada	November 23 - 24th
-Altitude Movement Gym	Colorado	November 23rd
-Lost Island	Colorado	November 30th
-The Grip	Utah	December 6 - 7th
-Camp Ninja Warrior	Oklahoma	December 7th
-Four Star Ninja Academy	North Dakota	December 7th
-Move Sport Ninja Academy	Texas	December 7th
-Ultimate Ninjas- Anaheim Hills	California	December 7th
-Free Spirit	Oregon	December 8th
-Ultimate Ninjas - Elmhurst	Illinois	December 8th
-NinjaKour	Georgia	December 14th
-Vertex Lab Academy	Virginia	December 15th
-Hit Squad Ninjas	Arizona	January 3
-World Class Dragons	Illinois	January 3 - 4th
-Conquer Ninja Gyms - Woodbury	Minnesota	January 10 - 11th
-USA Ninja Challenge-Manchester	New Hampshire	January 11 - 12th 
-Ninja Hub	Ohio	January 12th
-Power Pickle	Texas	January 18th
-605 Ninja	South Dakota	January 18 - 19th
-Impact Ninja Gym	Utah	January 24 - 25th
-Flow Vault	Colorado	January 25th
-Next Level Gym	Oklahoma	January 25th
-Ninja Obstacle Academy	Alabama	January 25th
-305 Ninja Academy	Florida	January 25th
-Hit Squad Ninjas	Arizona	Sept 21
-The Ninja Gym	Tennessee	October 5th
-Sumner Ninja	Washington	October 5th
-Big Time Ninja	Illinois	October 12th
-Republic Warrior Sports	Missouri	October 12th
-Ninja Intensity	Colorado	October 12-13th
-Next Level Gym	Oklahoma	October 19th
-Warrior Zone Ninja Obstacle Center	North Carolina	October 19 - 20th
-Ninja Lair	Nevada	October 19 - 20th
-Ninjobstacles	Ohio	October 19 - 20th
-Altius Ninja	Wisconsin	October 20th
-Permian Basin Ninja Academy	Texas	October 26th
-UNAA Gym	New Mexico	October 26th
-Authentik Movement Training	Ohio	October 26th
-Nebraska Ninja	Nebraska	October 27th
-Tri County	Michigan	October 27th
-The Ninja Playground	Utah	November 1 - 2nd
-District Christian Academy	California	November 2nd
-Paragon Performance Sports	Kansas	November 2nd
-Magic City Gymnastics	Montana	November 2nd
-Power Pickle	Texas	November 2nd
-605 Ninja	South Dakota	November 2 - 3rd
-Nova Ninja	Virginia	November 2 - 3rd
-Kid Wonder	California	November 9 - 10th
-Athletes in Motion	Lousiana	November 9th
-Fortified Fitness	Tennessee	November 9th
-Airbenders	Oklahoma	November 9th
-Warrior Tech - Raleigh	North Carolina	November 9 - 10th
-Surge Ninja	Massachusetts	November 9 - 10th
-Altius Ninja	Wisconsin	January 26th
-Leap Ninja	Wyoming	February 1st
-Athletes in Motion	Lousiana	February 1st
-USA Ninja Challenge - Greenbrier	Virginia	February 1st
-Authentik Movement Training	Ohio	February 8th
-Sumner Ninja	Washington	February 8th
-Warrior Challenge Arena	Colorado	February 8th
-Ninjas United	Minnesota	February 8 - 9th
-USA Ninja Challenge - Marlborough	Massachusetts	February 8 - 9th 
-AirBenders	Oklahoma	February 15th
-Iron Sports Ninja Warrior	Texas	February 15th
-Rock Solid Warrior - Apex	North Carolina	February 15 - 16th
-Ninjobstacles	Ohio	February 15 - 16th
-USA Ninja Challenge - Rochester	New York	February 16th
-Ninja Force	New Mexico	February 16th
-Vertex Lab Academy	Virginia	February 16th
-Strong Grip	Florida	February 17th
-The Jungle Movement Academy	Texas	February 22nd
-Bodies In Motion	Idaho	February 22nd
-The Barn	Illinois	February 22nd
-Nova Ninja Sterling	Virginia	February 22 - 23rd
-Kid Wonder	California	February 22 - 23rd
-Conquer Gym - Fargo	North Dakota	February 22 - 23rd
-Warrior Tech - Raleigh	North Carolina	February 22 - 23rd
-The Wolf's Den	California	March 1st
-Conquer Gym - Chandler	Arizona	March 15th
-Super Ninja Zone	Ohio	March 15th
-Buffalo Elite Ninja	New York	March 15th
-Ninja Quest Adventures	Washington	March 15th
-Rapt Ninja	Massachusetts	March 15 - 16th
-Paragon Performance Sports	Kansas	March 22nd
-Sumter Ninja Warrior	South Carolina	March 22nd
-WISC Ninja Warrior	Virginia	March 22nd
-Permian Basin Ninja Academy	Texas	March 22nd
-Avant Coeur Ninja	Idaho	March 22nd
-Ultimate Ninjas- Anaheim Hills	California	March 22nd
-Ninja Republic	California	March 22nd
-Camp Ninja Warrior	Oklahoma	March 29th
-USA Ninja Challenge - Bristol	Virginia	March 29th
-Magic City Gymnastics	Montana	March 29th
-Get Over It Fitness	Tennessee	March 29th
-Warrior Zone Ninja Obstacle Center	North Carolina	March 29 - 30th
-Sterling Gym	Massachusetts	March 29 - 30th
-Altitude Movement Gym	Colorado	March 30th
-Free Spirit	Oregon	March 30th
-USA Ninja Challenge - Katy	Texas	April 5th
-Rock Solid Warrior - Fuquay	North Carolina	April 5 - 6th
-USA Ninja Challenge-Manchester	New Hampshire	April 5 - 6th 
-Tumble Time Gymnastics	California	April 12th
-Ninja Fortress	Washington	April 19th 
-305 Ninja Academy	Florida	May 17th
-Fortified Fitness	Tennessee	June 6th
-First State Gymnatics	Delaware	June 7th
+The Ninja Playground	Utah	March 1st
+Ninja Lair	Nevada	March 2nd
+The Wolfs Den	California	March 2nd
+Hit Squad	Arizona	March 1 - 2nd
+Leap Ninja	Wyoming	March 7 - 9th
+Iron Sports Ninja Warrior	Texas	March 1 - 9th
+Ultimate Ninja Gym	New Mexico	March 1 - 9th
+Lost Island	Colorado	March 8th
+Republic Warrior Sports	Missouri	March 8th
+Athletes in Motion	Lousiana	March 8th
+Fortified Fitness	Tennessee	March 8th
+Ninjobstacles	Ohio	March 8th
+Next Level Gym	Oklahoma	March 8th
+Strong Grip	Florida	March 9th
+Move Sport Ninja Academy	Texas	March 1 - 9th
+WISC Ninja Warrior	Virginia	March 1 - 9th
+Altius Ninja	Wisconsin	March 1 - 9th
+Power Pickle	Texas	March 1 - 9th
+305 Ninja Academy	Florida	March 1 - 9th
+NinjaKour	Georgia	March 1 - 9th
+Warrior Playground	Colorado	March 1 - 9th
