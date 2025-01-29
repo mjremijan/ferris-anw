@@ -9,6 +9,7 @@
         <module>legacy</module>
         <module>db</module>
         <module>production</module>
+        <module>documentation</module>
     </modules>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
