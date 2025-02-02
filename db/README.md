@@ -29,7 +29,3 @@ Run flyway: `mvn flyway:migrate`
 <https://maven.apache.org/plugins/maven-resources-plugin/examples/resource-directory.html>
 
 * How to add a folder to Maven resources
-
-<https://stackoverflow.com/questions/78096545/no-database-found-to-handle-error-with-flyway-postgresql>
-
-* Error: No database found to handle jdbc:derby:...
