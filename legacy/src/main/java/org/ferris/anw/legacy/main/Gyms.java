@@ -127,6 +127,9 @@ public class Gyms {
         , "First State Gymnatics" //	Delaware
         , "The Rock Ninja Warrior Academy"  // Orange Park, FL
         , "Conquer Ninja Gym - Bedford" // - Bedford	Texas
+        , "Beast Ninja" //South Carolina
+        , "StricklyNinjas" //Georgia
+        , "SA Base Camp" // Australia
     );
 
     public static boolean contains(String gymName) {

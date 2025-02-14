@@ -21,10 +21,11 @@ public class UnaaWebsiteParserMain {
     private static final String path = 
         "D:\\Development\\projects\\ferris-anw\\unaa-events-from-website.txt";
     private static final int year = 2024; // For the 2024-2025 seasons, this value is 2024
+    private static final String league = "UNAA Season 10";    
     //private static final String type = "Area Qualifier";
     //private static final String type = "Regional Qualifier";
     private static final String type = "WNA Games";
-    private static final String league = "UNAA Season 10";
+    
     
     public static void main(String[] args) throws Exception {
         // Define the path to the file
@@ -78,6 +79,10 @@ public class UnaaWebsiteParserMain {
                     return;
                 }
                 
+                if (date.equalsIgnoreCase("March 1, 4, 6th")) {
+                    date = "March 1st - 6th";
+                }
+                else
                 if (date.equalsIgnoreCase("November 9 (Youth) & Nov 10 (15U/ Adults)")) {
                     date = "November 9th";
                 }
@@ -217,7 +222,7 @@ public class UnaaWebsiteParserMain {
         }
         
         System.out.printf("%n%n-- FOR ACCESS IMPORT ---------------------------------%n");
-        System.out.printf("%s\t%s\t%s\t%s\t%s\t%s%n","gym_name","begin_date","end_date","type","league","is_attendance_planned,is_registered");
+        System.out.printf("%s\t%s\t%s\t%s\t%s\t%s\t%s%n","gym_name","begin_date","end_date","type","league","is_attendance_planned","is_registered");
         comps.forEach(c -> System.out.printf("%s%n", c.toStringForAccessImport()));
         System.out.printf("%n%n Copy what's above into the \"competitions-to-import.xlsx file.\"%n%n");
 
