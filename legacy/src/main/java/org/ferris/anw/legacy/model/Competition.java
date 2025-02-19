@@ -1,5 +1,5 @@
 
-package org.ferris.anw.legacy.main;
+package org.ferris.anw.legacy.model;
 
 import java.time.format.DateTimeFormatter;
 
@@ -9,7 +9,6 @@ import java.time.format.DateTimeFormatter;
  */
 public class Competition {
     
-    protected Long id;
     protected Gym gym;
     protected CompetitionDate competitionDate;
     protected String league;
@@ -31,10 +30,6 @@ public class Competition {
         this.competitionDate = competitionDate;
         this.league = league;
         this.type = type;
-    }
-
-    public Long getId() {
-        return id;
     }
 
     public Gym getGym() {
@@ -63,7 +58,7 @@ public class Competition {
 
     @Override
     public String toString() {
-        return "Competition{" + "id=" + id + ", gym=" + gym + ", competitionDate=" + competitionDate + ", league=" + league + ", type=" + type + '}';
+        return "Competition{" + "gym=" + gym + ", competitionDate=" + competitionDate + ", league=" + league + ", type=" + type + '}';
     }
 
     

@@ -3,9 +3,9 @@ package org.ferris.anw.legacy.fina.main;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.util.Optional;
-import org.ferris.anw.legacy.main.Competition;
-import org.ferris.anw.legacy.main.CompetitionDate;
-import org.ferris.anw.legacy.main.Gym;
+import org.ferris.anw.legacy.model.Competition;
+import org.ferris.anw.legacy.model.CompetitionDate;
+import org.ferris.anw.legacy.model.Gym;
 import org.ferris.anw.legacy.sql.ConnectionToAnwDb;
 
 /**

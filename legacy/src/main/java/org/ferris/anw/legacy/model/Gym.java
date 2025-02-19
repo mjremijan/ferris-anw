@@ -1,4 +1,4 @@
-package org.ferris.anw.legacy.main;
+package org.ferris.anw.legacy.model;
 
 import java.util.Optional;
 
