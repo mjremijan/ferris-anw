@@ -8,11 +8,12 @@ import java.sql.Date;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
-import java.sql.SQLException;
+import java.sql.Types;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 /**
  *
@@ -28,6 +29,8 @@ public class CompetitionsToImportMain {
         String league;
         String isAttendancePlanned;
         String isRegistered;
+        Long id;
+        
         private static DateTimeFormatter formatter
                 = DateTimeFormatter.ofPattern("M/d/yyyy");
 
@@ -37,8 +40,8 @@ public class CompetitionsToImportMain {
             this.endDate = endDate == null ? null : endDate.isEmpty() ? null : endDate.isBlank() ? null : Date.valueOf(LocalDate.parse(endDate, formatter));
             this.type = type;
             this.league = league;
-            this.isAttendancePlanned = isAttendancePlanned;
-            this.isRegistered = isRegistered;
+            this.isAttendancePlanned = isAttendancePlanned.isEmpty() ? null : isAttendancePlanned.isBlank() ? null : isAttendancePlanned;
+            this.isRegistered = isRegistered.isEmpty() ? null : isRegistered.isBlank() ? null : isRegistered;
         }
 
         @Override
@@ -47,6 +50,12 @@ public class CompetitionsToImportMain {
         }
     }
 
+    String databaseURL = "jdbc:ucanaccess://D://Documents//Databases//Access//ANW.accdb";
+    
+    Date now = Date.valueOf(LocalDate.now());
+    
+    Connection conn;
+                
     public static void main(String[] args) throws Exception {
         new CompetitionsToImportMain().go();
     }
@@ -81,39 +90,100 @@ public class CompetitionsToImportMain {
             );
         }
         
-        String databaseURL = "jdbc:ucanaccess://D://Documents//Databases//Access//ANW.accdb";
+        conn = DriverManager.getConnection(databaseURL);
         
-        Connection conn = DriverManager.getConnection(databaseURL);
+        find(comps);
+        update(comps.stream().filter(c -> c.id != null).collect(Collectors.toList()));
+        insert(comps.stream().filter(c -> c.id == null).collect(Collectors.toList()));        
         
-        int found = 0, notfound = 0;
-        for (Competition comp : comps)
-        {
-            try (PreparedStatement stmt = createPreparedStatement(conn, comp); 
+        System.out.printf("%n%nStopping CompetitionsToImportMain%n");
+    }
+    
+    private void update(List<Competition> comps) {
+        System.out.printf("FOUND: %d%n", comps.size());
+        for (Competition comp : comps) {
+            try (PreparedStatement stmt = createUpdateStatement(comp);) 
+            {
+                int i = stmt.executeUpdate();
+                if (i == 0) {
+                    throw new RuntimeException(
+                        String.format("Failed to update! %s",comp)
+                    );
+                }
+            } catch (Exception e) {
+                throw new RuntimeException(e);
+            }
+        }
+    }
+
+    private void insert(List<Competition> comps) {
+        System.out.printf("NEW: %d%n", comps.size());
+    }
+    
+    private void find(List<Competition> comps) throws Exception {
+        for (Competition comp : comps) {
+            try (PreparedStatement stmt = createSelectStatement(comp); 
                  ResultSet rs = stmt.executeQuery()) 
             {
-                if (rs.next()) {
-                    // FOUND!
-                    found++;
+                if (rs.next()) 
+                {
+                    // get the ID of the matching row in the database
+                    comp.id = rs.getLong("ID");
+                    
+                    // Check if there is more than one match in the DB, which there shouldn't be.
                     if (rs.next()) {
                         throw new RuntimeException(
                             String.format("Duplicate! %s",comp)
                         );
                     }
-                } else {
-                    // NOT FOUND!
-                    notfound++;
-                }
-            } catch (SQLException e) {
+                } 
+            } catch (Exception e) {
                 throw new RuntimeException(e);
             }
         }
-        System.out.printf("FOUND: %d%n",found);
-        System.out.printf("NOT FOUND: %d%n",notfound);
-        
-        System.out.printf("%n%nStopping CompetitionsToImportMain%n");
     }
-
-    private PreparedStatement createPreparedStatement(Connection conn, Competition comp) 
+    
+    private PreparedStatement createUpdateStatement(Competition comp) 
+    throws Exception {
+        PreparedStatement stmt
+            = conn.prepareStatement(
+                " update competitions set "
+                + "   end_date = ? "
+                + " , is_attendance_planned = ? "
+                + " , is_registered = ? "
+                + " , last_found_on_date = ? "
+                + " where "
+                + "  id = ? "
+            );
+        
+        // end_date
+        if (comp.endDate == null) {
+            stmt.setNull(1, Types.DATE);
+        } else {
+            stmt.setDate(1, comp.endDate);
+        }
+        
+        // is_attendance_planned
+        if (comp.isAttendancePlanned == null) {
+            stmt.setNull(2, Types.VARCHAR);
+        } else {
+            stmt.setString(2, comp.isAttendancePlanned);
+        }
+        
+        // is_registered
+        if (comp.isRegistered == null) {
+            stmt.setNull(3, Types.VARCHAR);
+        } else {
+            stmt.setString(3, comp.isRegistered);
+        }
+        
+        // last_found_on_date
+        stmt.setDate(4, now);
+        
+        return stmt;
+    }
+    
+    private PreparedStatement createSelectStatement(Competition comp) 
     throws Exception {
         PreparedStatement stmt
             = conn.prepareStatement(

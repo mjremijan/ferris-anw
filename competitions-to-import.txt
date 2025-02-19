@@ -226,3 +226,4 @@ Camp Rhino	5/31/2025	6/1/2025	SECTIONAL - Endurance	FINA Season VI
 The Rock Ninja Warrior Academy	6/1/2025		SECTIONAL - Endurance	FINA Season VI		
 The Barn	5/31/2025	6/1/2025	SECTIONAL - Speed	FINA Season VI	Maybe	No
 The Barn	5/31/2025	6/1/2025	SECTIONAL - Endurance	FINA Season VI	Maybe	No
+The Barn	6/15/2025		Final	UNAA	Yes	No
