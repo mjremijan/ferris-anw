@@ -32,7 +32,6 @@ public class CompetitionDate {
 
     @Override
     public String toString() {
-        
         return "CompetitionDate{" + "begin=" + formatter.format(begin.toLocalDate()) + ", end=" + (end == null ? "null" : formatter.format(end.toLocalDate())) + '}';
     }
     
@@ -48,6 +47,9 @@ public class CompetitionDate {
     public static CompetitionDate parse(String token) {
         // Cleanup...if the number is followed by a st, nd, th...remove it.        
         token = token.replaceAll("(\\d+)(st|nd|rd|th)", "$1");
+        
+        // Cleanup...remove comments within parenthesis ()
+        token = token.replaceAll("\\s*\\(.*?\\)", "");
         
         // Parse the token, determine the competition month        
         int competitionMonth = parseCompetitionMonth(token);

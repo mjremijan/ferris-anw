@@ -1,6 +1,11 @@
 package org.ferris.anw.legacy.fina.main;
 
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.util.List;
 import java.util.Optional;
+import java.util.stream.Collectors;
 import org.ferris.anw.legacy.main.GymRepository;
 import org.ferris.anw.legacy.model.Competition;
 import org.ferris.anw.legacy.model.CompetitionDate;
@@ -17,8 +22,35 @@ public class FinaParser {
     public FinaParser(GymRepository gymRepository) {
         this.gymRepository = gymRepository;
     }
-
-    public Optional<Competition> parseLine(String line) {
+    
+    public Path getFilePath() {
+        return Paths.get("./import/fina/all-competitions.txt");
+    }
+    
+    public List<Competition> parse()
+    {
+        try {
+            // Read all lines from the file into a list
+            List<String> rawData 
+                = Files.readAllLines(getFilePath());
+            
+            // Parse the data, filter only data that's usable.
+            List<Competition> competitions = rawData.stream()
+                .map(l -> parseLine(l))
+                .filter(o -> o.isPresent())
+                .map(o -> o.get())
+                .collect(Collectors.toList())
+            ;
+        
+            // Return
+            return competitions;
+            
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+    }
+    
+    private Optional<Competition> parseLine(String line) {
         try {
             if (line.isEmpty() || line.isBlank()) {
                 return Optional.empty();

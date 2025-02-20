@@ -10,7 +10,7 @@ import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
 import org.ferris.anw.legacy.model.Competition;
-import org.ferris.anw.legacy.sql.ConnectionForAnw;
+import org.ferris.anw.legacy.sql.ConnectionToRepository;
 
 /**
  *
@@ -29,7 +29,7 @@ public class CompetitionRepository {
         }
     }
     
-    public CompetitionRepository(ConnectionForAnw conn) {
+    public CompetitionRepository(ConnectionToRepository conn) {
         this.conn = conn.get();
     }
     

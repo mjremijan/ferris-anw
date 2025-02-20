@@ -5,7 +5,7 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import org.ferris.anw.legacy.model.Gym;
-import org.ferris.anw.legacy.sql.ConnectionForAnw;
+import org.ferris.anw.legacy.sql.ConnectionToRepository;
 
 /**
  *
@@ -15,7 +15,7 @@ public class GymRepository {
     
     private Connection conn;
     
-    public GymRepository(ConnectionForAnw conn) {
+    public GymRepository(ConnectionToRepository conn) {
         this.conn = conn.get();
     }
     

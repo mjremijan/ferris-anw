@@ -9,7 +9,7 @@ import java.sql.SQLException;
  *
  * @author Michael
  */
-public class ConnectionForAnw {
+public class ConnectionToRepository {
   
     private static final String DB_URL 
         = "jdbc:ucanaccess://D://Documents//Databases//Access//ANW-DEV.accdb";
@@ -23,7 +23,7 @@ public class ConnectionForAnw {
         }
     }
     
-    public ConnectionForAnw() {}
+    public ConnectionToRepository() {}
     
     public Connection get() { 
         return conn;
