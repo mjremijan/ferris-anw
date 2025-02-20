@@ -36,49 +36,271 @@ public class CompetitionDateTest {
         );
     }
     
-/*
-January 3 (Kids) - 4th (Adults)
-November 23rd 7U - 11U / November 24th 13U & above
-November 9 (Youth) & Nov 10 (15U/ Adults)
-Sept 21(kids) Sept 22 (Adults
-*/
+    @Test
+    public void unaa022() 
+    {
+        // "January 3 (Kids) - 4th (Adults)";
+        
+        // Sep - Dec
+        for (int i=10; i<=12; i++) {
+            CompetitionDate d = parse("%1$s 3 (Kids) - 4th (Adults)", m1.get(i));
+            Assertions.assertEquals(firstHalf("%d-%02d-03", i), d.getBegin());
+            Assertions.assertEquals(firstHalf("%d-%02d-04", i), d.getEnd());
+        }
+        
+        // Jan - Aug
+        for (int i=1; i<=8; i++) {
+            CompetitionDate d = parse("%1$s 3 (Kids) - 4th (Adults)", m2.get(i));
+            Assertions.assertEquals(secondHalf("%d-%02d-03", i), d.getBegin());
+            Assertions.assertEquals(secondHalf("%d-%02d-04", i), d.getEnd());
+        }
+    }
     
     
-/*
-April 5 - 6th (Up to 17-year-olds)
-February 8 - 9th (Up to 17-year-olds)
-January 11 - 12th (Up to 17-year-olds)
-March 29 - 30th (Up to 17-year-olds)
-*/
-
+    @Test
+    public void unaa021() 
+    {
+        // "November 23rd 7U - 11U / November 24th 13U & above";
+        
+        // Sep - Dec
+        for (int i=10; i<=12; i++) {
+            CompetitionDate d = parse("%1$s 23rd 7U - 11U / %1$s 24th 13U & above", m1.get(i));
+            Assertions.assertEquals(firstHalf("%d-%02d-23", i), d.getBegin());
+            Assertions.assertEquals(firstHalf("%d-%02d-24", i), d.getEnd());
+        }
+        
+        // Jan - Aug
+        for (int i=1; i<=8; i++) {
+            CompetitionDate d = parse("%1$s 23rd 7U - 11U / %1$s 24th 13U & above", m2.get(i));
+            Assertions.assertEquals(secondHalf("%d-%02d-23", i), d.getBegin());
+            Assertions.assertEquals(secondHalf("%d-%02d-24", i), d.getEnd());
+        }
+    }
     
-/*
-February 16th (Up to 17-year-olds)
-January 25th 7U - 11U, January 26th 13U & above
-March 15th (13 & Under)
-March 29th (Up to 17-year-olds)
-May 17th (LCQ)
-June 6th (LCQ)
-June 7th (LCQ)
-*/
-
-
-/*
-April 5 - 6th
-December 6 - 7th
-February 15 - 16th
-February 22 - 23rd
-February 8 - 9th
-January 10 - 11th
-January 18 - 19th
-January 24 - 25th
-January 3 - 4th
-March 15 - 16th
-March 29 - 30th
-November 1 - 2nd
-November 2 - 3rd
-
-*/
+    
+    @Test
+    public void unaa020() 
+    {
+        // "November 9 (Youth) & Nov 10 (15U/ Adults)";
+        
+        // Sep - Dec
+        for (int i=10; i<=12; i++) {
+            CompetitionDate d = parse("%1$s 9 (Youth) & %1$s 10 (15U/ Adults)", m1.get(i));
+            Assertions.assertEquals(firstHalf("%d-%02d-09", i), d.getBegin());
+            Assertions.assertEquals(firstHalf("%d-%02d-10", i), d.getEnd());
+        }
+        
+        // Jan - Aug
+        for (int i=1; i<=8; i++) {
+            CompetitionDate d = parse("%1$s 9 (Youth) & %1$s 10 (15U/ Adults)", m2.get(i));
+            Assertions.assertEquals(secondHalf("%d-%02d-09", i), d.getBegin());
+            Assertions.assertEquals(secondHalf("%d-%02d-10", i), d.getEnd());
+        }
+    }
+    
+    
+    @Test
+    public void unaa019() 
+    {
+        // "Sept 21(kids) Sept 22 (Adults";
+        
+        // Sep - Dec
+        for (int i=10; i<=12; i++) {
+            CompetitionDate d = parse("%1$s 21(kids) %1$s 22 (Adults", m1.get(i));
+            Assertions.assertEquals(firstHalf("%d-%02d-21", i), d.getBegin());
+            Assertions.assertEquals(firstHalf("%d-%02d-22", i), d.getEnd());
+        }
+        
+        // Jan - Aug
+        for (int i=1; i<=8; i++) {
+            CompetitionDate d = parse("%1$s 21(kids) %1$s 22 (Adults", m2.get(i));
+            Assertions.assertEquals(secondHalf("%d-%02d-21", i), d.getBegin());
+            Assertions.assertEquals(secondHalf("%d-%02d-22", i), d.getEnd());
+        }
+    }
+    
+    @Test
+    public void unaa018() 
+    {
+        // "March 9 - 23rd (Up to 17-year-olds)";
+        
+        // Sep - Dec
+        for (int i=10; i<=12; i++) {
+            CompetitionDate d = parse("%1$s 9 - 23rd (Up to 17-year-olds)", m1.get(i));
+            Assertions.assertEquals(firstHalf("%d-%02d-09", i), d.getBegin());
+            Assertions.assertEquals(firstHalf("%d-%02d-23", i), d.getEnd());
+        }
+        
+        // Jan - Aug
+        for (int i=1; i<=8; i++) {
+            CompetitionDate d = parse("%1$s 9 - 23rd (Up to 17-year-olds)", m2.get(i));
+            Assertions.assertEquals(secondHalf("%d-%02d-09", i), d.getBegin());
+            Assertions.assertEquals(secondHalf("%d-%02d-23", i), d.getEnd());
+        }
+    }
+    
+    @Test
+    public void unaa017() 
+    {
+        // "March 1 - 2nd (Up to 17-year-olds)";
+        
+        // Sep - Dec
+        for (int i=10; i<=12; i++) {
+            CompetitionDate d = parse("%1$s 1 - 2nd (Up to 17-year-olds)", m1.get(i));
+            Assertions.assertEquals(firstHalf("%d-%02d-01", i), d.getBegin());
+            Assertions.assertEquals(firstHalf("%d-%02d-02", i), d.getEnd());
+        }
+        
+        // Jan - Aug
+        for (int i=1; i<=8; i++) {
+            CompetitionDate d = parse("%1$s 1 - 2nd (Up to 17-year-olds)", m2.get(i));
+            Assertions.assertEquals(secondHalf("%d-%02d-01", i), d.getBegin());
+            Assertions.assertEquals(secondHalf("%d-%02d-02", i), d.getEnd());
+        }
+    }
+    
+    @Test
+    public void unaa016() 
+    {
+        // "March 18 - 19th (Up to 17-year-olds)";
+        
+        // Sep - Dec
+        for (int i=10; i<=12; i++) {
+            CompetitionDate d = parse("%1$s 18 - 19th (Up to 17-year-olds)", m1.get(i));
+            Assertions.assertEquals(firstHalf("%d-%02d-18", i), d.getBegin());
+            Assertions.assertEquals(firstHalf("%d-%02d-19", i), d.getEnd());
+        }
+        
+        // Jan - Aug
+        for (int i=1; i<=8; i++) {
+            CompetitionDate d = parse("%1$s 18 - 19th (Up to 17-year-olds)", m2.get(i));
+            Assertions.assertEquals(secondHalf("%d-%02d-18", i), d.getBegin());
+            Assertions.assertEquals(secondHalf("%d-%02d-19", i), d.getEnd());
+        }
+    }
+    
+    
+    @Test
+    public void unaa015() 
+    {
+        // "January 25th 7U - 11U, January 26th 13U & above";
+        
+        // Sep - Dec
+        for (int i=10; i<=12; i++) {
+            CompetitionDate d = parse("%1$s 25th 7U - 11U, %1$s 26th 13U & above", m1.get(i));
+            Assertions.assertEquals(firstHalf("%d-%02d-25", i), d.getBegin());
+            Assertions.assertEquals(firstHalf("%d-%02d-26", i), d.getEnd());
+        }
+        
+        // Jan - Aug
+        for (int i=1; i<=8; i++) {
+            CompetitionDate d = parse("%1$s 25th 7U - 11U, %1$s 26th 13U & above", m2.get(i));
+            Assertions.assertEquals(secondHalf("%d-%02d-25", i), d.getBegin());
+            Assertions.assertEquals(secondHalf("%d-%02d-26", i), d.getEnd());
+        }
+    }
+    
+    @Test
+    public void unaa014() 
+    {
+        // "March 15th (13 & Under)";
+        
+        // Sep - Dec
+        for (int i=10; i<=12; i++) {
+            CompetitionDate d = parse("%s 15th (13 & Under)", m1.get(i));
+            Assertions.assertEquals(firstHalf("%d-%02d-15", i), d.getBegin());
+            Assertions.assertNull(d.getEnd());
+        }
+        
+        // Jan - Aug
+        for (int i=1; i<=8; i++) {
+            CompetitionDate d = parse("%s 15th (13 & Under)", m2.get(i));
+            Assertions.assertEquals(secondHalf("%d-%02d-15", i), d.getBegin());
+            Assertions.assertNull(d.getEnd());
+        }
+    }
+    
+    
+    @Test
+    public void unaa013() 
+    {
+        // "March 16th (Up to 17-year-olds)";
+        
+        // Sep - Dec
+        for (int i=10; i<=12; i++) {
+            CompetitionDate d = parse("%s 16th (Up to 17-year-olds)", m1.get(i));
+            Assertions.assertEquals(firstHalf("%d-%02d-16", i), d.getBegin());
+            Assertions.assertNull(d.getEnd());
+        }
+        
+        // Jan - Aug
+        for (int i=1; i<=8; i++) {
+            CompetitionDate d = parse("%s 16th (Up to 17-year-olds)", m2.get(i));
+            Assertions.assertEquals(secondHalf("%d-%02d-16", i), d.getBegin());
+            Assertions.assertNull(d.getEnd());
+        }
+    }
+    
+    @Test
+    public void unaa012() 
+    {
+        // "May 17th (LCQ)";
+        
+        // Sep - Dec
+        for (int i=10; i<=12; i++) {
+            CompetitionDate d = parse("%s 17th (LCQ)", m1.get(i));
+            Assertions.assertEquals(firstHalf("%d-%02d-17", i), d.getBegin());
+            Assertions.assertNull(d.getEnd());
+        }
+        
+        // Jan - Aug
+        for (int i=1; i<=8; i++) {
+            CompetitionDate d = parse("%s 17th (LCQ)", m2.get(i));
+            Assertions.assertEquals(secondHalf("%d-%02d-17", i), d.getBegin());
+            Assertions.assertNull(d.getEnd());
+        }
+    }
+    
+    @Test
+    public void unaa011() 
+    {
+        // "June 7th (LCQ)";
+        
+        // Sep - Dec
+        for (int i=10; i<=12; i++) {
+            CompetitionDate d = parse("%s 7th (LCQ)", m1.get(i));
+            Assertions.assertEquals(firstHalf("%d-%02d-07", i), d.getBegin());
+            Assertions.assertNull(d.getEnd());
+        }
+        
+        // Jan - Aug
+        for (int i=1; i<=8; i++) {
+            CompetitionDate d = parse("%s 7th (LCQ)", m2.get(i));
+            Assertions.assertEquals(secondHalf("%d-%02d-07", i), d.getBegin());
+            Assertions.assertNull(d.getEnd());
+        }
+    }
+    
+    
+    @Test
+    public void unaa010() 
+    {
+        // "November 2 - 3rd";
+        
+        // Sep - Dec
+        for (int i=10; i<=12; i++) {
+            CompetitionDate d = parse("%s 2 - 3rd", m1.get(i));
+            Assertions.assertEquals(firstHalf("%d-%02d-02", i), d.getBegin());
+            Assertions.assertEquals(firstHalf("%d-%02d-03", i), d.getEnd());
+        }
+        
+        // Jan - Aug
+        for (int i=1; i<=8; i++) {
+            CompetitionDate d = parse("%s 2 - 3rd", m2.get(i));
+            Assertions.assertEquals(secondHalf("%d-%02d-02", i), d.getBegin());
+            Assertions.assertEquals(secondHalf("%d-%02d-03", i), d.getEnd());
+        }
+    }
     
     @Test
     public void unaa009() 
