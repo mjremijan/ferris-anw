@@ -8,19 +8,21 @@ import org.ferris.anw.legacy.main.GymRepository;
  *
  * @author Michael
  */
-public class UnaaAreaParser extends UnaaParser {
+public class UnaaRegionalParser extends UnaaParser {
 
-    public UnaaAreaParser(GymRepository gymRepository) {
+//    private static final String type = "WNA Games";
+    
+    public UnaaRegionalParser(GymRepository gymRepository) {
         super(gymRepository);
     }
     
     @Override
     public Path getFilePath() {
-        return Paths.get("./import/unaa/area-competitions.txt");
+        return Paths.get("./import/unaa/regional-competitions.txt");
     }
     
     @Override
     public String parseTypeRequired() {
-        return "Area Qualifier";
+        return "Regional Qualifier";
     }
 }

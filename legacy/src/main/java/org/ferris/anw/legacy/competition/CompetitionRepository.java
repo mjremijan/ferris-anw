@@ -27,6 +27,11 @@ public class CompetitionRepository {
             this.id = id;
             this.comp = c;
         }
+
+        @Override
+        public String toString() {
+            return "Wrapper{" + "id=" + id + ", comp=" + comp + '}';
+        }
     }
     
     public CompetitionRepository(ConnectionToRepository conn) {
@@ -120,7 +125,7 @@ public class CompetitionRepository {
                 );
             }
         } catch (Exception e) {
-            throw new RuntimeException(e);
+            throw new RuntimeException(w.toString(), e);
         }
     }
     private PreparedStatement updateStatement(Wrapper w) 

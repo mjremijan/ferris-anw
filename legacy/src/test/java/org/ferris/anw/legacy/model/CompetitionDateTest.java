@@ -36,6 +36,27 @@ public class CompetitionDateTest {
         );
     }
     
+    
+    @Test
+    public void unaa023() 
+    {
+        // March 1st, 4th, 6th
+        
+        // Sep - Dec
+        for (int i=10; i<=12; i++) {
+            CompetitionDate d = parse("%1$s March 1st, 4th, 6th", m1.get(i));
+            Assertions.assertEquals(firstHalf("%d-%02d-01", i), d.getBegin());
+            Assertions.assertEquals(firstHalf("%d-%02d-06", i), d.getEnd());
+        }
+        
+        // Jan - Aug
+        for (int i=1; i<=8; i++) {
+            CompetitionDate d = parse("%1$s March 1st, 4th, 6th", m2.get(i));
+            Assertions.assertEquals(secondHalf("%d-%02d-01", i), d.getBegin());
+            Assertions.assertEquals(secondHalf("%d-%02d-06", i), d.getEnd());
+        }
+    }
+    
     @Test
     public void unaa022() 
     {

@@ -32,7 +32,7 @@ public class CompetitionDate {
 
     @Override
     public String toString() {
-        return "CompetitionDate{" + "begin=" + formatter.format(begin.toLocalDate()) + ", end=" + (end == null ? "null" : formatter.format(end.toLocalDate())) + '}';
+        return "CompetitionDate{" + "begin=" + (begin == null ? "null" : formatter.format(begin.toLocalDate())) + ", end=" + (end == null ? "null" : formatter.format(end.toLocalDate())) + '}';
     }
     
     
@@ -45,6 +45,7 @@ public class CompetitionDate {
      * @return 
      */
     public static CompetitionDate parse(String token) {
+        
         // Cleanup...if the number is followed by a st, nd, th...remove it.        
         token = token.replaceAll("(\\d+)(st|nd|rd|th)", "$1");
         
@@ -130,7 +131,11 @@ public class CompetitionDate {
         }
         else
         if (numbers.size() > 2) {
-            throw new RuntimeException(String.format("Too many competitionDates were determined from token \"%s\"", token));
+            //throw new RuntimeException(String.format("Too many competitionDates were determined from token \"%s\"", token));
+            List<Integer> n = new LinkedList<>();
+            n.add(numbers.getFirst());
+            n.add(numbers.getLast());
+            numbers = n;
         }
         
         return numbers;

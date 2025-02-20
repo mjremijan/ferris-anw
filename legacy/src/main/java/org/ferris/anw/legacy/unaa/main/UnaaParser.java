@@ -24,10 +24,10 @@ public abstract class UnaaParser {
     
     /**
      * The string to return is something like "UNAA Season 10".
-     * "UNAA Season" will alwyas be the same, but the season
+     * "UNAA Season" will always be the same, but the season
      * number will change. The 2024-2025 years was season 10.
      * Given this as a starting point, calculate what the
-     * season number will be for the current season start year.
+     * season number will be for the current season.
      * 
      * @return String, formatted as "UNAA Season %d" where the
      * season number for %d is calculated based of the current
@@ -41,8 +41,8 @@ public abstract class UnaaParser {
         // Determine the number of years since 2024
         int delta = seasonStartYear - 2024;
         
-        // Calculate current season number by adding the delta
-        // to 10
+        // Calculate current season number by adding 
+        // the delta to 10
         return "UNAA Season " + (10 + delta);
     }
     
@@ -56,10 +56,8 @@ public abstract class UnaaParser {
      */
     abstract Path getFilePath();
     
-    /**
-     * Parse the file
-     */
-    public void parse()
+    
+    public List<Competition> parse()
     {
         try {
             // Read all lines from the file into a list
@@ -67,12 +65,16 @@ public abstract class UnaaParser {
                 = Files.readAllLines(getFilePath());
             
             // Parse each line of data, filter to only usable data
-            rawData.stream()
+            List<Competition> competitions = rawData.stream()
                 .map(l -> parseLine(l))
                 .filter(o -> o.isPresent())
                 .map(o -> o.get())
                 .collect(Collectors.toList())
             ;
+            
+            // Return
+            return competitions;
+            
         } catch (Exception e) {
             throw new RuntimeException(e);
         }
@@ -88,9 +90,16 @@ public abstract class UnaaParser {
         if (line.startsWith("#")) {
             return Optional.empty();
         }
+       
 
         // Tokenize
         String[] tokens = line.split("\\t");
+        
+        // Begin date & End date
+        if (tokens[2].equalsIgnoreCase("TBD")) {
+            return Optional.empty();
+        }
+        CompetitionDate compDate = parseCompetitionDateRequired(tokens[2]);
         
         // League
         String league = parseLeagueRequired();
@@ -101,7 +110,18 @@ public abstract class UnaaParser {
         // Gym name & Gym ID
         Gym gym = parseGym(tokens[0]);
         
-        return null;
+        return Optional.of(
+            new Competition(
+                gym
+              , compDate
+              , league
+              , type
+        ));
+    }
+    
+    
+    private CompetitionDate parseCompetitionDateRequired(String token) {
+        return CompetitionDate.parse(token);
     }
     
     

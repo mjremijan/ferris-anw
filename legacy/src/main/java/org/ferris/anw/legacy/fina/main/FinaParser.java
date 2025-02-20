@@ -51,48 +51,42 @@ public class FinaParser {
     }
     
     private Optional<Competition> parseLine(String line) {
-        try {
-            if (line.isEmpty() || line.isBlank()) {
-                return Optional.empty();
-            }
-            
-            if (line.startsWith("#")) {
-                return Optional.empty();
-            }
-            
-            // Tokenize
-            String[] tokens = line.split("\\t");
-            
-            // League
-            Optional<String> league = parseLeagueRequired(tokens[2]);
-            if (league.isEmpty()) {
-                return Optional.empty();
-            }
-
-            // Gym name & Gym ID
-            Gym gym = parseGym(tokens[1]);
-
-            // Type
-            String type = parseTypeRequired(league.get(), tokens[2]);
-
-            // Begin date & End date
-            CompetitionDate compDate = parseCompetitionDateRequired(tokens[0]);
-
-            return Optional.of(
-                new Competition(
-                    gym
-                  , compDate
-                  , league.get()
-                  , type
-            ));
-        } catch (Exception e) {
-            throw new RuntimeException(
-                String.format("ERROR parsing line of data \"%s\"%n", line)
-            );
+        if (line.isEmpty() || line.isBlank()) {
+            return Optional.empty();
         }
+
+        if (line.startsWith("#")) {
+            return Optional.empty();
+        }
+
+        // Tokenize
+        String[] tokens = line.split("\\t");
+
+        // League
+        Optional<String> league = parseLeagueRequired(tokens[2]);
+        if (league.isEmpty()) {
+            return Optional.empty();
+        }
+
+        // Gym name & Gym ID
+        Gym gym = parseGym(tokens[1]);
+
+        // Type
+        String type = parseTypeRequired(league.get(), tokens[2]);
+
+        // Begin date & End date
+        CompetitionDate compDate = parseCompetitionDateRequired(tokens[0]);
+
+        return Optional.of(
+            new Competition(
+                gym
+              , compDate
+              , league.get()
+              , type
+        ));
     }
     
-    private CompetitionDate parseCompetitionDateRequired(String token) throws Exception {
+    private CompetitionDate parseCompetitionDateRequired(String token) {
         return CompetitionDate.parse(token);
     }
     

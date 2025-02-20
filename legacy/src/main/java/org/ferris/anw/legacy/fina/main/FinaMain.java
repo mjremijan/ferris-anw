@@ -22,6 +22,9 @@ public class FinaMain {
     
     public void go() throws Exception 
     {
+        banner("Welcome to FINA Main"); 
+        
+        banner("FINA Competitions Processing");
         // Create the parser
         FinaParser parser 
             = new FinaParser(new GymRepository(new ConnectionToRepository()));
@@ -30,27 +33,46 @@ public class FinaMain {
         List<Competition> competitions 
             = parser.parse();
         
-        // Find compettions that are ready to load
+        System.out.printf("%d FINA competitions total%n", competitions.size());
+        
+        // Find competitions that are ready to load
         List<Competition> competitionsReadyForLoading = competitions.stream()
             .filter(c -> c.isGymFoundInTheDatabase())
             .collect(Collectors.toList())
         ;
-        System.out.printf("%n%n#################################################%n");
-        System.out.printf("## competitionsReadyForLoading                ##%n");
-        System.out.printf("#################################################%n");
-        CompetitionRepository compRepo = new CompetitionRepository(new ConnectionToRepository());
-        compRepo.load(competitionsReadyForLoading);
+        System.out.printf("%d FINA competitions ready to load%n", competitionsReadyForLoading.size());
+        
         
         // Find competitions that have gyms missing from the database
         List<Competition> competitionsWithGymsMissingInTheDatabase = competitions.stream()
             .filter(c -> c.isGymNotFoundInTheDatabase())
             .collect(Collectors.toList())
         ;
-        System.out.printf("%n%n#################################################%n");
-        System.out.printf("## competitionsWithGymsMissingInTheDatabase    ##%n");
-        System.out.printf("#################################################%n");
-        competitionsWithGymsMissingInTheDatabase.stream()
-            .forEach(c -> System.out.printf("%s%n", c)
-        );
+        System.out.printf("%d FINA competitions missing gym data%n", competitionsWithGymsMissingInTheDatabase.size());
+        
+        
+        banner("FINA Competitions Loading...");
+        CompetitionRepository compRepo = new CompetitionRepository(new ConnectionToRepository());
+        compRepo.load(competitionsReadyForLoading);
+        
+        
+        banner("FINA Competitions missing gym database data");
+        if (competitionsWithGymsMissingInTheDatabase.isEmpty()) {
+            System.out.printf("NONE%n");
+        } else {
+            competitionsWithGymsMissingInTheDatabase.stream()
+                .forEach(c -> System.out.printf("%s%n", c)
+            );
+        }
+        
+        banner("Done");
     }
+    
+    private void banner(String m) {
+        System.out.printf("%n%n");
+        int l = 6 + m.length();
+        System.out.print(String.format("%-"+l+"s%n", "").replace(' ', '#'));
+        System.out.printf("## %s ##%n", m);
+        System.out.print(String.format("%-"+l+"s%n", "").replace(' ', '#'));
+    }    
 }
