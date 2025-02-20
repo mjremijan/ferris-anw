@@ -1,0 +1,158 @@
+#ID	Planned	Registered
+		
+		
+		
+1		
+		
+		
+13	Yes	Yes
+15		
+16	Yes	Yes
+18		
+21		
+2		
+22		
+298		
+299		
+300		
+		
+		
+		
+306		
+303		
+23		
+24		
+28		
+312		
+311		
+308		
+3		
+344		
+4		
+315		
+29		
+31		
+30		
+		
+		
+		
+324		
+35		
+34		
+5		
+37	Yes	Yes
+36	Yes	Yes
+329		
+330		
+42		
+43		
+		
+		
+		
+		
+333	Yes	Yes
+46		
+51		
+334		
+59		
+6		
+336		
+338		
+62		
+341		
+64		
+343		
+292	Yes	Yes
+		
+		
+		
+142	Evelyn's bday party	
+141	Evelyn's bday party	
+251	Kelly KC	
+254	Kelly KC	
+149	Kelly KC	
+150	Kelly KC	
+7	Church auditions	
+256	Valentine's Trattoria	
+259	Valentine's Trattoria	
+166	Daddy daughter dance	
+165	Daddy daughter dance	
+263	Daddy daughter dance	
+163	Daddy daughter dance	
+164	Daddy daughter dance	
+8	Yes	Yes
+		
+		
+		
+135	Church Conference	
+174	Church Conference	
+173	Church Conference	
+366	Church Conference	
+370	No	
+129	Maybe	
+131	Maybe	
+130	Maybe	
+127	Maybe	
+138	Maybe	
+177		
+179		
+178		
+273		
+181		
+180		
+76		
+277	Yes	No
+284		
+9		
+287		
+285		
+		
+		
+		
+79	Yes	No
+82		
+83		
+197		
+196		
+201	Yes	No
+84		
+202		
+203		
+71		
+85	Yes	No
+10		
+87		
+11		
+204		
+205		
+		
+		
+		
+214	Church	
+215	Church	
+212	Church	
+213	Church	
+92	Church	
+90	Church	
+217	Church	
+221	Maybe	
+220		
+219		
+218		
+100	Yes	No
+230		
+231		
+105		
+110		
+242		
+241		
+246	Maybe	No
+247	Maybe	No
+		
+		
+		
+73	Vaction	
+113	Vaction	
+114	Vaction	
+117	Vaction	
+
