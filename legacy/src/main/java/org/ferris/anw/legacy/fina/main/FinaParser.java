@@ -1,12 +1,10 @@
 package org.ferris.anw.legacy.fina.main;
 
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
 import java.util.Optional;
+import org.ferris.anw.legacy.main.GymRepository;
 import org.ferris.anw.legacy.model.Competition;
 import org.ferris.anw.legacy.model.CompetitionDate;
 import org.ferris.anw.legacy.model.Gym;
-import org.ferris.anw.legacy.sql.ConnectionToAnwDb;
 
 /**
  *
@@ -14,10 +12,10 @@ import org.ferris.anw.legacy.sql.ConnectionToAnwDb;
  */
 public class FinaParser {
     
-    private ConnectionToAnwDb conn;
-
-    public FinaParser(ConnectionToAnwDb conn) {
-        this.conn = conn;
+    private GymRepository gymRepository;
+            
+    public FinaParser(GymRepository gymRepository) {
+        this.gymRepository = gymRepository;
     }
 
     public Optional<Competition> parseLine(String line) {
@@ -162,47 +160,9 @@ public class FinaParser {
         return league;
     }
     
-    
-    private Gym findGymByNameOrAlias(String nameOrAlias) {
-        try (
-            PreparedStatement stmt = findGymByNameOrAliasStatement(nameOrAlias);
-            ResultSet rs = stmt.executeQuery();
-        ){
-            if (rs.next()) {
-                return new Gym(
-                      rs.getLong("id")
-                    , rs.getString("gym_name")
-                );
-            } else {
-                return new Gym(nameOrAlias);
-            }
-        } catch (Exception e) {
-            throw new RuntimeException("ERROR finding gym by either name or alias", e);
-        }
-    }
-    private PreparedStatement findGymByNameOrAliasStatement(String name) throws Exception {
-        PreparedStatement stmt = conn.get().prepareStatement("""
-            SELECT 
-                g.id        AS id, 
-                g.gym_name  AS gym_name, 
-                a.gym_alias AS gym_alias
-            FROM 
-                gyms g
-            LEFT JOIN 
-                gym_aliases a 
-            ON 
-                g.id = a.gym_id
-            where
-                g.gym_name = ? OR a.gym_alias = ?
-        """);
-        stmt.setString(1, name);
-        stmt.setString(2, name);
-        return stmt;
-    }
-    
 
     private Gym parseGym(String token) {
-        return findGymByNameOrAlias(parseGymNameRequired(token));
+        return gymRepository.findGymByNameOrAlias(parseGymNameRequired(token));
     }
     
     private String parseGymNameRequired(String token) {
@@ -211,5 +171,4 @@ public class FinaParser {
         }
         return token;
     }
-
 }

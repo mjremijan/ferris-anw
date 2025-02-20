@@ -46,6 +46,9 @@ public class CompetitionDate {
      * @return 
      */
     public static CompetitionDate parse(String token) {
+        // Cleanup...if the number is followed by a st, nd, th...remove it.        
+        token = token.replaceAll("(\\d+)(st|nd|rd|th)", "$1");
+        
         // Parse the token, determine the competition month        
         int competitionMonth = parseCompetitionMonth(token);
         
@@ -131,15 +134,11 @@ public class CompetitionDate {
         return numbers;
     }
     
+    
     /**
-     * Determine the year of the competion based of the month
-     * of the competition and the month/year value for today
-     * 
-     * @param competitionMonth
-     * @return 
+     * Determine the starting year of the active ANW season
      */
-    private static int parseCompetitionYear(int competitionMonth) 
-    {
+    public static int getSeasonStartYear() {
         // What is TODAY's date?
         LocalDate today = LocalDate.now();
         
@@ -158,6 +157,20 @@ public class CompetitionDate {
         if (seasonStartYear == -1) {
             throw new RuntimeException(String.format("Cannot determine seasonStartYear from today's month \"%d\"", today.getMonth().getValue()));
         }
+        return seasonStartYear;
+    }
+    
+    /**
+     * Determine the year of the competition based of the month
+     * of the competition and the month/year value for today
+     * 
+     * @param competitionMonth
+     * @return 
+     */
+    private static int parseCompetitionYear(int competitionMonth) 
+    {
+        // Given TODAYS date, what year did the currently active ANW season start?
+        int seasonStartYear = getSeasonStartYear();
         
         
         // Given the month of the ANW competition, what is it's year

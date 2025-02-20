@@ -9,8 +9,9 @@ import java.nio.file.Paths;
 import java.util.List;
 import java.util.stream.Collectors;
 import org.ferris.anw.legacy.competition.CompetitionRepository;
+import org.ferris.anw.legacy.main.GymRepository;
 import org.ferris.anw.legacy.model.Competition;
-import org.ferris.anw.legacy.sql.ConnectionToAnwDb;
+import org.ferris.anw.legacy.sql.ConnectionForAnw;
 
 /**
  *
@@ -34,7 +35,7 @@ public class FinaMain {
 
         
         // Parse each line of data, filter to only usable data
-        FinaParser parser = new FinaParser(ConnectionToAnwDb.getInstance());
+        FinaParser parser = new FinaParser(new GymRepository(new ConnectionForAnw()));
         List<Competition> competitions = rawData.stream()
             .map(l -> parser.parseLine(l))
             .filter(o -> o.isPresent())
@@ -50,7 +51,7 @@ public class FinaMain {
         System.out.printf("%n%n#################################################%n");
         System.out.printf("## competitionsReadyForLoading                ##%n");
         System.out.printf("#################################################%n");
-        CompetitionRepository compRepo = new CompetitionRepository(ConnectionToAnwDb.getInstance());
+        CompetitionRepository compRepo = new CompetitionRepository(new ConnectionForAnw());
         compRepo.load(competitionsReadyForLoading);
         
         // Find competitions that have gyms missing from the database
