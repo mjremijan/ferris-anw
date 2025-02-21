@@ -4,12 +4,13 @@ import java.sql.Connection;
 import java.sql.Date;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.sql.Types;
 import java.time.LocalDate;
 import java.util.List;
 import java.util.Optional;
+import java.util.concurrent.atomic.AtomicInteger;
 import java.util.stream.Collectors;
-import org.ferris.anw.legacy.model.Competition;
 import org.ferris.anw.legacy.sql.ConnectionToRepository;
 
 /**
@@ -131,12 +132,12 @@ public class CompetitionRepository {
     private PreparedStatement updateStatement(Wrapper w) 
     throws Exception {
         PreparedStatement stmt
-            = conn.prepareStatement(
-                " update competitions set "
-                + "   end_date = ? "
-                + " , last_found_on_date = ? "
-                + " where "
-                + "  id = ? "
+            = conn.prepareStatement("""                                    
+                 update competitions set 
+                   end_date = ? 
+                 , last_found_on_date = ? 
+                 where 
+                  id = ? """
             );
         
         // end_date
@@ -186,20 +187,20 @@ public class CompetitionRepository {
     private PreparedStatement findIdStatement(Competition c) 
     throws Exception {
         PreparedStatement stmt
-            = conn.prepareStatement(
-                " select "
-                + "  ID "
-                + " from "
-                + "  competitions "
-                + " where "
-                + "  gym_name = ? "
-                + "  and "
-                + "  begin_date = ? "
-                + "  and "
-                + "  league = ? "
-                + "  and "
-                + "  type = ? "
-            );
+            = conn.prepareStatement("""                                    
+                 select 
+                  ID 
+                 from 
+                  competitions 
+                 where 
+                  gym_name = ? 
+                  and 
+                  begin_date = ? 
+                  and 
+                  league = ? 
+                  and 
+                  type = ? 
+            """);
         stmt.setString(1, c.getGym().getName());
         stmt.setDate(2, c.getCompetitionDate().getBegin());
         stmt.setString(3, c.getLeague());
@@ -208,4 +209,47 @@ public class CompetitionRepository {
         return stmt;
     }
     
+    public int vaccuum(List<CompetitionType> competitionTypes) {
+        try (PreparedStatement stmt = vaccuumStatement();
+        ){
+            AtomicInteger cnt 
+                = new AtomicInteger(0);
+
+            competitionTypes.forEach(ct -> {
+                try {
+                    // league
+                    stmt.setString(1, ct.getLeague());
+                    // type
+                    stmt.setString(2, ct.getType());
+                    // delete and count
+                    cnt.addAndGet(stmt.executeUpdate());
+                } catch (SQLException e) {
+                    throw new RuntimeException(
+                        String.format("ERROR vaccuuming for competitionType=%s", ct)
+                    );
+                }
+            });
+            return cnt.get();
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+    }
+    private PreparedStatement vaccuumStatement() 
+    throws Exception {
+        PreparedStatement stmt
+            = conn.prepareStatement("""
+                delete from competitions
+                where 
+                    league = ?
+                    and
+                    type = ?
+                    and
+                    last_found_on_date < ?                                 
+            """
+            );       
+        stmt.setDate(3, Date.valueOf(LocalDate.now()));
+        return stmt;
+    }
+
 }
+

@@ -1,10 +1,10 @@
-package org.ferris.anw.legacy.fina.main;
+package org.ferris.anw.legacy.fina;
 
 import java.util.List;
 import java.util.stream.Collectors;
+import org.ferris.anw.legacy.competition.Competition;
 import org.ferris.anw.legacy.competition.CompetitionRepository;
-import org.ferris.anw.legacy.main.GymRepository;
-import org.ferris.anw.legacy.model.Competition;
+import org.ferris.anw.legacy.gym.GymRepository;
 import org.ferris.anw.legacy.sql.ConnectionToRepository;
 
 /**
@@ -25,6 +25,10 @@ public class FinaMain {
         // Create the parser
         FinaParser parser 
             = new FinaParser(new GymRepository(new ConnectionToRepository()));
+        
+        // Create the Repository
+        CompetitionRepository competitionRepository 
+            = new CompetitionRepository(new ConnectionToRepository());
         
         // Parse the data, getting the usable data
         List<Competition> competitions 
@@ -49,8 +53,15 @@ public class FinaMain {
         
         
         banner("FINA Competitions Loading...");
-        CompetitionRepository compRepo = new CompetitionRepository(new ConnectionToRepository());
-        compRepo.load(competitionsReadyForLoading);
+        competitionRepository.load(competitionsReadyForLoading);
+        
+        banner("FINA Competitions Vaccuuming...");
+        int deleted = competitionRepository.vaccuum(competitions.stream()
+            .map(c -> c.getCompetitionType())
+            .distinct()
+            .collect(Collectors.toList())
+        );
+        System.out.printf("%d competitions have been vaccuumed.%n", deleted);
         
         
         banner("FINA Competitions missing gym database data");

@@ -1,10 +1,11 @@
-package org.ferris.anw.legacy.unaa.main;
+package org.ferris.anw.legacy.unaa;
 
 import java.util.List;
 import java.util.stream.Collectors;
+import org.ferris.anw.legacy.competition.Competition;
 import org.ferris.anw.legacy.competition.CompetitionRepository;
-import org.ferris.anw.legacy.main.GymRepository;
-import org.ferris.anw.legacy.model.Competition;
+import org.ferris.anw.legacy.competition.CompetitionType;
+import org.ferris.anw.legacy.gym.GymRepository;
 import org.ferris.anw.legacy.sql.ConnectionToRepository;
 
 /**
@@ -17,10 +18,10 @@ public class UnaaMain {
         new UnaaMain().go();
     }
     
-    protected CompetitionRepository compRepo;
+    protected CompetitionRepository competitionRepository;
     
     public UnaaMain() {
-        compRepo = new CompetitionRepository(new ConnectionToRepository());
+        competitionRepository = new CompetitionRepository(new ConnectionToRepository());
     }
     
     private void go() {
@@ -63,6 +64,13 @@ public class UnaaMain {
         // Load
         load("UNAA WNA Competitions Loading...", competitionsReadyForLoading);
         
+        // Vaccuum
+        vaccuum("UNAA WNA Competitions Vaccuuming...", competitionsReadyForLoading.stream()
+            .map(c -> c.getCompetitionType())
+            .distinct()
+            .collect(Collectors.toList())
+        );
+        
         // Print
         print("UNAA WNS Competitions missing gym database data", competitionsWithGymsMissingInTheDatabase);
     }
@@ -98,6 +106,13 @@ public class UnaaMain {
         
         // Load
         load("UNAA Regional Competitions Loading...", competitionsReadyForLoading);
+        
+        // Vaccuum
+        vaccuum("UNAA Regional Competitions Vaccuuming...", competitionsReadyForLoading.stream()
+            .map(c -> c.getCompetitionType())
+            .distinct()
+            .collect(Collectors.toList())
+        );
         
         // Print
         print("UNAA Regional Competitions missing gym database data", competitionsWithGymsMissingInTheDatabase);
@@ -135,8 +150,16 @@ public class UnaaMain {
         // Load
         load("UNAA Area Competitions Loading...", competitionsReadyForLoading);
         
+        // Vaccuum
+        vaccuum("UNAA Area Competitions Vaccuuming...", competitionsReadyForLoading.stream()
+            .map(c -> c.getCompetitionType())
+            .distinct()
+            .collect(Collectors.toList())
+        );
+        
         // Print
         print("UNAA Area Competitions missing gym database data", competitionsWithGymsMissingInTheDatabase);
+                
     }
     
     private void print(String msg, List<Competition> competitions) {
@@ -152,7 +175,13 @@ public class UnaaMain {
     
     private void load(String msg, List<Competition> competitions) {
         banner(msg);
-        compRepo.load(competitions);
+        competitionRepository.load(competitions);
+    }
+    
+    private void vaccuum(String msg, List<CompetitionType> competitionTypes) {
+        banner(msg);
+        int deleted = competitionRepository.vaccuum(competitionTypes);
+        System.out.printf("%d competitions have been vaccuumed.%n", deleted);
     }
     
     private void banner(String m) {

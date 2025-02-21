@@ -1,14 +1,15 @@
-package org.ferris.anw.legacy.unaa.main;
+package org.ferris.anw.legacy.unaa;
 
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
-import org.ferris.anw.legacy.main.GymRepository;
-import org.ferris.anw.legacy.model.Competition;
-import org.ferris.anw.legacy.model.CompetitionDate;
-import org.ferris.anw.legacy.model.Gym;
+import org.ferris.anw.legacy.competition.Competition;
+import org.ferris.anw.legacy.competition.CompetitionDate;
+import org.ferris.anw.legacy.competition.CompetitionType;
+import org.ferris.anw.legacy.gym.Gym;
+import org.ferris.anw.legacy.gym.GymRepository;
 
 /**
  *
@@ -114,8 +115,7 @@ public abstract class UnaaParser {
             new Competition(
                 gym
               , compDate
-              , league
-              , type
+              , new CompetitionType(league, type)
         ));
     }
     

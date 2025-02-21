@@ -1,10 +1,9 @@
 
-package org.ferris.anw.legacy.main;
+package org.ferris.anw.legacy.gym;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
-import org.ferris.anw.legacy.model.Gym;
 import org.ferris.anw.legacy.sql.ConnectionToRepository;
 
 /**

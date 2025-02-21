@@ -1,4 +1,4 @@
-package org.ferris.anw.legacy.model;
+package org.ferris.anw.legacy.competition;
 
 import java.sql.Date;
 import java.time.LocalDate;

@@ -1,5 +1,6 @@
 package org.ferris.anw.legacy.model;
 
+import org.ferris.anw.legacy.competition.CompetitionDate;
 import java.sql.Date;
 import java.time.LocalDate;
 import java.util.Arrays;

@@ -1,8 +1,8 @@
-package org.ferris.anw.legacy.unaa.main;
+package org.ferris.anw.legacy.unaa;
 
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import org.ferris.anw.legacy.main.GymRepository;
+import org.ferris.anw.legacy.gym.GymRepository;
 
 /**
  *

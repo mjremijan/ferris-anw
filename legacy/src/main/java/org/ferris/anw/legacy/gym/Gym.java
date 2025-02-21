@@ -1,4 +1,4 @@
-package org.ferris.anw.legacy.model;
+package org.ferris.anw.legacy.gym;
 
 import java.util.Optional;
 

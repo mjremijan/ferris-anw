@@ -1,4 +1,4 @@
-package org.ferris.anw.legacy.fina.main;
+package org.ferris.anw.legacy.fina;
 
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -6,10 +6,11 @@ import java.nio.file.Paths;
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
-import org.ferris.anw.legacy.main.GymRepository;
-import org.ferris.anw.legacy.model.Competition;
-import org.ferris.anw.legacy.model.CompetitionDate;
-import org.ferris.anw.legacy.model.Gym;
+import org.ferris.anw.legacy.competition.Competition;
+import org.ferris.anw.legacy.competition.CompetitionDate;
+import org.ferris.anw.legacy.competition.CompetitionType;
+import org.ferris.anw.legacy.gym.Gym;
+import org.ferris.anw.legacy.gym.GymRepository;
 
 /**
  *
@@ -81,8 +82,7 @@ public class FinaParser {
             new Competition(
                 gym
               , compDate
-              , league.get()
-              , type
+              , new CompetitionType(league.get(), type)
         ));
     }
     
