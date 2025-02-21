@@ -55,13 +55,13 @@ public class FinaMain {
         banner("FINA Competitions Loading...");
         competitionRepository.load(competitionsReadyForLoading);
         
-        banner("FINA Competitions Vaccuuming...");
-        int deleted = competitionRepository.vaccuum(competitions.stream()
+        banner("FINA Competitions Vacuuming...");
+        int deleted = competitionRepository.vacuum(competitions.stream()
             .map(c -> c.getCompetitionType())
             .distinct()
             .collect(Collectors.toList())
         );
-        System.out.printf("%d competitions have been vaccuumed.%n", deleted);
+        System.out.printf("%d competitions have been vacuumed.%n", deleted);
         
         
         banner("FINA Competitions missing gym database data");

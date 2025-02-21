@@ -209,8 +209,8 @@ public class CompetitionRepository {
         return stmt;
     }
     
-    public int vaccuum(List<CompetitionType> competitionTypes) {
-        try (PreparedStatement stmt = vaccuumStatement();
+    public int vacuum(List<CompetitionType> competitionTypes) {
+        try (PreparedStatement stmt = vacuumStatement();
         ){
             AtomicInteger cnt 
                 = new AtomicInteger(0);
@@ -225,7 +225,7 @@ public class CompetitionRepository {
                     cnt.addAndGet(stmt.executeUpdate());
                 } catch (SQLException e) {
                     throw new RuntimeException(
-                        String.format("ERROR vaccuuming for competitionType=%s", ct)
+                        String.format("ERROR vacuuming for competitionType=%s", ct)
                     );
                 }
             });
@@ -234,7 +234,7 @@ public class CompetitionRepository {
             throw new RuntimeException(e);
         }
     }
-    private PreparedStatement vaccuumStatement() 
+    private PreparedStatement vacuumStatement() 
     throws Exception {
         PreparedStatement stmt
             = conn.prepareStatement("""

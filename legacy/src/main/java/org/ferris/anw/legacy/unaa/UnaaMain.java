@@ -64,8 +64,8 @@ public class UnaaMain {
         // Load
         load("UNAA WNA Competitions Loading...", competitionsReadyForLoading);
         
-        // Vaccuum
-        vaccuum("UNAA WNA Competitions Vaccuuming...", competitionsReadyForLoading.stream()
+        // Vacuum
+        vacuum("UNAA WNA Competitions Vacuuming...", competitionsReadyForLoading.stream()
             .map(c -> c.getCompetitionType())
             .distinct()
             .collect(Collectors.toList())
@@ -107,8 +107,8 @@ public class UnaaMain {
         // Load
         load("UNAA Regional Competitions Loading...", competitionsReadyForLoading);
         
-        // Vaccuum
-        vaccuum("UNAA Regional Competitions Vaccuuming...", competitionsReadyForLoading.stream()
+        // Vacuum
+        vacuum("UNAA Regional Competitions Vacuuming...", competitionsReadyForLoading.stream()
             .map(c -> c.getCompetitionType())
             .distinct()
             .collect(Collectors.toList())
@@ -150,8 +150,8 @@ public class UnaaMain {
         // Load
         load("UNAA Area Competitions Loading...", competitionsReadyForLoading);
         
-        // Vaccuum
-        vaccuum("UNAA Area Competitions Vaccuuming...", competitionsReadyForLoading.stream()
+        // Vacuum
+        vacuum("UNAA Area Competitions Vacuuming...", competitionsReadyForLoading.stream()
             .map(c -> c.getCompetitionType())
             .distinct()
             .collect(Collectors.toList())
@@ -178,10 +178,10 @@ public class UnaaMain {
         competitionRepository.load(competitions);
     }
     
-    private void vaccuum(String msg, List<CompetitionType> competitionTypes) {
+    private void vacuum(String msg, List<CompetitionType> competitionTypes) {
         banner(msg);
-        int deleted = competitionRepository.vaccuum(competitionTypes);
-        System.out.printf("%d competitions have been vaccuumed.%n", deleted);
+        int deleted = competitionRepository.vacuum(competitionTypes);
+        System.out.printf("%d competitions have been vacuumed.%n", deleted);
     }
     
     private void banner(String m) {
