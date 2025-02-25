@@ -1,3 +1,4 @@
+November 1, 2024	Authentik Movement	FINA Season VI TEST COMP	Speed	Cleveland, OH
 November 2-3, 2024	Queen City Ninja	FINA Season VI Qualifier #1 - Speed	Speed	Cincinnati, OH
 November 2-3, 2024	Queen City Ninja	FINA Season VI Qualifier #1 - Endurance	Endurance	Cincinnati, OH
 November 2, 2024	Rugged Obstacle Courses	FINA Season VI Qualifier #1 - Speed	Speed	Williamsburg, VA
@@ -137,6 +138,8 @@ May 17-18	The Barn	FINA Season VI SECTIONAL - Speed	Speed Sectional	Dorsey, IL
 May 17-18	The Barn	FINA Season VI SECTIONAL - Endurance	Endurance Sectional	Dorsey, IL
 May 17	Ultimate Ninja Gym	FINA Season VI SECTIONAL - Speed	Speed Sectional	Albuquerque, NM, US
 May 17	Ultimate Ninja Gym	FINA Season VI SECTIONAL - Endurance	Endurance Sectional	Albuquerque, NM, US
+May 17	Avant Coeur Ninja	FINA Season VI SECTIONAL - Speed	Speed Sectional	Coeur d'Alene, ID
+May 17	Avant Coeur Ninja	FINA Season VI SECTIONAL - Endurance	Endurance Sectional	Coeur d'Alene, ID
 May 17-18	KidWonder	FINA Season VI SECTIONAL - Speed	Speed Sectional	Encinitas, CA
 May 17-18	KidWonder	FINA Season VI SECTIONAL - Endurance	Endurance Sectional	Encinitas, CA
 May 24-25	Iron Sports	FINA Season VI SECTIONAL - Speed	Speed Sectional	Houston, TX, US
@@ -146,10 +149,12 @@ May 24	Hitsquad Ninja Gym	FINA Season VI SECTIONAL - End. 7U, 9U, 11U, 13U, TF	E
 May 25	Hitsquad Ninja Gym	FINA Season VI SECTIONAL - Speed - YA, Amat., Masters	Speed Sectional	Tempe, AZ
 May 25	Hitsquad Ninja Gym	FINA Season VI SECTIONAL - End. - YA, Amat., Masters	Endurance Sectional	Tempe, AZ
 May 31	The Rock Ninja Warrior Academy	FINA Season VI SECTIONAL - Speed	Speed Sectional	Orange Park, FL
-May 31 - Jun 1	AHW Obstacle Training Center	FINA Season VI SECTIONAL - Speed	Speed	Toms River, NJ
-May 31 - Jun 1	AHW Obstacle Training Center	FINA Season VI SECTIONAL - Endurance	Endurance	Toms River, NJ
+May 31 - Jun 1	AHW Obstacle Training Center	FINA Season VI SECTIONAL - Speed	Speed Sectional	Toms River, NJ
+May 31 - Jun 1	AHW Obstacle Training Center	FINA Season VI SECTIONAL - Endurance	Endurance Sectional	Toms River, NJ
 May 31 - Jun 1	Nebraska Ninja	FINA Season VI SECTIONAL - Speed	Speed Sectional	Lincoln, NE
 May 31 - Jun 1	Nebraska Ninja	FINA Season VI SECTIONAL - Endurance	Endurance Sectional	Lincoln, NE
+May 31 - Jun 1	Move Sport Ninja	FINA Season VI SECTIONAL - Speed	Speed Sectional	Round Rock, TX, US
+May 31 - Jun 1	Move Sport Ninja	FINA Season VI SECTIONAL - Endurance	Endurance Sectional	Round Rock, TX, US
 May 31 - Jun 1	Camp Rhino	FINA Season VI SECTIONAL - Speed	Speed Sectional	Las Vegas, NV
 May 31 - Jun 1	Camp Rhino	FINA Season VI SECTIONAL - Endurance	Endurance Sectional	Las Vegas, NV
 June 1	The Rock Ninja Warrior Academy	FINA Season VI SECTIONAL - Endurance	Endurance Sectional	Orange Park, FL
