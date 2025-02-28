@@ -89,11 +89,11 @@
 173	Church Conference	
 366	Church Conference	
 370	No	
-129	Maybe	
-131	Maybe	
-130	Maybe	
-127	Maybe	
-138	Maybe	
+129	No	
+131	No	
+130	No	
+127	Yes	Yes
+138	No	
 177		
 179		
 178		
@@ -146,8 +146,6 @@
 110		
 242		
 241		
-246	Maybe	No
-247	Maybe	No
 		
 		
 		
@@ -155,4 +153,3 @@
 113	Vaction	
 114	Vaction	
 117	Vaction	
-
