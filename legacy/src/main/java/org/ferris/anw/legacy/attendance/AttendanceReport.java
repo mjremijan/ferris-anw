@@ -8,6 +8,7 @@ import org.apache.poi.ss.usermodel.Font;
 import org.apache.poi.ss.usermodel.IndexedColors;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
+import org.apache.poi.ss.usermodel.VerticalAlignment;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.util.CellRangeAddress;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
@@ -69,6 +70,26 @@ public class AttendanceReport {
                 sheet.addMergedRegion(new CellRangeAddress(3, 3, 1, 3));
             }
             
+            // Height of row
+            {
+                // Create a row and cell
+                Row row = sheet.createRow(4);
+
+                // The default row height in Excel is 12.75 points
+                row.setHeightInPoints(12.75f * 2.0f);
+
+                // Create cell
+                Cell cell = row.createCell(0);
+                cell.setCellValue("Row with double height");
+                // Create a cell style and set vertical alignment
+                CellStyle style = workbook.createCellStyle();
+                style.setVerticalAlignment(VerticalAlignment.CENTER);
+                cell.setCellStyle(style);
+            }
+            
+            // Auto-size the column based on content
+            sheet.autoSizeColumn(0);
+
             // Write
             try (FileOutputStream fos = new FileOutputStream("example.xlsx")) {
                 workbook.write(fos);
