@@ -68,80 +68,80 @@
 		
 142	Evelyn's bday party	
 141	Evelyn's bday party	
+150	Kelly KC	
+149	Kelly KC	
 251	Kelly KC	
 254	Kelly KC	
-149	Kelly KC	
-150	Kelly KC	
 7	Church auditions	
-256	Valentine's Trattoria	
 259	Valentine's Trattoria	
+256	Valentine's Trattoria	
+8	Yes	Yes
 166	Daddy daughter dance	
 165	Daddy daughter dance	
 263	Daddy daughter dance	
 163	Daddy daughter dance	
 164	Daddy daughter dance	
-8	Yes	Yes
 		
 		
 		
 135	Church Conference	
-174	Church Conference	
-173	Church Conference	
 366	Church Conference	
+173	Church Conference	
+174	Church Conference	
 370	No	
-129	No	
-131	No	
-130	No	
 127	Yes	Yes
+129	No	
+130	No	
+131	No	
 138	No	
-177		
-179		
-178		
-273		
-181		
-180		
-76		
-277	Yes	No
-284		
-9		
+177	No	
+179	No	
+178	No	
+273	No	
+181	No	
+180	No	
+277	Go Bingo	
+76	No	
 287		
+9		
+284		
 285		
 		
 		
 		
 79	Yes	No
-82		
-83		
-197		
 196		
+197		
+83		
+82		
 201	Yes	No
 84		
+85	Yes	No
 202		
 203		
 71		
-85	Yes	No
 10		
-87		
 11		
-204		
 205		
+204		
+87		
 		
 		
 		
+90	Church	
+92	Church	
+213	Church	
+212	Church	
 214	Church	
 215	Church	
-212	Church	
-213	Church	
-92	Church	
-90	Church	
 217	Church	
-221	Maybe	
 220		
+221	Maybe	
 219		
 218		
-100	Yes	No
-230		
 231		
+230		
+100	Yes	No
 105		
 110		
 242		
@@ -149,7 +149,13 @@
 		
 		
 		
+		
+		
 73	Vaction	
 113	Vaction	
 114	Vaction	
 117	Vaction	
+		
+		
+		
+		

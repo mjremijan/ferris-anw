@@ -92,7 +92,7 @@ March 29	Sumner Ninja	FINA Season VI Qualifier # 1 - Endurance	Endurance	Auburn,
 March 29	Four Star Ninja Academy	FINA Season VI Qualifier #3 - Endurance	Endurance	Fargo, ND
 March 29	Magic City Gymnastics	FINA Season VI Qualifier #2 - Speed	Speed	Billings, MT
 March 29	Magic City Gymnastics	FINA Season VI Qualifier #2 - Endurance	Endurance	Billings, MT
-March 29-31	Camp Rhino	FINA Season VI Qualifier #1 - Speed	Speed	Las Vegas, NV
+March 29-30	Camp Rhino	FINA Season VI Qualifier #1 - Speed	Speed	Las Vegas, NV
 March 29-30	Camp Rhino	FINA Season VI Qualifier #1 - Endurance	Endurance	Las Vegas, NV
 March 30	Four Star Ninja Academy	FINA Season VI Qualifier #3 - Speed	Speed	Fargo, ND
 April 5	The Rock Ninja Warrior Academy	FINA Season VI Qualifier #2 - Speed	Speed	Orange Park, FL
@@ -135,10 +135,12 @@ May 17-18	Four Star Ninja Academy	FINA Season VI SECTIONAL - Speed	Speed Section
 May 17-18	Four Star Ninja Academy	FINA Season VI SECTIONAL - Endurance	Endurance Sectional	Fargo, ND
 May 17-18	The Barn	FINA Season VI SECTIONAL - Speed	Speed Sectional	Dorsey, IL
 May 17-18	The Barn	FINA Season VI SECTIONAL - Endurance	Endurance Sectional	Dorsey, IL
-May 17	Ultimate Ninja Gym	FINA Season VI SECTIONAL - Speed	Speed Sectional	Albuquerque, NM, US
-May 17	Ultimate Ninja Gym	FINA Season VI SECTIONAL - Endurance	Endurance Sectional	Albuquerque, NM, US
+May 17	Ultimate Ninja Gym	FINA Season VI SECTIONAL - Speed 7U, 9U, 11U, 13U	Speed Sectional	Albuquerque, NM, US
+May 17	Ultimate Ninja Gym	FINA Season VI SECTIONAL - Endurance - 7U, 9U, 11U, 13U	Endurance Sectional	Albuquerque, NM, US
 May 17-18	KidWonder	FINA Season VI SECTIONAL - Speed	Speed Sectional	Encinitas, CA
 May 17-18	KidWonder	FINA Season VI SECTIONAL - Endurance	Endurance Sectional	Encinitas, CA
+May 18	Ultimate Ninja Gym	FINA Season VI SECTIONAL - Speed YA, Amat., Masters. TF	Speed Sectional	Albuquerque, NM, US
+May 18	Ultimate Ninja Gym	FINA Season VI SECTIONAL - Endurance YA, Amat, Mast, TF	Endurance Sectional	Albuquerque, NM, US
 May 24-25	Iron Sports	FINA Season VI SECTIONAL - Speed	Speed Sectional	Houston, TX, US
 May 24-25	Iron Sports	FINA Season VI SECTIONAL - Endurance	Endurance Sectional	Houston, TX, US
 May 24	Hitsquad Ninja Gym	FINA Season VI SECTIONAL - Speed - 7U, 9U, 11U, 13U, TF	Speed Sectional	Tempe, AZ
@@ -154,6 +156,6 @@ May 31 - Jun 1	Move Sport Ninja	FINA Season VI SECTIONAL - Speed	Speed Sectional
 May 31 - Jun 1	Move Sport Ninja	FINA Season VI SECTIONAL - Endurance	Endurance Sectional	Round Rock, TX, US
 May 31	Avant Coeur Ninja	FINA Season VI SECTIONAL - Speed	Speed Sectional	Coeur d'Alene, ID
 May 31	Avant Coeur Ninja	FINA Season VI SECTIONAL - Endurance	Endurance Sectional	Coeur d'Alene, ID
-May 31 - Jun 1	Camp Rhino	FINA Season VI SECTIONAL - Speed	Speed Sectional	Las Vegas, NV
-May 31 - Jun 1	Camp Rhino	FINA Season VI SECTIONAL - Endurance	Endurance Sectional	Las Vegas, NV
+May 31 - Jun 1	Camp Rhino	FINA Season VI SECTIONAL - Speed *DATE TENTATIVE*	Speed Sectional	Las Vegas, NV
+May 31 - Jun 1	Camp Rhino	FINA Season VI SECTIONAL - Endurance *DATE TENTATIVE*	Endurance Sectional	Las Vegas, NV
 June 1	The Rock Ninja Warrior Academy	FINA Season VI SECTIONAL - Endurance	Endurance Sectional	Orange Park, FL
