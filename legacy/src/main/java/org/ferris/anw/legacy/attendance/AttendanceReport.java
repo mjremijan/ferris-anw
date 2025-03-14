@@ -9,6 +9,7 @@ import org.apache.poi.ss.usermodel.IndexedColors;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
+import org.apache.poi.ss.util.CellRangeAddress;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 /**
@@ -55,6 +56,17 @@ public class AttendanceReport {
                 Cell cell = row.createCell(0);
                 cell.setCellValue("Background yellow");
                 cell.setCellStyle(fillStyle);
+            }
+            
+            // Merge cells
+            {
+                // Create a row and cell
+                Row row = sheet.createRow(3);
+                Cell cell = row.createCell(1);
+                cell.setCellValue("Merged Cells Cols B,C,D");
+
+                // Merge cels from row 3 column 1 to row 3 column 3.
+                sheet.addMergedRegion(new CellRangeAddress(3, 3, 1, 3));
             }
             
             // Write
