@@ -100,8 +100,8 @@
 273	No	
 181	No	
 180	No	
-277	Go Bingo	
-76	No	
+277	Glo Bingo	
+76	Glo Bingo	
 287		
 9		
 284		
@@ -121,10 +121,10 @@
 203		
 71		
 10		
-11		
-205		
-204		
-87		
+11	John's burial	
+205	John's burial	
+204	John's burial	
+87	John's burial	
 		
 		
 		
