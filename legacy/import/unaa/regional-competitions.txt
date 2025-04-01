@@ -1,3 +1,4 @@
+#Gym	Location	Date
 NCNS (Qualified Athletes Only)	North Dakota	November 16 - 17th
 Hit Squad Ninjas	Arizona	March 22 (Kids) - 23rd (Adults)
 605 Ninja	South Dakota	March 22nd
@@ -28,12 +29,12 @@ Magic City Gymnastics	Montana	May 10th
 Athletes in Motion	Lousiana	May 10th
 Permian Basin Ninja Academy	Texas	May 10th
 Sumner Ninja	Washington	May 10th
+Beast Ninja	South Carolina	May 10th
 Vertex Lab Academy	Virginia	May 10 - 11th
 ORTHDX	Wisconsin	May 17 - 18th (13U and adult divisions)
 Ninja Lair	Nevada	May 17 - 18th
 Ninja Intensity	Colorado	May 17 - 18th
 305 Ninja Academy	Florida	May 24th
-Beast Ninja	South Carolina	May 24th
 Iron Sports Ninja Warrior	Texas	May 24-25th
 Ninjas United	Minnesota	May 24-25th
 Free Spirit	Oregon	May 25th

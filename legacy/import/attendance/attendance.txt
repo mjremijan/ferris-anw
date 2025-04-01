@@ -86,8 +86,8 @@
 		
 135	Church Conference	
 366	Church Conference	
-173	Church Conference	
 174	Church Conference	
+173	Church Conference	
 370	No	
 127	Yes	Yes
 129	No	
@@ -98,22 +98,27 @@
 179	No	
 178	No	
 273	No	
-181	No	
 180	No	
+181	No	
 277	Glo Bingo	
 76	Glo Bingo	
-287		
 9		
 284		
 285		
 		
 		
 		
-79	Yes	No
-196		
-197		
+		
+391		
+392		
+389		
+390		
+79	Canceled	
 83		
 82		
+413		
+412		
+404		
 201	Yes	No
 84		
 85	Yes	No
@@ -122,16 +127,16 @@
 71		
 10		
 11	John's burial	
-205	John's burial	
 204	John's burial	
+205	John's burial	
 87	John's burial	
 		
 		
 		
 90	Church	
 92	Church	
-213	Church	
 212	Church	
+213	Church	
 214	Church	
 215	Church	
 217	Church	
@@ -150,12 +155,7 @@
 		
 		
 		
-		
 73	Vaction	
 113	Vaction	
 114	Vaction	
 117	Vaction	
-		
-		
-		
-		

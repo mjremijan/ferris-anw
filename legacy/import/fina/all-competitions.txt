@@ -92,6 +92,7 @@ March 29-30	Buffalo Elite Ninja	FINA Season VI Qualifier #1 - Speed	Speed	Lancas
 March 29-30	Buffalo Elite Ninja	FINA Season VI Qualifier #1 - Endurance	Endurance	Lancaster, NY
 March 29	Sumner Ninja	FINA Season VI Qualifier #1 - Speed	Speed	Auburn, WA
 March 29	Sumner Ninja	FINA Season VI Qualifier # 1 - Endurance	Endurance	Auburn, WA
+March 29	Buffalo Elite Ninja	FINA Season VI Qualifier	Endurance	Lancaster, NY
 March 29	Four Star Ninja Academy	FINA Season VI Qualifier #3 - Endurance	Endurance	Fargo, ND
 March 29-30	Camp Rhino	FINA Season VI Qualifier #1 - Speed	Speed	Las Vegas, NV
 March 29-30	Camp Rhino	FINA Season VI Qualifier #1 - Endurance	Endurance	Las Vegas, NV
@@ -101,9 +102,11 @@ April 5-6	Ninjobstacles	FINA Season VI Qualifier #2 - Endurance	Endurance	Ketter
 April 5	The Rock Ninja Warrior Academy	FINA Season VI Qualifier #2 - Speed	Speed	Orange Park, FL
 April 5-6	Adrenaline Monkey West Dundee	FINA Season VI Qualifier #2 - Speed	Speed	West Dundee, IL
 April 5-6	Adrenaline Monkey West Dundee	FINA Season VI Qualifier #2 - Endurance	Endurance	West Dundee, IL
-April 5-6	Ultimate Ninjas Anaheim Hills	FINA Season VI Qualifier #1 - Speed	Speed	Anaheim, CA, US
-April 5-6	Ultimate Ninjas Anaheim Hills	FINA Season VI Qualifier #1 - Endurance	Endurance	Anaheim, CA, US
+April 5	Ultimate Ninjas Anaheim Hills	FINA Season VI Qualifier #1 - Speed	Speed	Anaheim, CA, US
+April 5	Ultimate Ninjas Anaheim Hills	FINA Season VI Qualifier #1 - Endurance	Endurance	Anaheim, CA, US
 April 6	The Rock Ninja Warrior Academy	FINA Season VI Qualifier #2 - Endurance	Endurance	Orange Park, FL
+April 12-13	Ninja Hub	FINA Season VI Qualifier #1 - Speed	Speed	Mackay, QLD, Australia
+April 12-13	Ninja Hub	FINA Season VI Qualifier #1 - Endurance	Endurance	Mackay, QLD, Australia
 April 12	AHW Obstacle Training Center	FINA Season VI Qualifier #1 - Speed	Speed	Toms River, NJ
 April 12	AHW Obstacle Training Center	FINA Season VI Qualifier #1 - Endurance	Endurance	Toms River, NJ
 April 12	Iron Sports	FINA Season VI Qualifier #3 - Speed	Speed	Houston, TX, US
