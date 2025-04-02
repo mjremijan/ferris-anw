@@ -16,7 +16,7 @@ public class UnaaAreaParser extends UnaaParser {
     
     @Override
     public Path getFilePath() {
-        return Paths.get("./import/unaa/area-competitions.txt");
+        return Paths.get("./import/unaa/unaa-area-competitions.txt");
     }
     
     @Override

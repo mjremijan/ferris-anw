@@ -16,7 +16,7 @@ public class UnaaWnaParser extends UnaaParser {
     
     @Override
     public Path getFilePath() {
-        return Paths.get("./import/unaa/wna-competitions.txt");
+        return Paths.get("./import/unaa/unaa-wna-competitions.txt");
     }
     
     @Override

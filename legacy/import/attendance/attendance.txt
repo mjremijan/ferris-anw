@@ -102,19 +102,18 @@
 181	No	
 277	Glo Bingo	
 76	Glo Bingo	
-9		
-284		
-285		
+9	No	
+284	No	
+285	No	
 		
 		
 		
 		
-391		
-392		
-389		
-390		
+391	Doll & Me	
+392	Doll & Me	
+389	Doll & Me	
+390	Doll & Me	
 79	Canceled	
-83		
 82		
 413		
 412		
@@ -127,30 +126,31 @@
 71		
 10		
 11	John's burial	
-204	John's burial	
 205	John's burial	
+204	John's burial	
 87	John's burial	
+		
 		
 		
 		
 90	Church	
 92	Church	
-212	Church	
 213	Church	
-214	Church	
+212	Church	
 215	Church	
+214	Church	
 217	Church	
-220		
 221	Maybe	
-219		
+220		
 218		
+219		
 231		
 230		
 100	Yes	No
 105		
 110		
-242		
 241		
+242		
 		
 		
 		

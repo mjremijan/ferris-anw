@@ -1,11 +1,10 @@
-#Gym	Location	Date
 NCNS (Qualified Athletes Only)	North Dakota	November 16 - 17th
 Hit Squad Ninjas	Arizona	March 22 (Kids) - 23rd (Adults)
 605 Ninja	South Dakota	March 22nd
 Move Sport Ninja Academy	Texas	March 29th
 Conquer Gym - Blaine	Minnesota	March 29 - 30th
 Buffalo Elite Ninja	New York	March 29th
-Ninja Obstacle Academy	Alabama	April 5th
+Ninja Obstacle Academy	Alabama	TBD
 The Ninja Playground	Utah	April 11 - 12th
 Authentik Movement Training	Ohio	April 12th
 StricklyNinjas	Georgia	April 12th
@@ -31,6 +30,7 @@ Permian Basin Ninja Academy	Texas	May 10th
 Sumner Ninja	Washington	May 10th
 Beast Ninja	South Carolina	May 10th
 Vertex Lab Academy	Virginia	May 10 - 11th
+United Sports Academy Ninja Nook - Mayfield	Pennsylvania	May 17th
 ORTHDX	Wisconsin	May 17 - 18th (13U and adult divisions)
 Ninja Lair	Nevada	May 17 - 18th
 Ninja Intensity	Colorado	May 17 - 18th

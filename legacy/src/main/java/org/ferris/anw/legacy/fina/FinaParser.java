@@ -25,7 +25,7 @@ public class FinaParser {
     }
     
     public Path getFilePath() {
-        return Paths.get("./import/fina/all-competitions.txt");
+        return Paths.get("./import/fina/fina-all.txt");
     }
     
     public List<Competition> parse()

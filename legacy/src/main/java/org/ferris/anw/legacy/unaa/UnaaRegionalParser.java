@@ -18,7 +18,7 @@ public class UnaaRegionalParser extends UnaaParser {
     
     @Override
     public Path getFilePath() {
-        return Paths.get("./import/unaa/regional-competitions.txt");
+        return Paths.get("./import/unaa/unaa-regional-competitions.txt");
     }
     
     @Override

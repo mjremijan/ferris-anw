@@ -1,4 +1,3 @@
-#Date 	Gym	Competition	Type	Location
 November 2-3, 2024	Queen City Ninja	FINA Season VI Qualifier #1 - Speed	Speed	Cincinnati, OH
 November 2-3, 2024	Queen City Ninja	FINA Season VI Qualifier #1 - Endurance	Endurance	Cincinnati, OH
 November 2, 2024	WISC Ninja Warrior	FINA Season VI Qualifier #1 - Speed	Speed	Williamsburg, VA
@@ -92,7 +91,6 @@ March 29-30	Buffalo Elite Ninja	FINA Season VI Qualifier #1 - Speed	Speed	Lancas
 March 29-30	Buffalo Elite Ninja	FINA Season VI Qualifier #1 - Endurance	Endurance	Lancaster, NY
 March 29	Sumner Ninja	FINA Season VI Qualifier #1 - Speed	Speed	Auburn, WA
 March 29	Sumner Ninja	FINA Season VI Qualifier # 1 - Endurance	Endurance	Auburn, WA
-March 29	Buffalo Elite Ninja	FINA Season VI Qualifier	Endurance	Lancaster, NY
 March 29	Four Star Ninja Academy	FINA Season VI Qualifier #3 - Endurance	Endurance	Fargo, ND
 March 29-30	Camp Rhino	FINA Season VI Qualifier #1 - Speed	Speed	Las Vegas, NV
 March 29-30	Camp Rhino	FINA Season VI Qualifier #1 - Endurance	Endurance	Las Vegas, NV
