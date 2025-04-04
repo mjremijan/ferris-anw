@@ -137,6 +137,8 @@ May 10-11	The Warrior Factory - Hamilton	FINA Season VI SECTIONAL - Speed	Speed 
 May 10-11	The Warrior Factory - Hamilton	FINA Season VI SECTIONAL - Endurance	Endurance Sectional	Hamilton, Ontario, Canada
 May 10-11	Altius Ninja	FINA Season VI SECTIONAL - Speed	Speed Sectional	Franklin, WI
 May 10-11	Altius Ninja	FINA Season VI SECTIONAL - Endurance	Endurance Sectional	Franklin, WI
+May 10-11	Fitset Ninja Edmonton	FINA Season VI Qualifier #1 - Speed	Speed	Edmonton, AB, Canada
+May 10-11	Fitset Ninja Edmonton	FINA Season VI Qualifier #1 - Endurance	Endurance	Edmonton, AB, Canada
 May 11	Magic City Gymnastics	FINA Season VI SECTIONAL - Speed Youth (7U-13U)	Speed Sectional	Billings, MT
 May 11	Magic City Gymnastics	FINA Season VI SECTIONAL - Endurance Youth (7U-13U)	Endurance Sectional	Billings, MT
 May 17-18	Mr. Ninja HQ	FINA Season VI Qualifier #1 - Speed	Speed	Narangba, Queensland, Australia
@@ -168,6 +170,6 @@ May 31 - Jun 1	Move Sport Ninja	FINA Season VI SECTIONAL - Speed	Speed Sectional
 May 31 - Jun 1	Move Sport Ninja	FINA Season VI SECTIONAL - Endurance	Endurance Sectional	Round Rock, TX, US
 May 31	Avant Coeur Ninja	FINA Season VI SECTIONAL - Speed	Speed Sectional	Coeur d'Alene, ID
 May 31	Avant Coeur Ninja	FINA Season VI SECTIONAL - Endurance	Endurance Sectional	Coeur d'Alene, ID
-May 31 - Jun 1	Camp Rhino	FINA Season VI SECTIONAL - Speed *DATE TENTATIVE*	Speed Sectional	Las Vegas, NV
-May 31 - Jun 1	Camp Rhino	FINA Season VI SECTIONAL - Endurance *DATE TENTATIVE*	Endurance Sectional	Las Vegas, NV
+May 31 - Jun 1	Camp Rhino	FINA Season VI SECTIONAL - Speed	Speed Sectional	Las Vegas, NV
+May 31 - Jun 1	Camp Rhino	FINA Season VI SECTIONAL - Endurance	Endurance Sectional	Las Vegas, NV
 June 1	The Rock Ninja Warrior Academy	FINA Season VI SECTIONAL - Endurance	Endurance Sectional	Orange Park, FL
