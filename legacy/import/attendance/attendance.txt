@@ -88,23 +88,23 @@
 366	Church Conference	
 174	Church Conference	
 173	Church Conference	
-370	No	
+370	x	
 127	Yes	Yes
-129	No	
-130	No	
-131	No	
-138	No	
-177	No	
-179	No	
-178	No	
-273	No	
-180	No	
-181	No	
+129	x	
+130	x	
+131	x	
+138	x	
+177	x	
+179	x	
+178	x	
+273	x	
+180	x	
+181	x	
 277	Glo Bingo	
 76	Glo Bingo	
-9	No	
-284	No	
-285	No	
+9	x	
+284	x	
+285	x	
 		
 		
 		
@@ -113,22 +113,22 @@
 392	Doll & Me	
 389	Doll & Me	
 390	Doll & Me	
-79	Canceled	
-82		
-413		
-412		
-404		
-201	Yes	No
-84		
-85	Yes	No
-202		
+82	x	
+413	x	
+412	x	
+404	x	
+201	Yes	Yes 03/25/2025
+84	x	
+85	Yes	Yes 03/26/2025
 203		
+202		
 71		
 10		
 11	John's burial	
-205	John's burial	
 204	John's burial	
+205	John's burial	
 87	John's burial	
+		
 		
 		
 		
@@ -137,20 +137,20 @@
 92	Church	
 213	Church	
 212	Church	
-215	Church	
 214	Church	
+215	Church	
 217	Church	
 221	Maybe	
 220		
-218		
 219		
+218		
 231		
 230		
 100	Yes	No
 105		
 110		
-241		
 242		
+241		
 		
 		
 		

@@ -98,11 +98,11 @@ March 30	Four Star Ninja Academy	FINA Season VI Qualifier #3 - Speed	Speed	Fargo
 April 5-6	Ninjobstacles	FINA Season VI Qualifier #2 - Speed	Speed	Kettering, OH
 April 5-6	Ninjobstacles	FINA Season VI Qualifier #2 - Endurance	Endurance	Kettering, OH
 April 5	The Rock Ninja Warrior Academy	FINA Season VI Qualifier #2 - Speed	Speed	Orange Park, FL
-April 5-6	Adrenaline Monkey West Dundee	FINA Season VI Qualifier #2 - Speed	Speed	West Dundee, IL
-April 5-6	Adrenaline Monkey West Dundee	FINA Season VI Qualifier #2 - Endurance	Endurance	West Dundee, IL
 April 5	Ultimate Ninjas Anaheim Hills	FINA Season VI Qualifier #1 - Speed	Speed	Anaheim, CA, US
 April 5	Ultimate Ninjas Anaheim Hills	FINA Season VI Qualifier #1 - Endurance	Endurance	Anaheim, CA, US
 April 6	The Rock Ninja Warrior Academy	FINA Season VI Qualifier #2 - Endurance	Endurance	Orange Park, FL
+April 6	Adrenaline Monkey West Dundee	FINA Season VI Qualifier #2 - Speed	Speed	West Dundee, IL
+April 6	Adrenaline Monkey West Dundee	FINA Season VI Qualifier #2 - Endurance	Endurance	West Dundee, IL
 April 12-13	Ninja Hub	FINA Season VI Qualifier #1 - Speed	Speed	Mackay, QLD, Australia
 April 12-13	Ninja Hub	FINA Season VI Qualifier #1 - Endurance	Endurance	Mackay, QLD, Australia
 April 12	AHW Obstacle Training Center	FINA Season VI Qualifier #1 - Speed	Speed	Toms River, NJ
