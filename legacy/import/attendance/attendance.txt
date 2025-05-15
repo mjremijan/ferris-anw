@@ -109,10 +109,10 @@
 		
 		
 		
-391	Doll & Me	
-392	Doll & Me	
 389	Doll & Me	
 390	Doll & Me	
+420	x	
+421	x	
 82	x	
 413	x	
 412	x	
@@ -120,13 +120,13 @@
 201	Yes	Yes 03/25/2025
 84	x	
 85	Yes	Yes 03/26/2025
-203		
-202		
-71		
-10		
+203	x	
+202	x	
+71	x	
+10	x	
 11	John's burial	
-204	John's burial	
 205	John's burial	
+204	John's burial	
 87	John's burial	
 		
 		
@@ -135,22 +135,22 @@
 		
 90	Church	
 92	Church	
-213	Church	
 212	Church	
+213	Church	
 214	Church	
 215	Church	
 217	Church	
-221	Maybe	
-220		
-219		
-218		
-231		
-230		
-100	Yes	No
-105		
-110		
-242		
-241		
+220	Not qualified	
+221	Not qualified	
+218	Not qualified	
+219	Not qualified	
+231	Not qualified	
+230	Not qualified	
+100	Yes	Yes
+105	Too far	
+110	Anniversary	
+242	Not qualified	
+241	Not qualified	
 		
 		
 		
