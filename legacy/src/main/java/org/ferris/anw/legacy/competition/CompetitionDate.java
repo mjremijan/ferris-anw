@@ -153,10 +153,10 @@ public class CompetitionDate {
         int seasonStartYear = switch (today.getMonth().getValue()) 
         {
             // If TODAY is [Jan - Aug] then the current ANW season started __last__ year
-            case 1,2,3,4,5,6,7,8 -> today.getYear() - 1;
+            case 1,2,3,4,5,6,7 -> today.getYear() - 1;
                 
             // if TODAY is [Sep - Dec] the the current ANW season started __this__ year
-            case 9,10,11,12 -> today.getYear();
+            case 8,9,10,11,12 -> today.getYear();
                 
             // This should never happen  
             default -> -1;
