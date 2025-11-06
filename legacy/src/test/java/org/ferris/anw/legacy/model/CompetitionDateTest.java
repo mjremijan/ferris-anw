@@ -1,10 +1,10 @@
 package org.ferris.anw.legacy.model;
 
-import org.ferris.anw.legacy.competition.CompetitionDate;
 import java.sql.Date;
 import java.time.LocalDate;
 import java.util.Arrays;
 import java.util.List;
+import org.ferris.anw.legacy.competition.CompetitionDate;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
@@ -37,6 +37,25 @@ public class CompetitionDateTest {
         );
     }
     
+    @Test
+    public void csna001() 
+    {
+        // CSNA date format: 9/20/2025
+        
+        // Sep - Dec
+        for (int i=9; i<=12; i++) {
+            CompetitionDate d = CompetitionDate.parse(String.format("%d/20/2025", i));
+            Assertions.assertEquals(firstHalf("%d-%02d-20", i), d.getBegin());
+            Assertions.assertNull(d.getEnd());
+        }
+        
+        // Jan - Aug
+        for (int i=1; i<=8; i++) {
+            CompetitionDate d = CompetitionDate.parse(String.format("%d/20/2025", i));
+            Assertions.assertEquals(secondHalf("%d-%02d-20", i), d.getBegin());
+            Assertions.assertNull(d.getEnd());
+        }
+    }
     
     @Test
     public void unaa023() 
@@ -615,7 +634,7 @@ public class CompetitionDateTest {
         // "November 2-3, 2024";
         
         // Sep - Dec
-        for (int i=10; i<=12; i++) {
+        for (int i=9; i<=12; i++) {
             CompetitionDate d = parse("%s 2-3, 2024", m1.get(i));
             Assertions.assertEquals(firstHalf("%d-%02d-02", i), d.getBegin());
             Assertions.assertEquals(firstHalf("%d-%02d-03", i), d.getEnd());

@@ -16,6 +16,12 @@ public class CompetitionDate {
     
     private static final DateTimeFormatter formatter
         = DateTimeFormatter.ofPattern("M/d/yyyy");
+    
+    private static final Pattern traditionalUsDatePattern
+        = Pattern.compile("^(0?[1-9]|1[0-2])/(0?[1-9]|[12][0-9]|3[01])/[0-9]{4}$");
+    
+    private static final Pattern getJustTheNumbersPattern
+        = Pattern.compile("\\b(?!\\d{4})\\d{1,2}\\b");
 
     private Date begin;
     private Date end;
@@ -62,7 +68,7 @@ public class CompetitionDate {
         // Parse the token, looking for competition dates. There
         // should be at least 1 but maybe 2. There should never be
         // zero or more than 2.
-        List<Integer> competitionDates = parseCompetitionDates(token);
+        List<Integer> competitionDates = parseCompetitionDays(token);
         
         
         // Create the object to store the start/end dates.
@@ -114,18 +120,33 @@ public class CompetitionDate {
      * @param token
      * @return 
      */
-    private static List<Integer> parseCompetitionDates(String token)
+    private static List<Integer> parseCompetitionDays(String token)
     {
-        // This regex pattern will capture just the numbers
-        // May 8     // 8 will be captured
-        // May 8-10  // 8 and 10 will be captured
-        Pattern p = Pattern.compile("\\b(?!\\d{4})\\d{1,2}\\b");
-        Matcher m = p.matcher(token);
+        // List to store the days
         List<Integer> numbers = new LinkedList<>();
-        while (m.find()) {
-            numbers.add(Integer.valueOf(m.group()));
+        
+        // Try to match a traditional US date format.
+        //  Ex: 9/15/2025
+        if (numbers.isEmpty())
+        {
+            Matcher m = traditionalUsDatePattern.matcher(token);
+            if (m.matches()) {
+                numbers.add(Integer.valueOf(m.group(2)));
+            }
+        }
+                    
+        // Try to capture just the numbers
+        //  Ex: May 8     // 8 will be captured
+        //  Ex: May 8-10  // 8 and 10 will be captured
+        if (numbers.isEmpty())
+        {        
+            Matcher m = getJustTheNumbersPattern.matcher(token);
+            while (m.find()) {
+                numbers.add(Integer.valueOf(m.group()));
+            }
         }
         
+        // Did we find any days?
         if (numbers.isEmpty()) {
             throw new RuntimeException(String.format("Cannot determine competitionDates from token \"%s\"", token));
         }
@@ -227,6 +248,14 @@ public class CompetitionDate {
 
             default -> -1;
         };
+        
+        if (competitionMonth == -1) {
+            Matcher m = traditionalUsDatePattern.matcher(token);
+            if (m.matches()) {
+                competitionMonth = Integer.valueOf(m.group(1));
+            }
+        }
+        
         if (competitionMonth == -1) {
             throw new RuntimeException(String.format("Cannot determine competitionMonth for \"%s\"", token));
         }
