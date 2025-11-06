@@ -22,12 +22,6 @@ import java.util.stream.Collectors;
  */
 public class GymRecordParser {
     
-    private GymRepository gymRepository;
-            
-    public GymRecordParser(GymRepository gymRepository) {
-        this.gymRepository = gymRepository;
-    }
-    
     public Path getFilePath() {
         return Paths.get("./import/gyms/gyms.txt");
     }

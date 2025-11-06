@@ -1,6 +1,8 @@
 
 package org.ferris.anw.legacy.gym;
 
+import java.net.URLEncoder;
+import java.nio.charset.StandardCharsets;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -52,6 +54,76 @@ public class GymRepository {
         """);
         stmt.setString(1, name);
         stmt.setString(2, name);
+        return stmt;
+    }
+    public int insert(GymRecord gym) {
+        try (
+            PreparedStatement stmt = insertStatement(gym);
+        ){
+            return stmt.executeUpdate();
+        } catch (Exception e) {
+            throw new RuntimeException("ERROR inserting gym", e);
+        }
+    }
+    private PreparedStatement insertStatement(GymRecord gym) throws Exception {
+        PreparedStatement stmt = conn.prepareStatement("""
+            INSERT INTO gyms
+            (
+                  gym_name
+                , gym_website
+                , gym_address_google_map
+                , gym_drive_hours
+                , gym_drive_minutes
+                , gym_address1
+                , gym_city
+                , gym_state
+                , gym_zipcode
+                , gym_country                                                                                                                                                                                                                                   
+            )
+            VALUES
+            (
+                    ?
+                  , ?
+                  , ?
+                  , ?
+                  , ?
+                  , ?
+                  , ?
+                  , ?
+                  , ?
+                  , ?                                                                                                                                                                                                                                   
+            )
+        """);
+        int x=0;        
+        // gym_name
+        stmt.setString(++x, gym.getName());
+        
+        // gym_website
+        stmt.setString(++x, gym.getName()+"#"+gym.getWebsite()+"#");
+        
+        // gym_address_google_map
+        stmt.setString(++x, gym.getCity()+", "+gym.getState()+"#"+"https://www.google.com/maps/dir/2270+Birmingham+Drive,+Belleville,+IL+62221-7996,+USA/"+URLEncoder.encode(gym.getFullAddress(), StandardCharsets.UTF_8)+"#");
+        
+        // gym_drive_hours
+        stmt.setInt(++x, gym.getDriveHours());
+        
+        // gym_drive_minutes
+        stmt.setInt(++x, gym.getDriveMinutes());
+        
+        // gym_address1
+        stmt.setString(++x, gym.getAddress());
+        
+        // gym_city
+        stmt.setString(++x, gym.getCity());
+        
+        // gym_state
+        stmt.setString(++x, gym.getState());
+        
+        // gym_zipcode
+        stmt.setString(++x, gym.getZip());
+        
+        // gym_country         
+        stmt.setString(++x, gym.getCountry());
         return stmt;
     }
     

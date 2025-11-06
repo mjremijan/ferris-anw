@@ -1,6 +1,7 @@
 package org.ferris.anw.legacy.gym;
 
 import java.util.List;
+import java.util.concurrent.atomic.AtomicInteger;
 import org.ferris.anw.legacy.sql.ConnectionToRepository;
 
 /**
@@ -18,57 +19,25 @@ public class GymRecordMain {
         banner("Welcome to GymRecord Main"); 
         
         banner("GymRecord Processing");
+        
         // Create the parser
         GymRecordParser parser 
-            = new GymRecordParser(new GymRepository(new ConnectionToRepository()));
-        
-//        // Create the Repository
-//        CompetitionRepository competitionRepository 
-//            = new CompetitionRepository(new ConnectionToRepository());
+            = new GymRecordParser();
         
         // Parse the data, getting the usable data
         List<GymRecord> gyms 
-            = parser.parse();
+            = parser.parse();        
+        System.out.printf("%d gyms loaded total%n", gyms.size());
         
-        System.out.printf("%d Gyms  total%n", gyms.size());
-        
-//        // Find competitions that are ready to load
-//        List<Competition> competitionsReadyForLoading = competitions.stream()
-//            .filter(c -> c.isGymFoundInTheDatabase())
-//            .collect(Collectors.toList())
-//        ;
-//        System.out.printf("%d FINA competitions ready to load%n", competitionsReadyForLoading.size());
-//        
-//        
-//        // Find competitions that have gyms missing from the database
-//        List<Competition> competitionsWithGymsMissingInTheDatabase = competitions.stream()
-//            .filter(c -> c.isGymNotFoundInTheDatabase())
-//            .collect(Collectors.toList())
-//        ;
-//        System.out.printf("%d FINA competitions missing gym data%n", competitionsWithGymsMissingInTheDatabase.size());
-//        
-//        
-//        banner("FINA Competitions Loading...");
-//        competitionRepository.load(competitionsReadyForLoading);
-//        
-//        banner("FINA Competitions Vacuuming...");
-//        int deleted = competitionRepository.vacuum(competitions.stream()
-//            .map(c -> c.getCompetitionType())
-//            .distinct()
-//            .collect(Collectors.toList())
-//        );
-//        System.out.printf("%d competitions have been vacuumed.%n", deleted);
-//        
-//        
-//        banner("FINA Competitions missing gym database data");
-//        if (competitionsWithGymsMissingInTheDatabase.isEmpty()) {
-//            System.out.printf("NONE%n");
-//        } else {
-//            competitionsWithGymsMissingInTheDatabase.stream()
-//                .forEach(c -> System.out.printf("%s%n", c)
-//            );
-//        }
-        
+        // Create the repository
+        GymRepository repo 
+            = new GymRepository(new ConnectionToRepository());
+         
+        // Loop and save the gym data
+        AtomicInteger cnt = new AtomicInteger();
+        gyms.stream().forEach(g -> cnt.addAndGet(repo.insert(g)));
+        System.out.printf("%d gyms inserted total%n", cnt.get());
+    
         banner("Done");
     }
     
