@@ -2,160 +2,160 @@
 		
 		
 		
-1		
+564	No	
+566	No	
+962	No	
+567	No	
 		
 		
-13	Yes	Yes
-15		
-16	Yes	Yes
-18		
-21		
-2		
-22		
-298		
-299		
-300		
+574	No	
+578	No	
+575	No	
+963	No	
+580	No	
+582	No	
+660	No	
+744	No	
+745	No	
+964	No	
 		
 		
-		
-306		
-303		
-23		
-24		
-28		
-312		
-311		
-308		
-3		
-344		
-4		
-315		
-29		
-31		
-30		
-		
-		
-		
-324		
-35		
-34		
-5		
-37	Yes	Yes
-36	Yes	Yes
-329		
-330		
-42		
-43		
+591	No	
+750	No	
+751	No	
+593	No	
+753	No	
+752	No	
+596	No	
+754	No	
+755	No	
+664	No	
+965	No	Symphony
+766	No	Symphony
+767	No	Symphony
+602	No	Symphony
+739	No	Symphony
+774	No	Retirement 
+775	No	Retirement 
+609	No	Retirement 
+773	No	Retirement 
+772	No	Retirement 
+611	No	
 		
 		
-		
-		
-333	Yes	Yes
-46		
-51		
-334		
-59		
-6		
-336		
-338		
-62		
-341		
-64		
-343		
-292	Yes	Yes
+790	No	Birthday
+789	No	Birthday
+784	No	Birthday
+924	No	Birthday
+925	No	Birthday
+726	No	Birthday
+667	No	Birthday
+612	No	Birthday
+927	No	Birthday
+966	No	Dress Rehsl
+797	No	Dress Rehsl
+930	No	Dress Rehsl
+672	No	Dress Rehsl
+616	No	Dress Rehsl
+802	No	Too far
+803	No	Too far
 		
 		
 		
-142	Evelyn's bday party	
-141	Evelyn's bday party	
-150	Kelly KC	
-149	Kelly KC	
-251	Kelly KC	
-254	Kelly KC	
-7	Church auditions	
-259	Valentine's Trattoria	
-256	Valentine's Trattoria	
-8	Yes	Yes
-166	Daddy daughter dance	
-165	Daddy daughter dance	
-263	Daddy daughter dance	
-163	Daddy daughter dance	
-164	Daddy daughter dance	
+807	No	#2
+806	No	#2
+804	No	Too far
+805	No	Too far
+931	No	Too far
+932	No	Too far
+619	Yes	
+620	No	Other comp
+967	No	Other comp
+817	No	#2
+818	No	#2
+933	No	Rascal Flatts
+934	No	Rascal Flatts
+656	No	Rascal Flatts
+968	No	Fashn show
+677	No	Fashn show
+825	No	Too far
+826	No	Too far
+827	No	Too far
+828	No	Too far
+625	No	Too far
+833	Yes	
+834	Yes	
+730	No	Other comp
+628	No	Other comp
+831	No	Other comp
+832	No	Other comp
+626	No	Other comp
+627	No	Other comp
 		
 		
-		
-135	Church Conference	
-366	Church Conference	
-174	Church Conference	
-173	Church Conference	
-370	x	
-127	Yes	Yes
-129	x	
-130	x	
-131	x	
-138	x	
-177	x	
-179	x	
-178	x	
-273	x	
-180	x	
-181	x	
-277	Glo Bingo	
-76	Glo Bingo	
-9	x	
-284	x	
-285	x	
+634	No	Food & wine
+632	No	Food & wine
+631	No	Food & wine
+969	No	Food & wine
+838	No	#2
+837	No	#2
+680	Maybe	
+944	No	Too far
+945	No	Too far
+732	No	Too far
+845	No	Too far
+844	No	Too far
+846	No	Too far
+847	No	Too far
+642	No	Too far
+970	Yes	
+851	No	Other comp
+850	No	Other comp
 		
 		
+854	No	Too far
+855	No	Too far
+952	No	Too far
+953	No	Too far
+690	Maybe	Regional
+864	No	#2
+865	No	#2
+869	No	#2
+868	No	#2
+870	No	#2
+871	No	#2
+686	Maybe	
+879	No	#3
+878	No	#3
+971	No	Other comp
+685	No	Other comp
+882	No	#3
+883	No	#3
 		
 		
-389	Doll & Me	
-390	Doll & Me	
-420	x	
-421	x	
-82	x	
-413	x	
-412	x	
-404	x	
-201	Yes	Yes 03/25/2025
-84	x	
-85	Yes	Yes 03/26/2025
-203	x	
-202	x	
-71	x	
-10	x	
-11	John's burial	
-205	John's burial	
-204	John's burial	
-87	John's burial	
+896	No	#3
+895	No	#3
+892	Maybe	
+891	Maybe	
+735	No	Too far
+972		
+899		
+900		
+695		
+698		
+973	Yes	
 		
 		
+702		
+699		
+706		
+689	Yes	
+707		
+974	No	Not qualified
+712		
 		
 		
+716		
+719		
+720		
 		
-90	Church	
-92	Church	
-212	Church	
-213	Church	
-214	Church	
-215	Church	
-217	Church	
-220	Not qualified	
-221	Not qualified	
-218	Not qualified	
-219	Not qualified	
-231	Not qualified	
-230	Not qualified	
-100	Yes	Yes
-105	Too far	
-110	Anniversary	
-242	Not qualified	
-241	Not qualified	
-		
-		
-		
-		
-73	Vacation	
-113	Vacation	
-114	Vacation	
-117	Vacation	
