@@ -1,4 +1,4 @@
-package org.ferris.anw.legacy.attendance;
+package org.ferris.anw.legacy.seasonplanner;
 
 import java.io.FileOutputStream;
 import org.apache.poi.ss.usermodel.Cell;
@@ -17,7 +17,7 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
  *
  * @author Michael
  */
-public class AttendanceReport {
+public class SeasonPlannerReport {
 
     public static void main(String[] args) {
         try (Workbook workbook = new XSSFWorkbook()) {
