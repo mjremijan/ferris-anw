@@ -1,2 +1,7 @@
 #name, website, address, city, state, zip, country
-Remijan Ninja, https://kellyandmichaelremijan.com, 644 N. Broadway, Park Ridge, IL, 60068	
+#Remijan Ninja, https://kellyandmichaelremijan.com, 644 N. Broadway, Park Ridge, IL, 60068
+Rocket City Ninja Obstacle Academy, https://ninjaobstacleacademy.com/, 2316 B Memorial Pkwy NW, Huntsville, AL, 35810 
+Ultimate Ninjas - Chicago, https://ultimateninjas.com/location/chicago/, 2925-2915 W Montrose Ave, Chicago, IL, 60618
+Parkinetic's Playground,https://parkinetics.com/, 5315 Oak Crest Hill Rd SE #203, Hills, IA, 52235
+Champion Gymnastics Ann Arbor, https://www.champgymaa.com/, 2362 Bishop Cir E, Dexter, MI, 48130
+USA Ninja Challenge - Norton, https://ninjanorton.com/, 175 Mansfield Ave, Norton, MA, 02766
