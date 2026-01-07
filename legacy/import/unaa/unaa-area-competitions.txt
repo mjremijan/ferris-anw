@@ -60,11 +60,9 @@ Move Sport Ninja Academy	Texas	December 13th
 Hit Squad Ninjas	Arizona	December 12 (7U) - 13th (9U - Pro)
 StricklyNinjas	Georgia	December 13 - 14th
 Altitude Movement Gym	Colorado	December 14th
-Paragon Performance Sports	Kansas	December 20th
 Ninja Republic	California	December 20th
 Sterling Gym	Massachusetts	December 20th
 Flow Vault	Colorado	January 3rd Youth Qualifier and January 4th Teen+ Qualifier.
-Conxion Gym	Mississippi	January 10th
 Next Level Gym	Oklahoma	January 10th
 Power Pickle	Texas	January 10th
 SOFLO Ninja Academy	Florida	January 10th
@@ -72,15 +70,18 @@ USA Ninja Challenge-Manchester	New Hampshire	January 10 - 11th (Only 17 & Under)
 Rocket City Ninja Obstacle Academy	Alabama	January 17th
 Altius Ninja	Wisconsin	January 18th
 PR Ninja Warrior	Puerto Rico	January 18th
+Conquer Ninja Gym - Bedford	Texas	January 18th
 Get Over It Fitness	Tennessee	January 24th
-Ultimate Ninjas - Chicago	Illinois	January 24th
+Ultimate Ninjas - Chicago	Illinois	January 25th
 Camp Rhino	Nevada	January 24 - 25th
 Ark Ninja	Colorado	January 24 - 25th
 Surge Ninja - Peabody	Massachusetts	January 24 - 25th
 Apex Ninja Warrior	Texas	January 25th
 USA Ninja Challenge - Woodstock	Georgia	January 25th (Only 17 & Under)
+USA Ninja Challenge - Greenbrier	Virginia	January 25th (Only 17 & Under)
 Tri County	Michigan	January 31st
 The Jungle Movement Academy	Texas	January 31st
+USA Ninja Challenge - Bristol	Virginia	January 31st
 Ninjobstacles	Ohio	January 31 - February 1st
 605 Ninja	South Dakota	January 31 - February 1st
 The Training Lab	Indiana	January 31 - February 1st (17 & Under Only)
@@ -90,7 +91,6 @@ WISC Ninja Warrior	Virginia	February 7th
 Authentik Movement Training	Ohio	February 7th
 Camp Ninja Warrior	Oklahoma	February 7th
 Iron Sports Ninja Warrior	Texas	February 7th
-ORTHDX	Wisconsin	February 7th
 Ultimate Ninjas - Anaheim Hills	California	February 7th
 USA Ninja Challenge - Marlborough	Massachusetts	February 7 - 8th (Up to 17-year-olds)
 Ninja Lair	Nevada	February 14th
@@ -101,6 +101,7 @@ AHW Training	New Jersey	February 20th
 The Wolfs Den	California	February 21st
 Samurai Athletics	Oklahoma	February 21st
 Ninja Quest Adventures	Washington	February 21st
+The Zone	South Carolina	February 21st
 Impact Ninja Gym	Utah	February 20 - 21st
 Conquer Gym - Goodyear	Arizona	February 21 - 22nd
 Conquer Ninja Gyms - Rosemount	Minnesota	February 21 - 22nd
@@ -108,7 +109,6 @@ Sumner Ninja	Washington	March 14th
 West River Ninja	South Dakota	March 14th
 Parkinetic's Playground	Iowa	March 14th
 Go Ninja	California	March 14th
-Rocket City Ninja Obstacle Academy	Alabama	March 14th
 Ascend Obstacle Training	Massachusetts	March 14 - 15th
 Conquer Gym - Fargo	North Dakota	March 14 - 15th
 Free Spirit	Oregon	March 15th
@@ -116,6 +116,7 @@ Altitude Movement Gym	Colorado	March 15th
 Champion Gymnastics Ann Arbor	Michigan	March 15th
 USA Ninja Challenge - Stafford	Virginia	March 15 -16th
 Permian Basin Ninja Academy	Texas	March 21st
+Forest Flyers	Michigan	March 21st
 Rapt Ninja	Massachusetts	March 21 - 22nd
 Warrior Zone Ninja Obstacle Center	North Carolina	March 21 - 22nd
 WISC Ninja Warrior	Virginia	March 28th
@@ -127,5 +128,6 @@ Magic City Gymnastics	Montana	March 28th
 USA Ninja Challenge - Norton	Massachusetts	March 28th
 USA Ninja Challenge-Manchester	New Hampshire	March 28-29th ( Under 17)
 Bodies In Motion	Idaho	Aprill 11th
+Vertex Lab Academy	Virginia	Aprill 11 - 12th
 Rock Solid Warrior - Fuquay	North Carolina	April 18th
-The Barn	Illinois	May 16 - 17th (Direct to Finals Qualifier)
+The Barn	Illinois	May 25th (Direct to Finals Qualifier)

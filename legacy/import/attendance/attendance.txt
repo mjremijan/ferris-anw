@@ -46,8 +46,6 @@
 790	No	Birthday
 789	No	Birthday
 784	No	Birthday
-924	No	Birthday
-925	No	Birthday
 726	No	Birthday
 667	No	Birthday
 612	No	Birthday
@@ -55,10 +53,12 @@
 966	No	Dress Rehsl
 797	No	Dress Rehsl
 930	No	Dress Rehsl
-672	No	Dress Rehsl
 616	No	Dress Rehsl
+977		
+994		
 802	No	Too far
 803	No	Too far
+		
 		
 		
 		
@@ -66,22 +66,25 @@
 806	No	#2
 804	No	Too far
 805	No	Too far
-931	No	Too far
-932	No	Too far
-619	Yes	
+619	No	Rescheduled (Mar)
+997	No	Other comp
 620	No	Other comp
+995	No	Other comp
+996	No	Other comp
 967	No	Other comp
-817	No	#2
 818	No	#2
-933	No	Rascal Flatts
+817	No	#2
 934	No	Rascal Flatts
+933	No	Rascal Flatts
+988		
 656	No	Rascal Flatts
 968	No	Fashn show
 677	No	Fashn show
-825	No	Too far
+989		
 826	No	Too far
-827	No	Too far
+825	No	Too far
 828	No	Too far
+827	No	Too far
 625	No	Too far
 833	Yes	
 834	Yes	
@@ -93,33 +96,43 @@
 627	No	Other comp
 		
 		
+		
 634	No	Food & wine
 632	No	Food & wine
 631	No	Food & wine
 969	No	Food & wine
-838	No	#2
+998		
+999		
 837	No	#2
+838	No	#2
 680	Maybe	
-944	No	Too far
+1012		
+1011		
 945	No	Too far
+944	No	Too far
 732	No	Too far
-845	No	Too far
 844	No	Too far
-846	No	Too far
+845	No	Too far
 847	No	Too far
+846	No	Too far
 642	No	Too far
 970	Yes	
+1003		
+1004		
+1002		
 851	No	Other comp
 850	No	Other comp
 		
 		
-854	No	Too far
 855	No	Too far
-952	No	Too far
-953	No	Too far
+854	No	Too far
+990		
 690	Maybe	Regional
-864	No	#2
 865	No	#2
+991		
+1006		
+1005		
+992		
 869	No	#2
 868	No	#2
 870	No	#2
@@ -129,15 +142,18 @@
 878	No	#3
 971	No	Other comp
 685	No	Other comp
-882	No	#3
 883	No	#3
+882	No	#3
 		
 		
-896	No	#3
+		
 895	No	#3
+896	No	#3
 892	Maybe	
 891	Maybe	
 735	No	Too far
+1008		
+1007		
 972		
 899		
 900		
