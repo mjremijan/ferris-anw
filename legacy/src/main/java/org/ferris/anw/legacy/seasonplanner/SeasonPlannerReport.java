@@ -19,12 +19,12 @@ import org.apache.poi.ss.usermodel.Hyperlink;
 import org.apache.poi.ss.usermodel.IndexedColors;
 import org.apache.poi.ss.usermodel.PatternFormatting;
 import org.apache.poi.ss.usermodel.Row;
-import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.SheetConditionalFormatting;
 import org.apache.poi.ss.usermodel.VerticalAlignment;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.util.CellRangeAddress;
 import org.apache.poi.xssf.usermodel.XSSFColor;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 /**
@@ -34,7 +34,7 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 public class SeasonPlannerReport {
 
     protected Workbook workbook;
-    protected Sheet sheet;
+    protected XSSFSheet sheet;
     protected CreationHelper helper;
     protected int rowIndex;
     
@@ -48,7 +48,7 @@ public class SeasonPlannerReport {
     
     public SeasonPlannerReport() {
         workbook = new XSSFWorkbook();
-        sheet = workbook.createSheet("Sheet1");
+        sheet = (XSSFSheet)workbook.createSheet("Sheet1");
         helper = workbook.getCreationHelper();
         
         rowIndex = -1;
@@ -65,6 +65,9 @@ public class SeasonPlannerReport {
     
     protected void defaultStyle() {
         defaultStyle = workbook.createCellStyle();
+        Font font = workbook.createFont();
+        font.setFontName("Calibri");
+        defaultStyle.setFont(font);
     }
     
     
@@ -144,6 +147,11 @@ public class SeasonPlannerReport {
     protected void autoSize() {
         for (int i=0; i<headers.size(); i++) {
             sheet.autoSizeColumn(i);
+        }
+        
+        for (int i=0; i<headers.size(); i++) {
+            int width = sheet.getColumnWidth(i);
+            sheet.setColumnWidth(i, width + (512*2));
         }
     }
     
