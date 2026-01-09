@@ -6,67 +6,83 @@ package org.ferris.anw.legacy.seasonplanner;
  */
 class SeasonPlannerComp {
     
+    protected int year;
     public int getYear() {
-        return 2025;
+        return year;
     }
     
+    protected String month;
     public String getMonth() {
-        return "September";
+        return month;
     }
     
+    protected String dateStart;
     public String getDateStart() {
-        return "09/06 Sat";
+        return dateStart;
     }
     
+    protected String dateEnd;
     public String getDateEnd() {
-        return "09/07 Sun";
+        return dateEnd;
     }
     
+    protected int id;
     public int getId() {
-        return 143;
+        return id;
     }
     
+    protected String planned;
     public String getPlanned() {
-        return "Yes";
+        return planned;
     }
     
+    protected String registered;
     public String getRegistered() {
-        return "Yes";
+        return registered;
     }
     
+    protected String league;
     public String getLeague() {
-        return "UNAA Season 11";
+        return league;
     }
     
+    protected String type;
     public String getType() {
-        return "Area Qualifier";
+        return type;
     }
     
+    protected String gymName;
     public String getGymName() {
-        return "Conquer Gym";
+        return gymName;
     }
     
+    protected String gymLink;
     public String getGymLink() {
-        return "https://www.google.com";
+        return gymLink;
     }
     
+    protected String drive;
     public String getDrive() {
-        return "8h 22m";
+        return drive;
     }
     
+    protected String cityState;
     public String getCityState() {
-        return "Woodbury, MN";
+        return cityState;
     }
     
+    protected String cityStateLink;
     public String getCityStateLink() {
-        return "https://maps.google.com";
+        return cityStateLink;
     }
     
+    protected String hotel;
     public String getHotel() {
-        return "Super 8";
+        return hotel;
     }
     
+    protected String hotelLink;
     public String getHotelLink() {
-        return "https://www.super8.com";
+        return hotelLink;
     }
 }

@@ -141,7 +141,7 @@ public class SeasonPlannerReport {
         }
     }
     
-    protected void addCom(SeasonPlannerComp comp) {
+    protected void addComp(SeasonPlannerComp comp) {
         addYear(comp.getYear());
         addMonth(comp.getMonth());
         
