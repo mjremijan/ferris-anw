@@ -22,6 +22,7 @@ public class SeasonPlannerReport {
     public static void main(String[] args) {
         try (Workbook workbook = new XSSFWorkbook()) {
             Sheet sheet = workbook.createSheet("Sheet1");
+            
             // Hello world
             {
                 Row row = sheet.createRow(0);
