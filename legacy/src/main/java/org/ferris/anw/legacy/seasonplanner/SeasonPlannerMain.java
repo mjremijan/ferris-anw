@@ -6,11 +6,11 @@ import java.io.FileOutputStream;
  *
  * @author Michael
  */
-public class ReportMain {
+public class SeasonPlannerMain {
 
     public static void main(String[] args) throws Exception {
-        Report report = new Report();
-        report.addCom(new Comp());
+        SeasonPlannerReport report = new SeasonPlannerReport();
+        report.addCom(new SeasonPlannerComp());
         report.autoSize();
         report.write(new FileOutputStream("report.xlsx"));
     }

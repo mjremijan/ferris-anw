@@ -4,7 +4,7 @@ package org.ferris.anw.legacy.seasonplanner;
  *
  * @author Michael
  */
-class Comp {
+class SeasonPlannerComp {
     
     public int getYear() {
         return 2025;
