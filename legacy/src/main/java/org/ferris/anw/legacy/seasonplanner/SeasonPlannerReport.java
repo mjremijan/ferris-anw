@@ -42,6 +42,7 @@ public class SeasonPlannerReport {
     protected List<Integer> years;
     protected List<String> months; 
     
+    protected CellStyle defaultStyle;
     protected CellStyle boldGreyStyle;
     protected CellStyle hyperlinkStyle;
     
@@ -55,10 +56,15 @@ public class SeasonPlannerReport {
         years = new LinkedList<>();
         months = new LinkedList<>();
         
+        defaultStyle();
         boldGreyStyle();
         hyperlinkStyle();
         conditionalFormattingRules();
         addHeader();
+    }
+    
+    protected void defaultStyle() {
+        defaultStyle = workbook.createCellStyle();
     }
     
     
@@ -151,36 +157,43 @@ public class SeasonPlannerReport {
         {
             Cell cell = row.createCell(colIdx++);
             cell.setCellValue(comp.getDateStart());
+            cell.setCellStyle(defaultStyle);
         }
         // Date end
         {
             Cell cell = row.createCell(colIdx++);
             cell.setCellValue(comp.getDateEnd());
+            cell.setCellStyle(defaultStyle);
         }
         // #ID
         {
             Cell cell = row.createCell(colIdx++);
             cell.setCellValue(comp.getId());
+            cell.setCellStyle(defaultStyle);
         }
         // Planned
         {
             Cell cell = row.createCell(colIdx++);
             cell.setCellValue(comp.getPlanned());
+            cell.setCellStyle(defaultStyle);
         }
         // Registered
         {
             Cell cell = row.createCell(colIdx++);
             cell.setCellValue(comp.getRegistered());
+            cell.setCellStyle(defaultStyle);
         }
         // League
         {
             Cell cell = row.createCell(colIdx++);
             cell.setCellValue(comp.getLeague());
+            cell.setCellStyle(defaultStyle);
         }
         // Type
         {
             Cell cell = row.createCell(colIdx++);
             cell.setCellValue(comp.getType());
+            cell.setCellStyle(defaultStyle);
         }
         // Gym
         {
@@ -195,6 +208,7 @@ public class SeasonPlannerReport {
         {
             Cell cell = row.createCell(colIdx++);
             cell.setCellValue(comp.getDrive());
+            cell.setCellStyle(defaultStyle);
         }
         // Location
         {
@@ -209,10 +223,14 @@ public class SeasonPlannerReport {
         {
             Cell cell = row.createCell(colIdx++);
             cell.setCellValue(comp.getHotel());
-            Hyperlink link = helper.createHyperlink(HyperlinkType.URL);
-            link.setAddress(comp.getHotelLink());
-            cell.setHyperlink(link);
-            cell.setCellStyle(hyperlinkStyle);
+            if (comp.getHotel().isEmpty()) {
+                cell.setCellStyle(defaultStyle);
+            } else {
+                Hyperlink link = helper.createHyperlink(HyperlinkType.URL);
+                link.setAddress(comp.getHotelLink());
+                cell.setHyperlink(link);
+                cell.setCellStyle(hyperlinkStyle);
+            }
         }
     }
     
