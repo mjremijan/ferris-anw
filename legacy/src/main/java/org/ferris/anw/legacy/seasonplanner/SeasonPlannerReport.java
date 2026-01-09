@@ -1,7 +1,8 @@
 
 package org.ferris.anw.legacy.seasonplanner;
 
-import java.io.OutputStream;
+import java.io.FileOutputStream;
+import java.util.Collections;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.stream.IntStream;
@@ -23,6 +24,7 @@ import org.apache.poi.ss.usermodel.SheetConditionalFormatting;
 import org.apache.poi.ss.usermodel.VerticalAlignment;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.util.CellRangeAddress;
+import org.apache.poi.ss.util.RegionUtil;
 import org.apache.poi.xssf.usermodel.XSSFColor;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
@@ -271,12 +273,18 @@ public class SeasonPlannerReport {
         
         Row row = sheet.createRow(nextRowIndex());
         // The default row height in Excel is 12.75 points
-        row.setHeightInPoints(12.75f * 2.0f);
+        //row.setHeightInPoints(12.75f * 2.0f);
+        row.setHeightInPoints(13f * 2.0f);
         Cell cell = row.createCell(0);
         cell.setCellValue(String.valueOf(year));
         cell.setCellStyle(copyStyle);
         // Merge cels from row 3 column 1 to row 3 column 3.
-        sheet.addMergedRegion(new CellRangeAddress(getRowIndex(), getRowIndex(), 0, headers.size()-1));
+        CellRangeAddress region
+            = new CellRangeAddress(getRowIndex(), getRowIndex(), 0, headers.size()-1);
+        sheet.addMergedRegion(region);
+        RegionUtil.setBorderBottom(BorderStyle.THIN, region, sheet);
+        RegionUtil.setBottomBorderColor(IndexedColors.WHITE.getIndex(), region, sheet);
+        
     }
     
     protected void addHeader() {
@@ -284,7 +292,7 @@ public class SeasonPlannerReport {
         CellStyle copyStyle = workbook.createCellStyle();
         copyStyle.cloneStyleFrom(boldGreyStyle);
         //copyStyle.setBorderTop(BorderStyle.THIN);
-        //copyStyle.setBorderBottom(BorderStyle.THIN);
+        copyStyle.setBorderBottom(BorderStyle.THIN);
         //copyStyle.setBorderLeft(BorderStyle.THIN);
         copyStyle.setBorderRight(BorderStyle.THIN);
         copyStyle.setAlignment(HorizontalAlignment.CENTER);
@@ -296,6 +304,7 @@ public class SeasonPlannerReport {
                 cell.setCellStyle(copyStyle);
             }
         );
+        sheet.createFreezePane(0, 1);
     }
     
     protected int getRowIndex() {
@@ -306,7 +315,11 @@ public class SeasonPlannerReport {
         return ++rowIndex;
     }
     
-    protected void write(OutputStream os) throws Exception {
-        workbook.write(os);
+    protected void write(String directory) throws Exception {
+        String min = String.valueOf(Collections.min(years));
+        String max = String.valueOf(Collections.max(years)).substring(2);
+        workbook.write(
+            new FileOutputStream(directory + "/" + String.format("ANW Season Planner (%s-%s).xlsx",min,max) )
+        );
     }
 }

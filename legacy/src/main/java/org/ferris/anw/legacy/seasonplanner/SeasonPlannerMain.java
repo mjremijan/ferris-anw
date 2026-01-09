@@ -1,6 +1,5 @@
 package org.ferris.anw.legacy.seasonplanner;
 
-import java.io.FileOutputStream;
 import org.ferris.anw.legacy.sql.ConnectionToRepository;
 
 /**
@@ -22,7 +21,9 @@ public class SeasonPlannerMain {
             = new SeasonPlannerRepository(new ConnectionToRepository()).getReport();
         
         banner("Saving Report...");
-        report.write(new FileOutputStream("D:\\Desktop\\ANW Season Planner.xlsx"));
+        report.write(
+            "C:\\Users\\Michael\\OneDrive\\Documents\\American Ninja Warrior (ANW)"
+        );
         
         banner("Done");
     }
