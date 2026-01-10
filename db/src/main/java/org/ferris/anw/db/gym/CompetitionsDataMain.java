@@ -35,6 +35,9 @@ public class CompetitionsDataMain {
         // gym_name
         stmt.setString(++x, rs.getString("gym_name"));
         
+        // begin_date
+        helper.setDate(rs, "begin_date", stmt, ++x);
+        
         // end_date
         helper.setDate(rs, "end_date", stmt, ++x);
         
@@ -54,11 +57,10 @@ public class CompetitionsDataMain {
         helper.setDate(rs, "last_found_on_date", stmt, ++x);
         
         // INSERT
-        System.out.printf("Copying %d%n", rs.getInt("id"));
         if (stmt.executeUpdate() != 1) {
             throw new RuntimeException("ExecuteUpdate not equal to 1");
         } else {
-            System.out.printf("Inserted \"%s\"%n", rs.getString("league"));
+            System.out.printf("Inserted \"%d\"%n", rs.getInt("id"));
         }
     }
     

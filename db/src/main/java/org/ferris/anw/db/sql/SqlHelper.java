@@ -1,11 +1,11 @@
 package org.ferris.anw.db.sql;
 
 import java.sql.Connection;
+import java.sql.Date;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.Types;
-import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -70,11 +70,11 @@ public class SqlHelper {
     
     public void setDate(ResultSet rs, String columnLabel, PreparedStatement stmt, int parameterIndex) throws Exception {
         // YYYY-MM-DD HH:MM:SS -- This is the ISO Standard
-        LocalDate localDate = rs.getDate(columnLabel).toLocalDate();
+        Date d = rs.getDate(columnLabel);
         if (rs.wasNull()) {
             stmt.setNull(parameterIndex, Types.VARCHAR);
         } else {
-            String formatted = localDate.format(DateTimeFormatter.ISO_LOCAL_DATE);
+            String formatted = d.toLocalDate().format(DateTimeFormatter.ISO_LOCAL_DATE);
             stmt.setString(parameterIndex, formatted);
         }
     }
