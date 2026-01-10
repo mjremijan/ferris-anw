@@ -76,9 +76,9 @@ class SeasonPlannerComp {
         return cityStateLink;
     }
     
-    protected String hotel;
+    protected String hotelName;
     public String getHotel() {
-        return hotel;
+        return hotelName;
     }
     
     protected String hotelLink;

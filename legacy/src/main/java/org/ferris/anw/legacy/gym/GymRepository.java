@@ -99,10 +99,10 @@ public class GymRepository {
         stmt.setString(++x, gym.getName());
         
         // gym_website
-        stmt.setString(++x, gym.getName()+"#"+gym.getWebsite()+"#");
+        stmt.setString(++x, gym.getWebsite());
         
         // gym_address_google_map
-        stmt.setString(++x, gym.getCity()+", "+gym.getState()+"#"+"https://www.google.com/maps/dir/2270+Birmingham+Drive,+Belleville,+IL+62221-7996,+USA/"+URLEncoder.encode(gym.getFullAddress(), StandardCharsets.UTF_8)+"#");
+        stmt.setString(++x, "https://www.google.com/maps/dir/2270+Birmingham+Drive,+Belleville,+IL+62221-7996,+USA/"+URLEncoder.encode(gym.getFullAddress(), StandardCharsets.UTF_8));
         
         // gym_drive_hours
         stmt.setInt(++x, gym.getDriveHours());

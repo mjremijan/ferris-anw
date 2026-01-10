@@ -10,77 +10,16 @@
     <artifactId>ferris-anw-db</artifactId>
     <packaging>jar</packaging>
     
-    <properties>
-        <ferris-flywaydb-version>11.2.0</ferris-flywaydb-version>
-        <ferris-derby-version>10.17.1.0</ferris-derby-version>
-        <ferris-junit-version>5.10.2</ferris-junit-version>
-    </properties>
-                
-    <build>
-        <resources>
-            <resource>
-                <directory>src/main/flyway</directory>
-            </resource>
-        </resources>
-        
-        <plugins>
-            <plugin>
-                <groupId>org.flywaydb</groupId>
-                <artifactId>flyway-maven-plugin</artifactId>
-                <version>${ferris-flywaydb-version}</version>
-                <configuration>
-                    <url>jdbc:derby:${project.basedir}\\..\\production\\data\\derby-${ferris-derby-version}\\anw.db;create=true</url>
-                    <!--<url>jdbc:derby:D:\\Development\\projects\\ferris-anw\\db\\target\\junit\\ConnectionTest\\data\\derby-10.17.1.0\\test.db;create=true</url>-->
-                    <user>sa</user>
-                    <password>sa</password>
-                    <locations>classpath:/</locations>
-                    <driver>org.apache.derby.iapi.jdbc.AutoloadedDriver</driver>
-                </configuration>
-                
-                <dependencies>
-                    <dependency>
-                        <groupId>org.flywaydb</groupId>
-                        <artifactId>flyway-database-derby</artifactId>
-                        <version>${ferris-flywaydb-version}</version>
-                    </dependency>
-                    <dependency>
-                        <groupId>org.apache.derby</groupId>
-                        <artifactId>derby</artifactId>
-                        <version>${ferris-derby-version}</version>
-                    </dependency>
-                    <dependency>
-                        <groupId>org.apache.derby</groupId>
-                        <artifactId>derbyshared</artifactId>
-                        <version>${ferris-derby-version}</version>
-                    </dependency>
-                </dependencies>
-            </plugin>
-        </plugins>
-    </build>
     <dependencies>
         <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter-api</artifactId>
-            <version>${ferris-junit-version}</version>
-            <scope>test</scope>
+            <groupId>org.xerial</groupId>
+            <artifactId>sqlite-jdbc</artifactId>
+            <version>3.45.3.0</version>
         </dependency>
         <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter-params</artifactId>
-            <version>${ferris-junit-version}</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter-engine</artifactId>
-            <version>${ferris-junit-version}</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.derby</groupId>
-            <artifactId>derby</artifactId>
-            <version>${ferris-derby-version}</version>
-            <scope>test</scope>
-        </dependency>        
+            <groupId>net.sf.ucanaccess</groupId>
+            <artifactId>ucanaccess</artifactId>
+            <version>4.0.4</version>
+        </dependency>          
     </dependencies>
 </project>

@@ -6,12 +6,12 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Types;
-import java.time.LocalDate;
 import java.util.List;
 import java.util.Optional;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.stream.Collectors;
 import org.ferris.anw.legacy.sql.ConnectionToRepository;
+import org.ferris.anw.legacy.time.ISOLocalDateFormatter;
 
 /**
  *
@@ -93,14 +93,13 @@ public class CompetitionRepository {
         stmt.setString(++x, comp.getGym().getName());
         
         // begin_date
-        stmt.setDate(++x, comp.getCompetitionDate().getBegin());
+        stmt.setString(++x, ISOLocalDateFormatter.format(comp.getCompetitionDate().getBegin()));
         
-        // end_date, 
-        Date endDate = comp.getCompetitionDate().getEnd();
-        if (endDate == null) {
-            stmt.setNull(++x, Types.DATE);
+        // end_date
+        if (comp.getCompetitionDate().getEnd() == null) {
+            stmt.setNull(++x, Types.VARCHAR);
         } else {
-            stmt.setDate(++x, endDate);
+            stmt.setString(++x, ISOLocalDateFormatter.format(comp.getCompetitionDate().getEnd()));
         }
         
         // league
@@ -110,7 +109,7 @@ public class CompetitionRepository {
         stmt.setString(++x, comp.getType());
         
         // last_found_on_date
-        stmt.setDate(++x, Date.valueOf(LocalDate.now()));
+        stmt.setString(++x, ISOLocalDateFormatter.now());
         
         return stmt;
     }
@@ -143,13 +142,13 @@ public class CompetitionRepository {
         // end_date
         Date endDate = w.comp.getCompetitionDate().getEnd();
         if (endDate == null) {
-            stmt.setNull(1, Types.DATE);
+            stmt.setNull(1, Types.VARCHAR);
         } else {
-            stmt.setDate(1, endDate);
+            stmt.setString(1, ISOLocalDateFormatter.format(endDate));
         }
         
         // last_found_on_date
-        stmt.setDate(2, Date.valueOf(LocalDate.now()));
+        stmt.setString(2, ISOLocalDateFormatter.now());
         
         // ID
         stmt.setLong(3, w.id.get());
@@ -202,7 +201,7 @@ public class CompetitionRepository {
                   type = ? 
             """);
         stmt.setString(1, c.getGym().getName());
-        stmt.setDate(2, c.getCompetitionDate().getBegin());
+        stmt.setString(2, ISOLocalDateFormatter.format(c.getCompetitionDate().getBegin()));
         stmt.setString(3, c.getLeague());
         stmt.setString(4, c.getType());
         
@@ -247,7 +246,7 @@ public class CompetitionRepository {
                     last_found_on_date < ?                                 
             """
             );       
-        stmt.setDate(3, Date.valueOf(LocalDate.now()));
+        stmt.setString(3, ISOLocalDateFormatter.now());
         return stmt;
     }
 
