@@ -12,7 +12,7 @@ import java.sql.SQLException;
 public class ConnectionToRepository {
   
     private static final String DB_URL 
-        = "jdbc:ucanaccess://D://Documents//Databases//Access//ANW.accdb";
+        = "jdbc:sqlite:D:/Documents/Databases/SQLite/anw.db";
 
     private static Connection conn;
     static {

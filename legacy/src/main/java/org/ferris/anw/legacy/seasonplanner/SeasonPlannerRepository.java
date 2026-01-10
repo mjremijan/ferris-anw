@@ -1,12 +1,11 @@
 package org.ferris.anw.legacy.seasonplanner;
 
 import java.sql.Connection;
-import java.sql.Date;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
-import java.text.SimpleDateFormat;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+import java.util.Objects;
 import org.ferris.anw.legacy.sql.ConnectionToRepository;
 
 /**
@@ -24,11 +23,10 @@ public class SeasonPlannerRepository {
     public SeasonPlannerReport getReport() {
         try (PreparedStatement stmt = selectStatement(); 
              ResultSet rs = stmt.executeQuery()) 
-        {
-            SimpleDateFormat sdf = new SimpleDateFormat("MM/dd EEE");
-            SimpleDateFormat sdfYear = new SimpleDateFormat("yyyy");
-            SimpleDateFormat sdfMonth = new SimpleDateFormat("MMMM");
-            Pattern urlPattern = Pattern.compile("^(.*?)#(.*?)#");
+        {            
+            DateTimeFormatter sdf = DateTimeFormatter.ofPattern("MM/dd EEE");
+            DateTimeFormatter sdfYear = DateTimeFormatter.ofPattern("yyyy");
+            DateTimeFormatter sdfMonth = DateTimeFormatter.ofPattern("MMMM");
             
             // Build report
             SeasonPlannerReport report = new SeasonPlannerReport();
@@ -36,98 +34,106 @@ public class SeasonPlannerRepository {
             {
                 SeasonPlannerComp comp = new SeasonPlannerComp();
                 // Date start
-                {
-                    comp.dateStart = sdf.format(rs.getDate("Date_Start"));
-                }
                 // Date start year
-                {
-                    comp.year = Integer.parseInt(sdfYear.format(rs.getDate("Date_Start")));
-                }
                 // Date start month name
                 {
-                    comp.month = sdfMonth.format(rs.getDate("Date_Start"));
-                    
+                    LocalDate ldate = LocalDate.parse(rs.getString("begin_date"));
+                    comp.dateStart = sdf.format(ldate);
+                    comp.year = Integer.parseInt(sdfYear.format(ldate));
+                    comp.month = sdfMonth.format(ldate);
                 }                
                 // Date end
                 {
-                    comp.dateEnd = rs.getString("Date_End");
-                    Date d = rs.getDate("Date_End");
+                    String s = rs.getString("end_date");
                     if (rs.wasNull()) {
                         comp.dateEnd = "";
                     } else {
-                        comp.dateEnd = sdf.format(rs.getDate("Date_End"));
+                        comp.dateEnd = sdf.format(LocalDate.parse(s));
                     }
                 }
                 // #ID
                 {
-                    comp.id = rs.getInt("ID");
+                    comp.id = rs.getInt("id");
                 }
                 // Planned
                 {
-                    comp.planned = rs.getString("Planned");
+                    comp.planned = rs.getString("is_attendance_planned");
                 }
                 // Registered
                 {
-                    comp.registered = rs.getString("Registered");
+                    comp.registered = rs.getString("is_registered");
                 }
                 // League
                 {
-                    comp.league = rs.getString("League");
+                    comp.league = rs.getString("league");
                 }
                 // Type
                 {
-                    comp.type = rs.getString("Type");
+                    comp.type = rs.getString("type");
                 }
                 // Gym
                 {
-                    String val = rs.getString("Gym");
+                    String s;
+                    s = rs.getString("gym_name");
                     if (rs.wasNull()) {
                         comp.gymName = "";
+                    } else {
+                        comp.gymName = s;
+                    }
+                    s = rs.getString("gym_website");
+                    if (rs.wasNull()) {
                         comp.gymLink = "";
                     } else {
-                        Matcher matcher = urlPattern.matcher(val);
-                        if (matcher.find()) {
-                            comp.gymName = matcher.group(1);
-                            comp.gymLink = matcher.group(2);
-                        } else {
-                            throw new RuntimeException("Error! Do not know what this url pattern is: \""+val+"\" ");
-                        }
+                        comp.gymLink = s;
                     }
                 }
                 // Drive
                 {
-                    comp.drive = rs.getString("Drive");
+                    comp.drive = String.format("%dh %dm", rs.getInt("gym_drive_hours"), rs.getInt("gym_drive_minutes"));
                 }
                 // Location
                 {
-                    String val = rs.getString("Location");
-                    if (rs.wasNull()) {
-                        comp.cityState = "";
-                        comp.cityStateLink = "";
-                    } else {
-                        Matcher matcher = urlPattern.matcher(val);
-                        if (matcher.find()) {
-                            comp.cityState = matcher.group(1);
-                            comp.cityStateLink = matcher.group(2);
-                        } else {
-                            throw new RuntimeException("Error! Do not know what this url pattern is: \""+val+"\" ");
-                        }
+                    String city = Objects.toString(rs.getString("gym_city"), "").trim();
+                    String state = Objects.toString(rs.getString("gym_state"), "").trim();
+                    String country = Objects.toString(rs.getString("gym_country"), "").trim();
+                    
+                    if (!city.isEmpty() && !state.isEmpty()) {
+                        comp.cityState = city + ", " + state;
+                    } 
+                    else
+                    if (!city.isEmpty()) {
+                        comp.cityState = city;
                     }
+                    else
+                    if (!state.isEmpty()) {
+                        comp.cityState = state;
+                    }
+                    else
+                    if (!country.isEmpty()) {
+                        comp.cityState = country;
+                    }
+                    else {
+                        comp.cityState = "unknown";
+                    }
+                    
+                    comp.cityStateLink
+                        = Objects.toString(rs.getString("gym_address_google_map"), "").trim();
+                    
                 }
                 // Hotel
                 {
-                    String val = rs.getString("Hotel");
+                    String s;
+                    s = rs.getString("hotel_name");
                     if (rs.wasNull()) {
-                        comp.hotel = "";
+                        comp.hotelName = "";
+                    } else {
+                        comp.hotelName = s;
+                    }
+                    s = rs.getString("hotel_address_google_map");
+                    if (rs.wasNull()) {
                         comp.hotelLink = "";
                     } else {
-                        Matcher matcher = urlPattern.matcher(val);
-                        if (matcher.find()) {
-                            comp.hotel = matcher.group(1);
-                            comp.hotelLink = matcher.group(2);
-                        } else {
-                            throw new RuntimeException("Error! Do not know what this url pattern is: \""+val+"\" ");
-                        }
+                        comp.hotelLink = s;
                     }
                 }
 
@@ -145,23 +151,28 @@ public class SeasonPlannerRepository {
         PreparedStatement stmt               
             = conn.prepareStatement("""                                    
                 SELECT 
-                      [begin_date] AS [Date_Start]
-                    , [end_date] AS [Date_End]    
-                    , competitions.is_attendance_planned AS Planned
-                    , competitions.id AS ID
-                    , competitions.is_registered AS Registered
-                    , gyms.gym_website AS Gym
-                    , competitions.league AS League
-                    , competitions.type AS Type
-                    , gyms.gym_address_google_map AS Location
-                    , [gym_drive_hours] & "h " & [gym_drive_minutes] & "m" AS Drive
-                    , hotels.hotel_address_google_map AS Hotel                                                    
+                      competitions.begin_date
+                    , competitions.end_date
+                    , competitions.is_attendance_planned
+                    , competitions.id
+                    , competitions.is_registered
+                    , competitions.league
+                    , competitions.type
+                    , gyms.gym_name
+                    , gyms.gym_website
+                    , gyms.gym_address_google_map
+                    , gyms.gym_drive_hours
+                    , gyms.gym_drive_minutes
+                    , gyms.gym_city
+                    , gyms.gym_state
+                    , gyms.gym_country
+                    , hotels.hotel_name
+                    , hotels.hotel_address_google_map
                 FROM 
-                    (gyms INNER JOIN competitions ON gyms.gym_name = competitions.gym_name) 
-                    LEFT JOIN 
-                    hotels ON gyms.gym_name = hotels.gym_name
+                    gyms INNER JOIN competitions ON gyms.gym_name = competitions.gym_name
+                    LEFT JOIN hotels ON gyms.gym_name = hotels.gym_name
                 WHERE 
-                    (((gyms.gym_drive_hours)<=8))
+                    gyms.gym_drive_hours <=8
                 ORDER BY 
                     competitions.begin_date, gyms.gym_drive_hours, gyms.gym_drive_minutes, competitions.gym_name;
             """);
