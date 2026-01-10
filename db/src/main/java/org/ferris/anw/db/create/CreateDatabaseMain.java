@@ -2,7 +2,7 @@ package org.ferris.anw.db.create;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
-import org.ferris.anw.db.sql.Connections;
+import org.ferris.anw.db.sql.SqlHelper;
 
 /**
  *
@@ -13,7 +13,7 @@ public class CreateDatabaseMain {
     public static void main(String[] args) throws Exception 
     {
         String sql;
-        Connection conn = new Connections().sqlite();
+        Connection conn = new SqlHelper().sqlite();
         
         //
         // GYMS
@@ -23,13 +23,13 @@ public class CreateDatabaseMain {
                   id integer primary key autoincrement
                 , gym_name text unique not null
                 , gym_website text not null
-                , gym_address_google_map text not null
+                , gym_address_google_map text 
                 , gym_drive_hours int not null
                 , gym_drive_minutes int not null
-                , gym_address1 text not null
-                , gym_city text not null
-                , gym_state text not null
-                , gym_zipcode text not null
+                , gym_address1 text
+                , gym_city text
+                , gym_state text
+                , gym_zipcode text
                 , gym_country text               
             );
         """;     
