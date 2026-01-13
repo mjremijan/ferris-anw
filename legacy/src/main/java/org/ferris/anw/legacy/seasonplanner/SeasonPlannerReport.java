@@ -1,7 +1,9 @@
 
 package org.ferris.anw.legacy.seasonplanner;
 
+import java.io.File;
 import java.io.FileOutputStream;
+import java.nio.file.Files;
 import java.util.Collections;
 import java.util.LinkedList;
 import java.util.List;
@@ -318,6 +320,15 @@ public class SeasonPlannerReport {
     protected void write(String directory) throws Exception {
         String min = String.valueOf(Collections.min(years));
         String max = String.valueOf(Collections.max(years)).substring(2);
+        File newf = new File(directory, String.format("ANW Season Planner (%s-%s).xlsx",min,max));
+        File bakf = new File(newf.getParentFile(), newf.getName()+".bak1");
+        if (bakf.exists()) {
+            bakf.delete();
+        }
+        if (newf.exists()) {
+            Files.copy(newf.toPath(), bakf.toPath());
+            newf.renameTo(bakf);
+        }
         workbook.write(
             new FileOutputStream(directory + "/" + String.format("ANW Season Planner (%s-%s).xlsx",min,max) )
         );

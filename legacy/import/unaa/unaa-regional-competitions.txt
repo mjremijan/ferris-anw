@@ -1,11 +1,11 @@
 NCNS Finals	Iowa	November 15 - 16th (Only For Athletes Who Qualified Through NSNC & Reside In The Area)
 Ultimate Ninjas - North Shore	Illinois	March 14th
-Surge Ninja - Peabody	Massachusetts	April 4 - 5th
 Conquer Gym - Blaine	Minnesota	April 11-12th
 Super Ninja World	Ohio	April 11 - 12th
 Strickly Ninjas	Georgia	April 11 - 12th
 The Ninja Playground	Utah	April 17 - 18th
 Conquer Ninja Gym - Bedford	Texas	April 18th
+Surge Ninja - Peabody	Massachusetts	April 18 - 19th
 SOFLO Ninja Academy	Florida	April 18 - 19th
 Conquer Gym - Chandler	Arizona	April 18 - 19th
 AHW Training	New Jersey	April 25 - 26th
@@ -41,7 +41,7 @@ Camp Ninja Warrior	Oklahoma	June 6th
 Fortified Fitness	Tennessee	June 6th
 Ninja Intensity	Colorado	June 6th
 West River Ninja	South Dakota	June 6th
-Vertex Lab Academy	Ohio	June 6 - 7th
+Vertex Lab Academy	Virginia	June 6 - 7th
+Ninjobstacles	Ohio	June 6 - 7th
 Ultimate Ninjas - Elmhurst	Illinois	June 7th
 NinjaForce	New Mexico	June 7th
-		

@@ -1,4 +1,3 @@
 #name, website, address, city, state, zip, country
-#Remijan Ninja, https://kellyandmichaelremijan.com, 644 N. Broadway, Park Ridge, IL, 60068
-Fitset Ninja Calgary, https://calgary.fitsetninja.com/, 3691 19 St NE, Calgary, AB, T2E 6S8, Canada
+ARK Ninja, https://www.arkninja.com/, 1623 Vista View Drive Unit 5, Longmont, CO, 80504
 

@@ -105,13 +105,13 @@ The Zone	South Carolina	February 21st
 Impact Ninja Gym	Utah	February 20 - 21st
 Conquer Gym - Goodyear	Arizona	February 21 - 22nd
 Conquer Ninja Gyms - Rosemount	Minnesota	February 21 - 22nd
+Free Spirit	Oregon	March 1st
 Sumner Ninja	Washington	March 14th
 West River Ninja	South Dakota	March 14th
 Parkinetic's Playground	Iowa	March 14th
 Go Ninja	California	March 14th
 Ascend Obstacle Training	Massachusetts	March 14 - 15th
 Conquer Gym - Fargo	North Dakota	March 14 - 15th
-Free Spirit	Oregon	March 15th
 Altitude Movement Gym	Colorado	March 15th
 Champion Gymnastics Ann Arbor	Michigan	March 15th
 USA Ninja Challenge - Stafford	Virginia	March 15 -16th
@@ -126,6 +126,7 @@ Airbenders	Oklahoma	March 28th
 Get Over It Fitness	Tennessee	March 28th
 Magic City Gymnastics	Montana	March 28th
 USA Ninja Challenge - Norton	Massachusetts	March 28th
+Warrior Playground	Colorado	March 28th
 USA Ninja Challenge-Manchester	New Hampshire	March 28-29th ( Under 17)
 Bodies In Motion	Idaho	Aprill 11th
 Vertex Lab Academy	Virginia	Aprill 11 - 12th

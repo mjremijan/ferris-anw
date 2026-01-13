@@ -1,177 +1,168 @@
 #ID	Planned	Registered
 		
 		
+1299		
+1301		
+1059		
+1302		
 		
-564	No	
-566	No	
-962	No	
-567	No	
+1309		
+1313		
+1310		
+1060		
+1315		
+1317		
+1076		
+1077		
+1326		
+1061		
 		
+1330		
+1082		
+1083		
+1331		
+1086		
+1087		
+1334		
+1088		
+1089		
+1337		
+1062		
+1104		
+1105		
+1342		
+1432		
+1114		
+1115		
+1346		
+1110		
+1111		
+1349		
 		
-574	No	
-578	No	
-575	No	
-963	No	
-580	No	
-582	No	
-660	No	
-744	No	
-745	No	
-964	No	
-		
-		
-591	No	
-750	No	
-751	No	
-593	No	
-753	No	
-752	No	
-596	No	
-754	No	
-755	No	
-664	No	
-965	No	Symphony
-766	No	Symphony
-767	No	Symphony
-602	No	Symphony
-739	No	Symphony
-774	No	Retirement 
-775	No	Retirement 
-609	No	Retirement 
-773	No	Retirement 
-772	No	Retirement 
-611	No	
-		
-		
-790	No	Birthday
-789	No	Birthday
-784	No	Birthday
-726	No	Birthday
-667	No	Birthday
-612	No	Birthday
-927	No	Birthday
-966	No	Dress Rehsl
-797	No	Dress Rehsl
-930	No	Dress Rehsl
-616	No	Dress Rehsl
-977		
-994		
-802	No	Too far
-803	No	Too far
+1130		
+1131		
+1124		
+1351		
+1352		
+1353		
+1134		
+1063		
+1141		
+1144		
+1359		
+1149		
+1150		
+1151		
 		
 		
+1154	No	Too far
+1155	No	Too far
+1152	No	Too far
+1153	No	Too far
+1161	No	Vball camp
+1364	No	Vball camp
+1159	No	Vball camp
+1160	No	Vball camp
+1064	No	Vball camp
+1168	No	Rascal Flatts
+1169	No	Rascal Flatts
+1172	No	Rascal Flatts
+1173	No	Rascal Flatts
+1368	No	Rascal Flatts
+1369	No	Rascal Flatts
+1065	No	Eve birthday
+1372	No	Eve birthday
+1178	No	Eve birthday
+1179	No	Eve birthday
+1180	No	Eve birthday
+1181	No	Eve birthday
+1373	No	Eve birthday
+1378	No	Eve birthday
+1184	Yes	Yes
+1185	Yes	Yes
+1385	No	Other comp
+1383	No	Other comp
+1182	No	Other comp
+1183	No	Other comp
+1380	No	Other comp
+1382	No	Other comp
+1384	No	Other comp
 		
+1190		
+1390		
+1389		
+1066		
+1191		
+1192		
+1193		
+1194		
+1196		
+1197		
+1396		
+1212		
+1213		
+1206		
+1207		
+1400		
+1204		
+1205		
+1405		
+1067		
+1220		
+1221		
+1218		
+1216		
+1217		
 		
-807	No	#2
-806	No	#2
-804	No	Too far
-805	No	Too far
-619	No	Rescheduled (Mar)
-997	No	Other comp
-620	No	Other comp
-995	No	Other comp
-996	No	Other comp
-967	No	Other comp
-818	No	#2
-817	No	#2
-934	No	Rascal Flatts
-933	No	Rascal Flatts
-988		
-656	No	Rascal Flatts
-968	No	Fashn show
-677	No	Fashn show
-989		
-826	No	Too far
-825	No	Too far
-828	No	Too far
-827	No	Too far
-625	No	Too far
-833	Yes	
-834	Yes	
-730	No	Other comp
-628	No	Other comp
-831	No	Other comp
-832	No	Other comp
-626	No	Other comp
-627	No	Other comp
+1483		
+1482		
+1484		
+1488		
+1226		
+1227		
+1408		
+1433		
+1238		
+1239		
+1236		
+1237		
+1414		
+1242		
+1243		
+1244		
+1245		
+1424		
+1252		
+1253		
+1068		
+1423		
+1258		
+1259		
 		
+1273		
+1274		
+1269		
+1270		
+1436		
+1437		
+1279		
+1280		
+1069		
+1281		
+1282		
+1444		
+1449		
+1070		
 		
+1450		
+1452		
+1458		
+1457		
+1459		
+1461		
+1431		
+1071		
 		
-634	No	Food & wine
-632	No	Food & wine
-631	No	Food & wine
-969	No	Food & wine
-998		
-999		
-837	No	#2
-838	No	#2
-680	Maybe	
-1012		
-1011		
-945	No	Too far
-944	No	Too far
-732	No	Too far
-844	No	Too far
-845	No	Too far
-847	No	Too far
-846	No	Too far
-642	No	Too far
-970	Yes	
-1003		
-1004		
-1002		
-851	No	Other comp
-850	No	Other comp
-		
-		
-855	No	Too far
-854	No	Too far
-990		
-690	Maybe	Regional
-865	No	#2
-991		
-1006		
-1005		
-992		
-869	No	#2
-868	No	#2
-870	No	#2
-871	No	#2
-686	Maybe	
-879	No	#3
-878	No	#3
-971	No	Other comp
-685	No	Other comp
-883	No	#3
-882	No	#3
-		
-		
-		
-895	No	#3
-896	No	#3
-892	Maybe	
-891	Maybe	
-735	No	Too far
-1008		
-1007		
-972		
-899		
-900		
-695		
-698		
-973	Yes	
-		
-		
-702		
-699		
-706		
-689	Yes	
-707		
-974	No	Not qualified
-712		
-		
-		
-716		
-719		
-720		
-		
+1472		
+1471		
+1476		
