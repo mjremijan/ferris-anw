@@ -11,7 +11,6 @@ Conquer Gym - Chandler	Arizona	April 18 - 19th
 AHW Training	New Jersey	April 25 - 26th
 Conquer Gym - Fargo	North Dakota	April 24 - 25th
 Next Level Gym	Oklahoma	April 25th
-Athletes in Motion	Louisiana	April 25th
 Avant Coeur Ninja	Idaho	April 25th
 Ark Ninja	Colorado	April 25 - 26th
 WISC Ninja Warrior	Virginia	April 25 - 26th
@@ -23,6 +22,7 @@ USA Ninja Challenge - Marlborough	Massachusetts	May 2 - 3rd
 Hit Squad Ninjas	Arizona	May 2 - 3rd
 The Grip	Utah	May 8 - 9th
 Magic City Gymnastics	Montana	May 9 - 10th
+Athletes in Motion	Louisiana	May 9th
 Paragon Performance Sports	Kansas	May 9th
 Boss Comp	Tennessee	May 9 - 10th
 ORTHDX	Wisconsin	May 16 - 17th
