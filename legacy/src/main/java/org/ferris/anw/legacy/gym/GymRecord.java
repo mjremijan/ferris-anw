@@ -1,5 +1,7 @@
 package org.ferris.anw.legacy.gym;
 
+import java.util.Optional;
+
 
 /**
  *
@@ -7,9 +9,10 @@ package org.ferris.anw.legacy.gym;
  */
 public class GymRecord {
     private String name, website, address, city, state, zip, country;
-    int driveHours, driveMinutes;
+    Optional<Integer> driveHours;
+    int driveMinutes;
 
-    public GymRecord(String name, String website, String address, String city, String state, String zip, String country) {
+    public GymRecord(String name, String website, String address, String city, String state, String zip, String country, Optional<Integer> driveTimeHours) {
         this.name = name;
         this.website = website;
         this.address = address;
@@ -17,10 +20,12 @@ public class GymRecord {
         this.state = state;
         this.zip = zip;
         this.country = country;
+        driveHours = driveTimeHours;
+        driveMinutes = 0;
     }
 
     public void setDriveTime(int hours, int minutes) {
-        this.driveHours = hours;
+        this.driveHours = Optional.of(hours);
         this.driveMinutes = minutes;
     }
     
@@ -53,11 +58,15 @@ public class GymRecord {
     }
 
     public int getDriveHours() {
-        return driveHours;
+        return driveHours.get();
     }
 
     public int getDriveMinutes() {
         return driveMinutes;
+    }
+    
+    public boolean isDriveTimeSet() {
+        return driveHours.isPresent();
     }
 
     public String getFullAddress() {

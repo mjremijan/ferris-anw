@@ -82,8 +82,6 @@
 1185	Yes	Yes
 1385	No	Other comp
 1383	No	Other comp
-1182	No	Other comp
-1183	No	Other comp
 1380	No	Other comp
 1382	No	Other comp
 1384	No	Other comp

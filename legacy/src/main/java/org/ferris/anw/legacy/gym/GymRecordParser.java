@@ -64,8 +64,8 @@ public class GymRecordParser {
         if (tokens.length == 0) {
             throw new RuntimeException("Unable to tokenize gym record line: \""+line+"\"");
         }
-        if (tokens.length > 7) {
-            throw new RuntimeException("Gym record line has more than 7 tokens: \""+line+"\"");
+        if (tokens.length > 8) {
+            throw new RuntimeException("Gym record line has more than 8 tokens: \""+line+"\"");
         }
         if (tokens.length < 6) {
             throw new RuntimeException("Gym record line has less than 6 tokens: \""+line+"\"");
@@ -92,9 +92,12 @@ public class GymRecordParser {
         // Country
         String country = parseCountry(tokens);
         
+        // Drive time
+        Optional<Integer> driveTimeHours = parseDriveTimeHours(tokens);
+        
         // Create the object
         GymRecord gym = new GymRecord(
-            name, website, address, city, state, zip, country
+            name, website, address, city, state, zip, country, driveTimeHours
         );
     
         // Set the drive time
@@ -104,6 +107,17 @@ public class GymRecordParser {
         return Optional.of(gym);
     }
     
+    protected Optional<Integer> parseDriveTimeHours(String[] tokens) {
+        Optional<Integer> retval = Optional.empty();
+        if (tokens.length == 8) {            
+            try {
+                retval = Optional.of(Integer.parseInt(tokens[7].trim()));
+            } catch (Exception e) {
+                throw new RuntimeException("Drive time hours is not numeric", e);
+            }
+        } 
+        return retval;
+    }
     
     protected String parseCountry(String[] tokens) {
         String retval = "";
@@ -162,6 +176,10 @@ public class GymRecordParser {
     }
 
     private void setDriveTime(GymRecord gym) {
+        
+        if (gym.isDriveTimeSet()) {
+            return;
+        }
         
         Map<String, String> params = Map.of(
             "origins", "2270 Birmingham Dr., Shiloh, IL 62221",

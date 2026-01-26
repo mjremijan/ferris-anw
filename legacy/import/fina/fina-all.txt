@@ -1,3 +1,4 @@
+October 15, 2025	Centenary Playground	FINA Season VII Qualifier - Speed #1	Speed	Darra, QLD, Australia
 October 25-26, 2025	AHW Obstacle Training Center	FINA Season VII Qualifier - Speed #1	Speed	Toms River, NJ
 October 25-26, 2025	AHW Obstacle Training Center	FINA Season VII Qualifier - Endurance #1	Endurance	Toms River, NJ
 October 25-26, 2025	Wojo Ninja Warrior	FINA Season VII Qualifier - Speed #1	Speed	East Aurora, NY
@@ -108,14 +109,14 @@ January 17-18	Conquer Ninja Gym Peoria	FINA Season VII Qualifier - Speed #1	Spee
 January 17-18	Conquer Ninja Gym Peoria	FINA Season VII Qualifier - Endurance #1	Endurance	Glendale, AZ
 January 17-18	Ultimate Ninjas Anaheim Hills	FINA Season VII Qualifier - Speed #1	Speed	Anaheim, CA, US
 January 17-18	Ultimate Ninjas Anaheim Hills	FINA Season VII Qualifier - Endurance #1	Endurance	Anaheim, CA, US
-January 24-25	Super Ninja World	FINA Season VII Qualifier - Speed #1	Speed	Cuyahoga Falls, OH
-January 24-25	Super Ninja World	FINA Season VII Qualifier - Endurance #1	Endurance	Cuyahoga Falls, OH
+January 24	Super Ninja World	FINA Season VII Qualifier - Speed #1	Speed	Cuyahoga Falls, OH
+January 24	Super Ninja World	FINA Season VII Qualifier - Endurance #1	Endurance	Cuyahoga Falls, OH
 January 24-25	Ninjas United	FINA Season VII Qualifier - Speed #1	Speed	Maple Grove, MN
 January 24-25	Ninjas United	FINA Season VII Qualifier - Endurance #1	Endurance	Maple Grove, MN
 January 24-25	ARK Ninja	FINA Season VII Qualifier - Speed #2	Speed	Longmont, CO
 January 24-25	ARK Ninja	FINA Season VII Qualifier - Endurance #2	Endurance	Longmont, CO
-Jan 31 - Feb 1	The Warrior Factory - Hamilton	FINA Season VII Qualifier - Endurance #2	Endurance	Hamilton, Ontario, Canada
-Jan 31 - Feb 1	The Warrior Factory - Hamilton	FINA Season VII Qualifier - Speed #2	Speed	Hamilton, Ontario, Canada
+Jan 31 - Feb 1	The Warrior Factory - Brantford	FINA Season VII Qualifier - Speed #1	Speed	Brantford, ON, Canada
+Jan 31 - Feb 1	The Warrior Factory - Brantford	FINA Season VII Qualifier - Endurance #1	Endurance	Brantford, ON, Canada
 Jan 31 - Feb 1	The Barn	FINA Season VII Qualifier - Speed #1	Speed	Dorsey, IL
 Jan 31 - Feb 1	The Barn	FINA Season VII Qualifier - Endurance #1	Endurance	Dorsey, IL
 Jan 31 - Feb 1	Avant Coeur Ninja	FINA Season VII Qualifier - Speed #1	Speed	Coeur d'Alene, ID
@@ -128,8 +129,6 @@ February 13-14	Rocket City Ninja Obstacle Academy	FINA Season VII Qualifier - Sp
 February 14	Four Star Ninja Academy	FINA Season VII Ninja vs. Ninja	Ninja vs. Ninja	Fargo, ND
 February 14-15	The Vault Ninja Academy	FINA Season VII Qualifier - Endurance #1	Endurance	Saint Joseph, MO
 February 14-15	The Vault Ninja Academy	FINA Season VII Qualifier - Speed #2	Speed	Saint Joseph, MO
-February 14-15	LEAP	FINA Season VII Qualifier - Speed #1	Speed	Laramie, WY
-February 14-15	LEAP	FINA Season VII Qualifier - Endurance #1	Endurance	Laramie, WY
 February 15	Fighting Lyons	FINA Season VII Qualifier - Speed #1	Speed International	Essendon North, Victoria, Australia
 February 15	Fighting Lyons	FINA Season VII Qualifier - Endurance #1	Endurance International	Essendon North, Victoria, Australia
 February 20-21	Impact Ninja Gym	FINA Season VII Qualifier - Speed #1	Speed	Sandy, UT
@@ -148,28 +147,32 @@ February 21-22	Ninja Republic	FINA Season VII Qualifier - Speed #1	Speed	San Mat
 February 21-22	Ninja Republic	FINA Season VII Qualifier - Endurance #1	Endurance	San Mateo, CA
 Feb 28 - Mar 1	Ninjobstacles	FINA Season VII Qualifier - Speed #1	Speed	Kettering, OH
 Feb 28 - Mar 1	Ninjobstacles	FINA Season VII Qualifier - Endurance #1	Endurance	Kettering, OH
+Feb 28 - Mar 1	TA Fitness Weymouth	FINA Season VII Qualifier - Endurance #2	Endurance	Weymouth, MA
+Feb 28 - Mar 1	TA Fitness Weymouth	FINA Season VII Qualifier - Speed #2	Speed	Weymouth, MA
 February 28	Altius Ninja	FINA Season VII Qualifier - Speed #2	Speed	Franklin, WI
 February 28	Apex Ninja Warriors	FINA Season VII Ninja vs. Ninja	Ninja vs. Ninja	Houston, TX
 Feb 28 - Mar 1	Ultimate Ninjas Naperville	FINA Season VII Qualifier - Endurance #2	Endurance	Naperville, IL
 Feb 28 - Mar 1	Ultimate Ninjas Naperville	FINA Season VII Qualifier - Speed #1	Speed	Naperville, IL
 Feb 28 - Mar 1	Hitsquad Ninja Gym	FINA Season VII Qualifier - Speed #2	Speed	Tempe, AZ
 Feb 28 - Mar 1	Hitsquad Ninja Gym	FINA Season VII Qualifier - Endurance #2	Endurance	Tempe, AZ
-March 1	USA Ninja Challenge Marlborough	FINA Season VII Qualifier - Speed #1	Speed	Marlborough, MA
-March 1	USA Ninja Challenge Marlborough	FINA Season VII Qualifier - Endurance #1	Endurance	Marlborough, MA
 March 7-8	Tri County Ninja	FINA Season VII Qualifier - Speed #2	Speed	Fenton, MI
 March 7-8	Tri County Ninja	FINA Season VII Qualifier - Endurance #2	Endurance	Fenton, MI
 March 7-8	The Rock Ninja Warrior Academy	FINA Season VII Qualifier - Speed #3	Speed	Orange Park, FL
 March 7-8	The Rock Ninja Warrior Academy	FINA Season VII Qualifier - Endurance #3	Endurance	Orange Park, FL
 March 7-8	Buffalo Elite Ninja	FINA Season VII Qualifier - Speed #2	Speed	Lancaster, NY
 March 7-8	Buffalo Elite Ninja	FINA Season VII Qualifier - Endurance #2	Endurance	Lancaster, NY
+March 7	LEAP	FINA Season VII Qualifier - Speed #1	Speed	Laramie, WY
+March 7	LEAP	FINA Season VII Qualifier - Endurance #1	Endurance	Laramie, WY
+March 7	Warrior Playground	FINA Season VII Qualifier - Endurance #1	Endurance	Longmont, CO
+March 7	Warrior Playground	FINA Season VII Qualifier - Speed #1	Speed	Longmont, CO
 March 7-8	Ultimate Ninjas Anaheim Hills	FINA Season VII Qualifier - Speed #2	Speed	Anaheim, CA, US
 March 7-8	Ultimate Ninjas Anaheim Hills	FINA Season VII Qualifier - Endurance #2	Endurance	Anaheim, CA, US
-March 14-15	The Park Buffalo	FINA Season VII Qualifier - Speed #2	Speed	Grand Island, NY
-March 14-15	The Park Buffalo	FINA Season VII Qualifier - Endurance #2	Endurance	Grand Island, NY
 March 14	The Ninja Hive	FINA Season VII Qualifier - Endurance #2	Endurance	Akron, OH
 March 14	The Ninja Hive	FINA Season VII Qualifier - Speed #2	Speed	Akron, OH
 March 14	Altius Ninja	FINA Season VII Qualifier - Endurance #2	Endurance	Franklin, WI
 March 14	Next Level Gym	FINA Season VII Qualifier - Speed #1	Speed	Stillwater, OK
+March 15	The Park Buffalo	FINA Season VII Qualifier - Speed #2	Speed	Grand Island, NY
+March 15	The Park Buffalo	FINA Season VII Qualifier - Endurance #2	Endurance	Grand Island, NY
 March 21-22	Warrior Zone	FINA Season VII Qualifier - Speed #2	Speed	Winterville, NC, US
 March 21-22	Warrior Zone	FINA Season VII Qualifier - Endurance #2	Endurance	Winterville, NC, US
 March 21-22	Get Over It Fitness	FINA Season VII Qualifier - Speed #2	Speed	Hendersonville, TN, US
@@ -199,6 +202,8 @@ April 11-12	Sumner Ninja	FINA Season VII Qualifier - Speed #2	Speed	Auburn, WA
 April 11-12	Sumner Ninja	FINA Season VII Qualifier - Endurance #2	Endurance	Auburn, WA
 April 11-12	Vertex Labs Academy	FINA Season VII Qualifier - Speed #2	Speed	Lorton, VA
 April 11-12	Vertex Labs Academy	FINA Season VII Qualifier - Endurance #2	Endurance	Lorton, VA
+April 11-12	USA Ninja Challenge Marlborough	FINA Season VII Qualifier - Speed #1	Speed	Marlborough, MA
+April 11-12	USA Ninja Challenge Marlborough	FINA Season VII Qualifier - Endurance #1	Endurance	Marlborough, MA
 April 11	Fortified Fitness	FINA Season VII Qualifier - Speed #1	Speed	Murfreesboro, TN
 April 11	Fortified Fitness	FINA Season VII Qualifier - Endurance #1	Endurance	Murfreesboro, TN
 April 11-12	Four Star Ninja Academy	FINA Season VII Qualifier - Speed #3	Speed	Fargo, ND
@@ -208,8 +213,6 @@ April 11-12	Adrenaline Monkey West Dundee	FINA Season VII Qualifier - Endurance 
 April 11	Camp Ninja Warrior	FINA Season VII Qualifier - Speed #1	Speed	Bixby, OK
 April 11-12	Ninja Lair	FINA Season VII Qualifier - Speed #2	Speed	Las Vegas, NV, US
 April 11-12	Ninja Lair	FINA Season VII Qualifier - Endurance #2	Endurance	Las Vegas, NV, US
-April 12	USA Ninja Challenge Marlborough	FINA Season VII Qualifier - Endurance #2	Endurance	Marlborough, MA
-April 12	USA Ninja Challenge Marlborough	FINA Season VII Qualifier - Speed #2	Speed	Marlborough, MA
 April 17-18	Rocket City Ninja Obstacle Academy	FINA Season VII Qualifier - Endurance #2	Endurance	Huntsville, AL
 April 17-18	Rocket City Ninja Obstacle Academy	FINA Season VII Qualifier - Speed #2	Speed	Huntsville, AL
 April 18-19	Ninjobstacles	FINA Season VII Qualifier - Speed #2	Speed	Kettering, OH

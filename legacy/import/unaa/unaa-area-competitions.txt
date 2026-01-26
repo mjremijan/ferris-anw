@@ -97,7 +97,7 @@ Ninja Lair	Nevada	February 14th
 Tumble Time Gymnastics	California	February 14th
 Paragon Performance Sports	Kansas	February 14th
 NinjaForce	New Mexico	February 15th
-AHW Training	New Jersey	February 20th
+AHW Training	New Jersey	February 21 - 22nd
 The Wolfs Den	California	February 21st
 Samurai Athletics	Oklahoma	February 21st
 Ninja Quest Adventures	Washington	February 21st
@@ -115,7 +115,6 @@ Conquer Gym - Fargo	North Dakota	March 14 - 15th
 Altitude Movement Gym	Colorado	March 15th
 Champion Gymnastics Ann Arbor	Michigan	March 15th
 USA Ninja Challenge - Stafford	Virginia	March 15 -16th
-Permian Basin Ninja Academy	Texas	March 21st
 Forest Flyers	Michigan	March 21st
 Rapt Ninja	Massachusetts	March 21 - 22nd
 Warrior Zone Ninja Obstacle Center	North Carolina	March 21 - 22nd
