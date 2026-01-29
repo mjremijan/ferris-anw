@@ -4,6 +4,7 @@ Conquer Gym - Blaine	Minnesota	April 11-12th
 Super Ninja World	Ohio	April 11 - 12th
 Strickly Ninjas	Georgia	April 11 - 12th
 The Ninja Playground	Utah	April 17 - 18th
+United Sports Academy Ninja Nook - Mayfield	Pennsylvania	April 18th
 Conquer Ninja Gym - Bedford	Texas	April 18 - 19th
 Surge Ninja - Peabody	Massachusetts	April 18 - 19th
 SOFLO Ninja Academy	Florida	April 18 - 19th
@@ -45,3 +46,4 @@ Vertex Lab Academy	Virginia	June 6 - 7th
 Ninjobstacles	Ohio	June 6 - 7th
 Ultimate Ninjas - Elmhurst	Illinois	June 7th
 NinjaForce	New Mexico	June 7th
+		
