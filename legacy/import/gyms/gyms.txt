@@ -1,3 +1,4 @@
 #name, website, address, city, state, zip, country, drive_time_hours_bypass_api_lookup
-Centenary Playground, http://centenaryplayground.com/, 75 Bellwood St., Darra, QLD, 4076, Australia, 99
-
+Sarnia Super Ninja OCR Club, https://www.superninjaocr.com/, 180 College Ave N, Sarnia, ON, N7T 7X2, Canada
+Elemental Ninja AB, https://elementalninja.ca/, 4242 99 St NW, Edmonton, AB, T6E 5B4, Canada
+Sinai Sports, https://www.sinaisportserie.com/, 2311 W 15th St., Erie, PA, 16505
