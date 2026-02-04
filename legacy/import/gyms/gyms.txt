@@ -1,4 +1,2 @@
 #name, website, address, city, state, zip, country, drive_time_hours_bypass_api_lookup
-Sarnia Super Ninja OCR Club, https://www.superninjaocr.com/, 180 College Ave N, Sarnia, ON, N7T 7X2, Canada
-Elemental Ninja AB, https://elementalninja.ca/, 4242 99 St NW, Edmonton, AB, T6E 5B4, Canada
-Sinai Sports, https://www.sinaisportserie.com/, 2311 W 15th St., Erie, PA, 16505
+Traverse Fitness,https://www.traversefit.com/,1 W Barrett Ave, Richmond, CA, 94801

@@ -1,7 +1,8 @@
 Power Pickle	Texas	February 28th
 305 Ninja Academy	Florida	February 28th
-Vertex Lab Academy	Virginia	February 28 - March 8
+Vertex Lab Academy	Virginia	February 28 - March 8th
 The Wolfs Den	California	February 28th
+Ninjobstacles	Ohio	February 28 - March 2st
 Strickly Ninjas	Georgia	March 7 - 8th
 Fortified Fitness	Tennessee	March 7th
 Republic Warrior Sports	Missouri	March 7th
@@ -16,3 +17,8 @@ Warrior Zone Ninja Obstacle Center	North Carolina	March 8th
 Infinity Ninja	North Dakota	March 8th
 Hit Squad Ninjas	Arizona	March 8th
 Apex Ninja Warrior	Texas	March 8th
+Iron Sports Ninja Warrior	Texas	TBD
+Ninja Nation - Murphy	Texas	TBD
+ORTHDX	Wisconsin	TBD
+Warrior Playground	Colorado	TBD
+		

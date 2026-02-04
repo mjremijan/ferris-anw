@@ -81,9 +81,8 @@ USA Ninja Challenge - Bristol	Virginia	January 31st
 Ninjobstacles	Ohio	January 31 - February 1st
 605 Ninja	South Dakota	January 31 - February 1st
 The Training Lab	Indiana	January 31 - February 1st (17 & Under Only)
+The Barn	Illinois	January 31 - February 1st (17 & Under Only)
 USA Ninja Challenge - Woodstock	Georgia	February 1st (Only 17 & Under)
-USA Ninja Challenge - Greenbrier	Virginia	February 1st (Only 17 & Under)
-Win Kids	Texas	February 1st
 Warrior Challenge Arena	Colorado	February 7th
 WISC Ninja Warrior	Virginia	February 7th
 Authentik Movement Training	Ohio	February 7th
@@ -95,7 +94,6 @@ Ninja Lair	Nevada	February 14th
 Tumble Time Gymnastics	California	February 14th
 Paragon Performance Sports	Kansas	February 14th
 NinjaForce	New Mexico	February 15th
-AHW Training	New Jersey	February 21 - 22nd
 The Wolfs Den	California	February 21st
 Samurai Athletics	Oklahoma	February 21st
 Ninja Quest Adventures	Washington	February 21st
@@ -103,21 +101,25 @@ The Zone	South Carolina	February 21st
 Impact Ninja Gym	Utah	February 20 - 21st
 Conquer Gym - Goodyear	Arizona	February 21 - 22nd
 Conquer Ninja Gyms - Rosemount	Minnesota	February 21 - 22nd
+Win Kids	Texas	February 22nd
 Apex Ninja Warrior	Texas	February 22nd
+Jumptwist Ninja	Florida	February 28 - March 1st
 Free Spirit	Oregon	March 1st
 Sumner Ninja	Washington	March 14th
 West River Ninja	South Dakota	March 14th
 Parkinetic's Playground	Iowa	March 14th
 Go Ninja	California	March 14th
-United Sports Academy Ninja Nook - Mayfield	Pennsylvania	March 14th
 Ascend Obstacle Training	Massachusetts	March 14 - 15th
 Conquer Gym - Fargo	North Dakota	March 14 - 15th
 Altitude Movement Gym	Colorado	March 15th
 Champion Gymnastics Ann Arbor	Michigan	March 15th
 USA Ninja Challenge - Stafford	Virginia	March 15 -16th
+United Sports Academy Ninja Nook - Mayfield	Pennsylvania	March 21st
 Forest Flyers	Michigan	March 21st
+Super Ninja World	Ohio	March 21st
 Rapt Ninja	Massachusetts	March 21 - 22nd
 Warrior Zone Ninja Obstacle Center	North Carolina	March 21 - 22nd
+USA Ninja Challenge - Greenbrier	Virginia	March 22nd (Only 17 & Under)
 WISC Ninja Warrior	Virginia	March 28th
 Apex Ninja Warrior	Texas	March 28th
 Avant Coeur Ninja	Idaho	March 28th
@@ -125,9 +127,10 @@ Airbenders	Oklahoma	March 28th
 Get Over It Fitness	Tennessee	March 28th
 Magic City Gymnastics	Montana	March 28th
 USA Ninja Challenge - Norton	Massachusetts	March 28th
-Warrior Playground	Colorado	March 28th
+Four Star Ninja Academy - Bismark	North Dakota	March 28th
 Bodies In Motion	Idaho	Aprill 11th
 Vertex Lab Academy	Virginia	Aprill 11 - 12th
 Rock Solid Warrior - Fuquay	North Carolina	April 18th
 Get Over It Fitness	Tennessee	April 25th
 The Barn	Illinois	May 25th (Direct to Finals Qualifier)
+		
