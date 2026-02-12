@@ -103,7 +103,6 @@ Conquer Gym - Goodyear	Arizona	February 21 - 22nd
 Conquer Ninja Gyms - Rosemount	Minnesota	February 21 - 22nd
 Win Kids	Texas	February 22nd
 Apex Ninja Warrior	Texas	February 22nd
-Jumptwist Ninja	Florida	February 28 - March 1st
 Free Spirit	Oregon	March 1st
 Sumner Ninja	Washington	March 14th
 West River Ninja	South Dakota	March 14th
@@ -128,6 +127,7 @@ Get Over It Fitness	Tennessee	March 28th
 Magic City Gymnastics	Montana	March 28th
 USA Ninja Challenge - Norton	Massachusetts	March 28th
 Four Star Ninja Academy - Bismark	North Dakota	March 28th
+Jumptwist Ninja	Florida	Aprill 11th
 Bodies In Motion	Idaho	Aprill 11th
 Vertex Lab Academy	Virginia	Aprill 11 - 12th
 Rock Solid Warrior - Fuquay	North Carolina	April 18th
